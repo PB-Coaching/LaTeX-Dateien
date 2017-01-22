@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage{pifont}
+\begin{document}
+
+\paragraph{Class}  (please \ding{52})\\
+\begin{minipage}{\textwidth}
+\begin{multicols}{2}
+\begin{itemize}
+\item[$\bigcirc$] 12M3A -- Mr Zuber
+\item[$\bigcirc$] 12M3B -- Mr Berry
+\item[$\bigcirc$] 12M3C -- Mr Lowe
+\columnbreak
+\item[$\bigcirc$] 12M4A -- Ms Ziaziaris
+\item[$\bigcirc$] 12M4B -- Mr Lam
+\item[$\bigcirc$] 12M4C -- Mr Ireland
+\end{itemize}
+\end{multicols}
+\end{minipage}
+
+\end{document}

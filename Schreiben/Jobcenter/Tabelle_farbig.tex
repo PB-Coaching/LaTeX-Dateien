@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{colortbl}
+\begin{document}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+  \hline 
+  \rowcolor[gray]{.6} Stoff & Mischungs- &\multicolumn{2}{c|}{Beurteilung} & Versuchs- &  & Siehe  \\
+  \rowcolor[gray]{.6} & verhältnis  & Schichtdicken & Schnitt- & reihe & Versuch & Anhang \\ 
+  \rowcolor[gray]{.6} & & homogenität & test & & & Seite \\
+  \noalign{\hrule height .8pt}
+  1 & 70Ma\% & Schlecht & 1 & 2 & IV& \pageref{Tab2} \\
+  \cline{2-7} 
+  & 80Ma\% & Sehr Schlecht & 1 &2 & III & \pageref{Tab2} \\
+  \cline{2-7}
+  & 90Ma\% & Sehr Schlecht & 1 &2 & III & \pageref{Tab2} \\
+  \noalign{\hrule height .8pt}
+  2 & 80Ma\% & konstant & 1 & 3 & V & \pageref{Tab7} \\
+  \cline{2-7} 
+  & 85Ma\% & Befriedigend & 4 & 3 & IV & \pageref{Tab3} \\
+  \cline{2-7}
+  & 90Ma\% & Befriedigend & 1 & 3 & III & \pageref{Tab3} \\
+  \noalign{\hrule height .8pt}
+  3 & 95Ma\% & Sehr gut & 1 & 7  & IV & \pageref{Tab7}\\
+  \cline{2-7}
+  \rowcolor{yellow} & 97,5Ma\% & Sehr gut  & 2 & 7 & III & \pageref{Tab7} \\
+  \cline{2-7}
+  & 99Ma\% & Differenziert & 3 & 7 & II &  \pageref{Tab7} \\
+  \hline
+\end{tabular}
+
+\end{document}

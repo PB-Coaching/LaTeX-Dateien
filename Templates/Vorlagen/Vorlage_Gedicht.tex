@@ -1,0 +1,33 @@
+%Vorlage "Gedicht", v1.04
+
+\documentclass[DIV=calc,11pt,a4paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{verse,setspace}
+\usepackage[osf]{libertine}
+\usepackage{microtype}
+
+\begin{document}
+
+\thispagestyle{empty} %entfernt bei einem einseitigen Gedicht die Seitenzahl auf der Seite; sieht doch besser aus ;)
+\onehalfspace % 1,5-facher Zeilenabstand
+\newcommand{\attrib}[1]{\nopagebreak{\raggedleft\footnotesize #1\par}} %für den angehangenen "attrib"-Befehl
+
+\begin{verse}
+\poemtitle*{Mein Gedicht}
+
+Will ich denn nicht mehr verstehen,\\ %jede Zeile wird mit \\ beendet
+als dem Alten unversehens\\
+in Gebilde, in Gedanken?\\
+Die Gelehrten werden sich noch zanken!\\! %das Ausrufezeichen erzeugt einen kleinen Absatz zur nächsten Strophe
+
+So komme nieder, steige auf,\\
+entblöße dich der Sonne Lauf!\\
+Habe Angst und blicke dar,\\
+wie fremd es in deinem Inneren war!\\
+
+\attrib{für Henrietta \\ März 2004}
+\end{verse}
+
+\end{document}

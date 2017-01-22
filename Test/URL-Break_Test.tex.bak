@@ -1,0 +1,26 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath,amssymb,amsbsy}
+\usepackage{color}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[dvipdfm, colorlinks=true, bookmarksopen=true, bookmarksopenlevel=4, breaklinks=true, pdfstartview=Fit, linkcolor=blue]{hyperref}
+
+\makeatletter
+\g@addto@macro\UrlBreaks{
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3
+  \do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+% \def\do@url@hyp{\do\-}
+\makeatother
+
+\begin{document}
+
+\chapter{Minimalbeispiel}
+
+Diese URL soll umgebrochen werden. Das funktioniert auch recht gut, aber leider entsteht eine Overfull Box, die "`4.63574pt too wide"' ist: \url{http://www.heise.de/security/Neues-Rating-System-fuer-Sicherheitsfehler-vorgestellt--/news/meldung/64047}
+
+\end{document} 

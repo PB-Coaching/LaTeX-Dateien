@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{General description}{}
+\BOOKMARK [2][-]{subsection.2.1}{Package inclusion and options}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Making a citation}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{The bst styles}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{The bib file fields}{section.2}
+\BOOKMARK [1][-]{section.3}{Customization}{}
+\BOOKMARK [2][-]{subsection.3.1}{Dimensions}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Flags and formats}{section.3}
+\BOOKMARK [1][-]{section.4}{Using both directory and bibliography}{}
+\BOOKMARK [1][-]{section.5}{Generating directories with hypertext links}{}
+\BOOKMARK [1][-]{section.6}{Generating HTML, vCard or LDIF directories}{}
+\BOOKMARK [1][-]{section.7}{Example}{}
+\BOOKMARK [2][-]{subsection.7.1}{Source file}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{Output}{section.7}
+\BOOKMARK [1][-]{section.8}{Contributors}{}
+\BOOKMARK [1][-]{section.9}{Versions}{}

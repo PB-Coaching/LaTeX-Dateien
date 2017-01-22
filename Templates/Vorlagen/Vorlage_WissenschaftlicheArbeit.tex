@@ -1,0 +1,131 @@
+%%Vorlage "Wissenschaftliche Arbeit", v1.06
+
+\documentclass[a4paper,DIV=calc,11pt,%
+BCOR=3mm,twoside,headsepline,%
+openright,%jedes neue Kapitel beginnt auf einer rechten Seite bei doppelseitigen Druck
+numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
+bibliography=totoc%fügt das Literaturverzeichnis ins Inhaltsverzeichnis ein
+]{scrreprt}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{setspace}
+\usepackage{blindtext} %erzeugt sinnlosen Fülltext
+\usepackage{natbib}
+\usepackage[addtotoc]{abstract} %die Option "addtotoc" setzt das Abstract mit in das Inhaltsverzeichnis; das Paket "abstract" selbst dient der Abstract-Umgebung (siehe unten)
+\usepackage[osf]{libertine}
+\usepackage{microtype}
+\usepackage[colorlinks=false,pdfborder={0 0 0},bookmarksnumbered]{hyperref} % colorlinks -> keine farbigen Links; pdfborder -> keine Rahmenboxen um links; bookmarksnumbered -> im PDF haben alle Kapitel eine Nummer im Inhaltsverzeichnis am Rand
+
+\hypersetup{
+	pdftitle={Über riffbildende Reptilien},
+	pdfauthor={Keil Hennings},
+	pdfsubject={Diplomarbeit}
+	}
+
+\begin{document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\onehalfspace
+\renewcommand{\figurename}{Abb.} %statt "Abbildung" -> "Abb."
+\renewcommand{\tablename}{Tab.} %statt "Tabelle" -> "Tab."
+
+\begin{titlepage}
+	\titlehead{\begin{center} Universität der freien Künste \end{center}}
+	\subject{-- Diplomarbeit --}
+	\title{Über riffbildende Reptilien}
+	\subtitle{Mit einer Einführung in die Anatomie der tauchenden Giraffen}
+	\author{Keil Hennings\thanks{Universität der freien Künste} \and Allice Kudros\thanks{Fachhochschule in Ottersleben} \and Jim Hat\thanks{Abteilung für tote Tiere}}
+	\date{1904}
+	\publishers{\vspace*{3cm} Betreuer: \\ Prof. Albers \\ Prof. Pegasus} %dieses Feld kann fuer viele Zwecke gebraucht werden; das \vspace-Kommando erzeugt einen gewissen Abstand zum Rest der Elemente der Titelseite
+\end{titlepage}
+
+\dedication{Für meine liebe Oma} %hier kommt die Widmung hin; abhängig von der Dokumentklasse steht die Widmung entweder mit auf der Titelseite (bei scrartcl) oder einer Extraseite (scrbook}
+
+\maketitle %dieser Befehl kommt an die Stelle im Dokument, wo die Titelseite erscheinen soll
+
+\pagenumbering{Roman}
+
+\newpage
+\section*{Danksagung} %Stern-Version verhindert Nummerierung und Eintrag ins Inhaltsverzeichnis
+\addcontentsline{toc}{chapter}{Danksagung}  %diese Zeile fügt einen manuellen Eintrag ins Inhaltsverzeichnis ein
+
+Meinen herzlichen Dank an:\medskip
+
+\begin{description}
+	\item Prof. Albers für seine tolle Unterstützung.
+	\item Alle anderen.
+\end{description}
+
+\newpage
+
+\begin{abstract} %wird diese spezielle "abstract"-Umgebung in der Dokumentklasse "article" bzw. "scrartcl" eingesetzt, erscheint der in dieser Umgebung verfasste Text beidseitig etwas eingerückt und eine Schriftgröße kleiner
+
+\blindtext
+
+\end{abstract}
+
+\tableofcontents
+
+\chapter{Einleitung}
+\pagenumbering{arabic} %wieder Umschalten auf arabische Seitenzahlen
+
+\blindtext
+
+\section{Geographischer Überblick}
+
+\blindtext
+
+\section{Methodik}
+
+\blindtext
+
+\chapter{Stellung der Riffe und Reptilien}
+\label{StellungRiff}
+
+Und dann kam ich also zu der Erkenntnis, dass das in Kapitel~\ref{StellungRiff} auf Seite \pageref{StellungRiff} Beschriebe wahr sein musste!
+
+\section{Riffe im Paläozoikum}
+
+\subsection{Die Riffe Europas}
+
+\blindtext
+
+\subsection{Die Riffe Asiens}
+
+Das hatten im Übrigen auch schon \citet{Alvin1967} und \citet{Till36} bemerkt. Manche Autoren meinen, diese Riffe gab es überhaupt nicht \citep{Ash1997}. \citeauthor{Augusta1960} ergänzte im Jahr \citeyear{Augusta1960}, dass vielleicht die Riffe im fernen Osten gemeint waren.
+
+\chapter{Schlussfolgerungen und Ausblick}
+
+\blindtext
+
+\bibliographystyle{authordate2}
+\bibliography{Literatur}
+
+\appendix
+
+\chapter{Abkürzungsverzeichnis}
+
+Chemische Elementnamen werden wie international abgekürzt: Fe für Eisen, K für Kalium.
+
+\chapter{Glossar}
+Erklärungen nach \citet{Arno1991}.
+
+\begin{description}
+	\item[Aggradation] vertikale Überlagerung von Faziesgürteln.
+	\item[Maxillare] Oberkieferknochen.
+	\item[Tergit] dorsale Sklerite; Rückenteile der Körpersegmente bei Insekten.
+\end{description}
+
+\newpage
+\section*{Ehrenwörtliche Erklärung}
+
+Hiermit versichere ich, die vorliegende Arbeit ohne fremde Hilfe und nur unter Verwendung der angegebenen Hilfsmittel selbstständig verfasst zu haben. Alle Stellen, die wörtlich oder sinngemäß aus veröffentlichten oder nicht veröffentlichten Arbeiten anderer entnommen sind, habe ich kenntlich gemacht.\bigskip
+
+\noindent
+Ottenwalde, den \today
+
+\vspace*{2cm}
+\noindent
+$\overline{\parbox{4cm}{Keil Hennings}}$
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[ngerman,11pt,a4paper]{g-brief}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage{enumerate}
+\lochermarke
+\faltmarken
+\fenstermarken
+\trennlinien
+
+\Name                {Pascal Bernhard}
+\Strasse             {Schwalbacher Stra�e 7}
+\Zusatz              {}
+
+\Ort                 {12161 Berlin}
+
+\Unterschrift        {Pascal Bernhard}
+
+
+		      
+
+\Betreff             {Auskunft über gespeicherte Daten}
+
+\Datum               {\today}
+
+
+\Anrede              {Sehr geehrte Damen und Herren}
+\Gruss               {Mit freundlichen Grüßen}{2.5cm}
+
+\Anlagen             {}
+\Verteiler           {}
+%\klassisch %-> altes Kopfzeilenformat, Betr.: vor Betreff und Unterschrift kursiv und in Klammern
+%\unserzeichen %-> "Unser Zeichen" statt "Mein Zeichen"
+
+
+\begin{document}
+\newcommand\serienbrief[3]{
+
+
+
+	\begin{g-brief}
+\thispagestyle{firstpage}
+auf der Grundlage von \S\S 34 I, IV BDSG (in der am 01. April 2010 in Kraft getretenen
+Fassung) bitte ich unentgeltlich um Auskunft über die über mich gespeicherten Daten
+sowie meiner tagesaktuellen Scorewerte sowie um nachvollziehbare, verständliche
+Information über die für dieses Scoring genutzten Datenarten, das Zustandekommen
+der Zahlenwerte und ihre Bedeutung.
+Darüber hinaus bitte ich um Mitteilung, über die innerhalb der letzten zwölf Monate
+an Dritte übermittelten Scorewerte sowie die Benennung dieser Dritten mit Name und
+letztbekannter Anschrift. 
+	\end{g-brief}
+\Adresse             {#1\\
+		      #2\\
+		      \\
+		      #3}
+
+}
+\serienbrief{SCHUFA Holding AG}{Postfach 10 21 66}{44721 Bochum}
+\serienbrief{CEG Creditreform Consumer GmbH}{Hellersbergstrasse 11}{41460 Neuss}
+\serienbrief{Arvato Infoscore GmbH}{Rheinstrasse 99}{76532 Baden}
+\serienbrief{Bürgel Wirtschaftsinformationen~GmbH \&~Co.~KG}{Gasstrasse 18}{22761 Hamburg}
+\serienbrief{Deltavista GmbH}{Kaiserstrasse 217}{76133 Karlsruhe}
+\serienbrief{SAF Accumio}{Eppelheimern Strasse 13}{69115 Heidelberg}
+\serienbrief{Schober Informationen Services GmbH}{Max-Eyth-Strasse 6 - 10}{71254 Ditzingen}
+\serienbrief{Vermieterverein e.V.}{Otto-Falckenberg-Strasse 22}{56070 Koblenz}
+\serienbrief{EOS Information Services GmbH}{Gottlieb-Daimler-Ring 7 - 9}{74906 Bad Rappenau}
+\serienbrief{Deutsche Mieterdatenbank DEMDA}{Langenstraße 52 - 54}{21895 Bremen}
+
+\end{document}
+              
+	    
+

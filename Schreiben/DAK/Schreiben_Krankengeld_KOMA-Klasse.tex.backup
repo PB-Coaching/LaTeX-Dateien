@@ -1,0 +1,103 @@
+\documentclass[DIN, 10pt, pagenumber=false, parskip=half, fromalign=right, fromphone=true, fromemail=true, fromurl=true,              fromlogo=true, fromrule=false]{scrlttr2}
+
+ 
+\usepackage[ansinew]{inputenc}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{xcolor}
+\usepackage[german,germanb]{babel}
+\usepackage{fontenc}
+\usepackage{textcomp}
+\usepackage{marvosym}
+
+
+%ursprüngliche Pakete:
+%\usepackage[latin1]{inputenc}
+%\usepackage{german}
+
+\RequirePackage{graphicx}
+
+%Paket für farbige Tabellen
+\usepackage{colortbl}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+
+
+ 
+
+\setkomavar{fromname}{DAK}
+
+\setkomavar{fromaddress}{22778 Hamburg}
+
+\setkomavar{fromphone}{030/911292980}
+
+\setkomavar{fromfax}{030/9120298-7090}
+
+\setkomavar{fromemail}{service723300@dak.de}
+
+%\setkomavar{fromurl}{www.dak.de}
+
+\setkomavar{signature}{Hans Meyer}
+
+%\setkomavar{fromlogo}{\includegraphics*[width=2cm]{logo}}
+
+ 
+
+\begin{document}
+
+ 
+
+\begin{letter}{Herr \\ Pascal Bernhard \\
+               Schwalbacher Straße 7 \\ 
+	       12161 Berlin}
+
+\opening{Sehr geehrter Herr Bernhard,}
+
+Sie hatten im Zeitraum vom 11. April 2011 bis einschließlich 30. November 2012 gemäß V.
+Sozialgesetzbuch \S 44 Abs. 1  und \S 46 Abs. 2 von der DAK Krankengeld bezogen, da Sie aufgrund
+Ihrer Tumorerkrankung laut ärztlichem Attest vom 14. April 2011 als arbeitsunfähig eingestuft
+wurden. Wir mussten nun feststellen, dass Sie zum Wintersemester 2011/2012 am 1. Oktober 2011 Ihr
+unterbrochenes Studium an der Freien Universität Berlin wieder aufgenommen haben und auch im
+darauffolgende Sommersemester 2012 als regulärer Student eingeschrieben waren. Eine Krankschreibung
+schließt jedoch ein Vollzeitstudium zum gleichen Zeitpunkt aus (siehe II. Sozialgesetzbuch \S 7 und
+\S 8 Abs. 1). Da Sie ab dem 1. Oktober 2011 offenbar wieder studierfähig waren, war ab diesem Datum
+die bescheinigte Arbeitsunfähigkeit nicht mehr gegeben. Entsprechend bestand im Zeitraum vom 1.
+Oktober 2011 bis 30. November 2012 kein Anspruch auf Krankengeld. Wir fordern Sie hiermit auf, die
+unberechtigt erhaltenen Leistungen innerhalb von 4 Wochen 
+zurückzuerstatten. Den genauen Betrag entnehmen Sie bitte der folgenden Tabelle:
+
+\vspace{8mm}
+
+%Tabelle
+\setlength{\tabcolsep}{23pt}
+\renewcommand{\arraystretch}{1.4}
+\definecolor{dunkelgrau}{rgb}{0.82,0.82,0.82}
+\definecolor{hellgrau}{rgb}{0.92,0.92,0.92}
+
+
+  \begin{tabular}[c]{>{\columncolor{dunkelgrau}}l >{\columncolor{hellgrau}}c r}
+    \rowcolor{dunkelgrau}
+
+    \multicolumn{3}{l}{\textbf{Leistungen: Krankengeld} \footnotesize{\textsl{(nach V.
+Sozialgesetzbuch §44
+Abs. 1 und §46 Abs. 2)}}} \\
+    
+    \rowcolor{dunkelgrau}
+%   & & \\
+    Bezugszeitraum: & monatlich & Summe \\
+
+    \textsl{01.10.2011 -- 31.12.2011} & 935,96 \EUR & 2807,88 \EUR{} \\
+    \textsl{01.01.2012 -- 31.10.2012} & 962,25 \EUR & 9622,50 \EUR{} \\
+    \hline
+    \cellcolor{white} \textbf{Gesamtbetrag:} & \cellcolor{white} & 12430,38 \EUR{} \\
+    
+  \end{tabular}
+
+\closing{Mit freundlichem Gruss}
+
+\end{letter}
+
+ 
+
+\end{document}

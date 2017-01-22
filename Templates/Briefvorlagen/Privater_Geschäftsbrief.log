@@ -1,0 +1,231 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.16)  19 FEB 2014 16:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Privater_Geschäftsbrief.tex
+(./Privater_Geschäftsbrief.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 42 languages loaded.
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlttr2.cls
+Document Class: scrlttr2 2012/07/29 v3.11b KOMA-Script document class (letter)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2012/06/15 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+Package scrlttr2 Info: You've used obsolete option `10pt'.
+(scrlttr2)             \KOMAExecuteOptions{fontsize=10pt} will be
+(scrlttr2)             used instead.
+(scrlttr2)             You may simply replace `10pt'
+(scrlttr2)             by `fontsize=10pt'.
+Class scrlttr2 Info: File `scrsize10pt.clo' used to setup font sizes on input l
+ine 1174.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (10p
+t)
+)
+(/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2012/07/29 v3.11b KOMA-Script package (type area)
+
+Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1213.
+))
+Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 11.
+ (/usr/share/texmf-dist/tex/latex/koma-script/DIN.lco
+File: DIN.lco 2012/07/29 v3.11b KOMA-Script letter-class-option
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count80
+\U@D=\dimen102
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 92.
+))
+(./Privater_Geschäftsbrief.aux)
+\openout1 = `Privater_Geschäftsbrief.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 23.
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package scrbase Info: No captions found for `USenglish'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `USenglish'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `american'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `american'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `british'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `british'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `UKenglish'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `UKenglish'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `german'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `german'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: `\ccname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 23.
+Package scrbase Info: `\enclname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 23.
+Package scrbase Info: `\headtoname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 23.
+Package scrbase Info: `\pagename' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 23.
+Package scrbase Info: No captions found for `austrian'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `austrian'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `naustrian'
+(scrbase)             --> skipped on input line 23.
+Package scrbase Info: No captions found for `french'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `french'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `italian'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `italian'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `spanish'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `spanish'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `croatian'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `croatian'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `dutch'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `dutch'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `finnish'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `finnish'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `norsk'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `norsk'
+(scrlttr2)           --> skipped on input line 23.
+Package scrbase Info: No captions found for `swedish'
+(scrbase)             --> skipped on input line 23.
+Class scrlttr2 Info: no date found for language `swedish'
+(scrlttr2)           --> skipped on input line 23.
+Class scrlttr2 Info: used language is `ngerman'.
+(scrlttr2)           Supported languages are `english', `UKenglish',
+(scrlttr2)           `british', `american', `USenglish',
+(scrlttr2)           `german', `ngerman', `austrian', `naustrian',
+(scrlttr2)           `dutch', `italian', `spanish',
+(scrlttr2)           `croatian', `finnish', `norsk' on input line 23.
+
+Foldmarks: yes
+Head of first page
+Foot of first page
+Address (backaddress, addressee)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 56.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 56.
+Location field: empty
+Title: no
+Subject: no
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./Privater_Geschäftsbrief.aux) ) 
+Here is how much of TeX's memory you used:
+ 1895 strings out of 493853
+ 27732 string characters out of 6157277
+ 131578 words of memory out of 5000000
+ 5195 multiletter control sequences out of 15000+600000
+ 8999 words of font info for 21 fonts, out of 8000000 for 9000
+ 788 hyphenation exceptions out of 8191
+ 35i,9n,44p,426b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-sup
+er/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0500.
+pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share
+/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fon
+ts/type1/public/cm-super/sfsx1440.pfb>
+Output written on Privater_Geschäftsbrief.pdf (1 page, 50033 bytes).
+PDF statistics:
+ 25 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

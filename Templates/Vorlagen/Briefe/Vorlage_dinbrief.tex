@@ -1,0 +1,48 @@
+%dinbrief-Vorlage, v1.04
+
+\documentclass[a4paper,11pt]{dinbrief}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[osf]{libertine}
+\usepackage{microtype}
+
+\begin{document}
+
+\address{Bertram Bohne \\
+		Gemüseweg 5 \\ 
+		12345 Maishausen} %Absenderaddresse
+\signature{Bertram Bohne} %Unterschrift in Druckbuchstaben
+\place{Maishausen} %Absendeort, wird zusammen mit Datum am Briefkopf ausgegeben
+\subject{\bf Mein Betreff ist das Schreiben eines neuen Briefs}
+\yourmail{\today} %Ihre Zeichen/Ihre Nachricht vom
+\sign{123} %Unsere Zeichen/Unsere Nachricht vom
+\phone{0123}{45678910}
+\writer{Herr Müller} %Name des Sachbearbeiters
+\backaddress{Bertram Bohne \\
+			Gemüseweg 5 \\
+			12345 Maishausen} %Ruecksendeaddresse, wird oben im Brieffenster angezeigt
+%\nowindowrules %aktivieren, um Linien des Empfaengerfensters zu entfernen
+%\nowindowtics %aktivieren, um Faltmarkierungen am Rand zu entfernen
+
+	\begin{letter}{\large Theodor Tester \\[\smallskipamount]
+				\large Testweg 5 \\[\smallskipamount]
+				\large 12345 Testhausen \\[\medskipamount]
+				\large Deutschland} 
+				%mit \\ neue Zeile beginnen; mit \smallskipamount
+				%oder \medskipamount einen kleinen oder 
+				%mittelgroßen Abstand zur nächsten Zeile erzeugen;
+				%\large dient nur zur Vergrößerung der Schrift
+		\opening{Sehr geehrte Damen und Herren}
+		
+		Dies ist der Inhalt meines Briefs. \blindtext
+		
+		\closing{Mit freundlichen Grüßen}
+		
+		\ps{Ach übrigens} %Geschäftsbriefe (wie diese Vorlage) enthalten eigentlich kein Postscriptum!
+		\encl{Anlagen}
+		\cc{Verteilerliste 1 \\ noch ein Verteiler} %verschiedene Anlagen
+													%mit \\ trennen
+	\end{letter}
+\end{document}

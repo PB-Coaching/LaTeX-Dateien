@@ -1,0 +1,128 @@
+\documentclass{article}
+
+\author{Hugh C. Pumphrey}
+
+\title{Alternative fonts in \LaTeX: a test document}
+
+%% This one is OK apart from Fn names.
+%%\usepackage[LGR,T1]{fontenc} %% LGR encoding is needed for loading the package gfsneohellenic
+%%\usepackage[default]{gfsneohellenic}
+
+%% Works well. A bit whacky. Not in all installations.
+%%\usepackage[T1]{fontenc}
+%%\usepackage{gfsartemisia-euler}
+
+%% Good sans font for in presentations. Not in all installations.
+%\usepackage[T1]{fontenc}
+%\usepackage{arev}
+
+%  URW Nimbus Roman (A Times clone).
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%% Helvetica (actually URW Nimbus Sans (A Helvetica clone)). 
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of
+%the document is to be sans serif
+%% This is a glaring example of not having math support, unless you do this:
+%% Note the use of EULERGREEK to ensure that you get some greek
+%% letters that do not look too out of place
+\usepackage[EULERGREEK]{sansmath}
+\sansmath
+
+
+%TeX Gyre heros ( \usepackage{tgheros} ) is a better helvetica
+%package, (e.g. \Delta works) but UofE computers don't have it.
+
+%% Ariel. No math support here either. NERC insist on this for
+%% proposals. Really URW A030 (An Arial clone).
+%% Not available on stock Debian. No longer on School machines either,
+%% probably as it is non-Free
+
+%\usepackage[T1]{fontenc}
+%\usepackage[scaled]{uarial}
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+The vast majority of \LaTeX\ documents use the standard computer
+modern fonts. But you do not have to stick with these old stalwarts:
+there are some alternative font possibilities. A word of caution,
+though. If you want your document to look nice, all the fonts in it
+should work together and look good together. Or you will get lossage
+such as the numbers in formul\ae\ not looking like those in the
+running text. This document contains many of the style commands common
+in \LaTeX\ documents to test whether a given font package supports
+them all. For more information, go to the \LaTeX\ font catalogue at
+\texttt{http://www.tug.dk/FontCatalogue/}.
+
+\section{Some tests}
+\subsection{Font styles}
+
+It is common in a \LaTeX\ document to use 
+\begin{itemize}
+\item \verb+\emph{}+ to \emph{emphasise} text, 
+\item \verb+\textit{}+ to make \textit{italic} text,
+\item \verb+\textsl{}+ to make \textsl{slanted} text,
+\item \verb+\textbf{}+ to make \textbf{bold} text,
+\item \verb+\textsf{}+ to get \textsf{sans serif}, 
+\item \verb+\texttt+ for a \texttt{monospaced typewriter font.} 
+\item \verb+\textsc{}+ \textsc{To Speak Like
+  Death, in CAPS and small caps.} 
+\item  \verb+\textrm{}+ \textrm{to get text in a serif font?}
+\end{itemize}
+Note that \textit{italic} and \textsl{slanted} are the same as each
+other in some font packages and different from each other in other
+font packages. Also note that if your main font is a sans font then
+\verb+\textsf{}+ and  \verb+\textrm{}+ are the same thing.
+
+
+
+\subsection{Mathematical formul\ae}
+
+In-line equations look like this: $x^2 + y^2 = z^2$ Displayed
+equations look like this:
+%
+\[ A = \int_0^\infty \frac{x^2 \cos ax}{1+x^3}\, dx \]
+%
+Numbered equations are done using \verb+\begin{equation}+ and
+  \verb+\end{equation}+, like in equation~\ref{eq:example}.
+\begin{equation}
+\label{eq:example}
+\sigma = \sqrt{  \frac{1}{n}\sum_{j=0}^n (x_j - \bar x)^2 }
+\end{equation}
+%
+To ensure that lower-case greek letters such as $\lambda$, $\alpha$, $\beta$,
+$\theta$, $\phi$, and upper-case greek letters such as $\Delta$,
+$\Theta$, $\Phi$, $\Xi$ appear correctly we
+try this: 
+\[ \cos \theta \sin\phi = \cos\Delta_C \sin\Delta_A - \tan \Psi \cot
+\Xi \]
+There are some font packages in which the capital Greek letters do not
+appear correctly.
+%
+%
+A problem with alternative fonts is that 1234567890 (running text) may
+look different from $1234567890$ (in math mode). They should look the
+same. Here they are next to each other, so that you can
+check:\\ 1234567890$1234567890$\\ Another problem is that the function
+names in formul\ae\ may revert to computer modern
+roman. Compare\\ $\cos x + \sin y$ in math mode with\\ cos \emph{x} +
+sin \emph{y} in text mode. Text mode won't get the spacing right (and
+maybe not the fonts for $x$ and $y$), but the fonts for cos and sin
+should match.
+
+
+
+\end{document}
+
+
+
+
+
+

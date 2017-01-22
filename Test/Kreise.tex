@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{pst-all}
+
+\begin{document}
+
+\begin{pspicture}(5,5)
+	\psline[linecolor=red]{->}(2.5,4.5)(3.95,3.05)
+	\psline[linecolor=red]{->}(2.5,4.5)(1.05,3.05)
+	\rput(2.5,4.75){\small Nicht b"undig!}
+
+	\pscircle[linewidth=1pt](1,2.5){0.5}
+	\pscircle[linewidth=1pt](4,2.5){0.5}
+
+	% Manuelle Anpassung der unteren Linie!
+	\psline[linewidth=1pt](1,2.0145)(4,2.0145)
+	\psline[linewidth=1pt](1,3)(4,3)
+
+	\psline[linecolor=red]{->}(2.5,0.5)(1.05,1.95)
+	\psline[linecolor=red]{->}(2.5,0.5)(3.95,1.95)
+	\rput(2.5,0.25){\small Manuell angepasst!}
+\end{pspicture}
+\end{document}

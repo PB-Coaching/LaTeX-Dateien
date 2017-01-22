@@ -1,0 +1,38 @@
+%%Vorlage "Visitenkarte", v1.03
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{uni}{gray}{.4}
+\usepackage[zw32010,crossmark]{ticket}
+\usepackage{marvosym} % Telefon/Handy-Glyphe usw.
+\usepackage[osf]{libertine}
+\usepackage{microtype}
+
+\renewcommand{\ticketdefault}{
+	\put( 53, 27){\includegraphics[width=26mm,origin=bl]{Logo_Grafik.pdf}}
+	\put( 5, 18){\color{uni}\line(1,0){36}}
+	\put( 7, 13){\small Fachbetrieb für Gärtnerei}
+	\put( 7,  9){\small Obstweg 54, 33288 Gemüsehausen}
+	\put( 7,  5){\small \Telefon\ 21324-4558}
+	\put( 7, 26){\small \Mobilefone}
+}
+
+\newcommand{\vcard}[4]{\ticket{
+	\put(6,45){\LARGE\bfseries #1}
+	\put(7,39){#2}
+	\put(11,26){\small #3}
+	\put( 7,21){\small #4}
+}}
+
+\begin{document}
+\sffamily
+\newcounter{numcards}
+\whiledo{\value{numcards}<10}{%
+	\stepcounter{numcards}%
+	\vcard{Jonny Banane}{Obst-Verkäufer}%
+		{44546-445632}{\Email\ drueckmichaus@saftpresse.de}}
+
+\end{document}

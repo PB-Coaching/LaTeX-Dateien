@@ -1,0 +1,286 @@
+% !TeX encoding = ISO-8859-1
+\documentclass[
+11pt,			%Schriftgröße
+paper=a4,		%Papierformat
+ngerman,		%Deutsche Silbentrennung
+BCOR=0pt,		%Bindekorrektureinstellung=AN (15mm) Bindekorrektureinstellung=AUS > 0pt
+%twoside,		%Bindekorrektur für zweiseitigen Druck
+DIV=calc,		%Satzspiegelberechnung
+headinclude,	%Kopfzeile bei Satzspiegelberechnung mit einbeziehen
+headsepline,	%Trennlinie unter der Kopfzeile
+numbers=noenddot,
+]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[sc]{mathpazo}
+
+% Satzspiegel wird neu berechnet
+\typearea[current]{calc}
+
+\usepackage[ansinew]{inputenc}
+
+% Paket für besseres Schriftbild
+\usepackage{microtype}
+
+
+% Allgemeine Pakete:
+\usepackage[table]{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{mdwlist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{geometry}
+
+\usepackage{fancybox}
+\usepackage{array}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{pifont}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{tikz}
+%\usepackage{pgf-pie}
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.8}
+
+
+\usetikzlibrary{shapes,arrows,shadows}
+
+\usepackage{scrpage2}
+
+% Pakete für Abbildungen
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{floatpag}
+
+
+
+% Fußnotengefrickel muss vor HYPERREF geladen werden
+\usepackage[bottom,flushmargin,hang,multiple]{footmisc}
+
+%Hyperxmp-Paket einbinden für PDF-Metadaten
+\usepackage{hyperxmp} 
+
+% Rahmen um Hyperlinks unterbinden
+\usepackage[bookmarks=true,pdftoolbar=true,pdfmenubar=true,pdfstartview={FitH},citecolor=magenta,hidelinks,breaklinks=true]{hyperref}
+
+\hypersetup{ %
+pdftitle={Geschichten}
+pdfauthor={Pascal Bernhard}
+pdfproducer={Texlive-LaTeX 2014 on Sabayon GNU/Linux 3.16}
+pdfcopyright={Creative Commons 3.0 CC-BY}
+pdflicenseurl={https://creativecommons.org/licenses/by/3.0/de/legalcode}
+pdfmetalang={de-DE}
+}
+
+
+%%% Auf tatsächlichen Namen des Abschnitts verlinken
+\usepackage{titleref}
+\usepackage{nameref}
+
+
+
+% Gleiche Schriftart für Hyperlinks
+\urlstyle{same}
+
+
+%  Gefrickel um URL-Links vernünftig umzubrechen
+\makeatletter
+\g@addto@macro\UrlBreaks{
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3
+  \do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+% \def\do@url@hyp{\do\-}
+
+% Hiermit soll einer übervolle Box verhindert werden -- funktioniert sogar irgendwie
+\g@addto@macro\UrlSpecials{\do\/{\mbox{\UrlFont/}\hskip 0pt plus 1pt}}
+\makeatother
+
+% Hier kommen Optionen der KOMA-Klasse zu Überschriften
+\KOMAoptions{headings=small}
+
+% Einstellungen für Kopfzeilen
+\ihead{\leftmark} 
+\ohead{\rightmark} 
+\chead{} 
+\pagestyle{scrheadings} 
+\automark[section]{chapter}
+
+\setfootnoterule[0.8pt]{10cm} % Höhe und Länge des Trennstriches für Fußnoten anpassen
+\setkomafont{caption}{\sffamily} % Bezeichnungen von Bilder werden serifenlos und fett gesetzt
+\setkomafont{captionlabel}{\sffamily\bfseries} % Beschreibungen von Bilder werden serifenlos und fett gesetzt
+
+\renewcommand{\headfont}{\small\sffamily\mdseries} % Schriftart der Kopfzeile ändern
+
+
+
+%%%----------------------------------------------------------------------
+\definecolor{dunkelgrau}{gray}{0.20}
+\definecolor{hellgrau}{gray}{0.40}
+\definecolor{MidnightBlue}{RGB}{0,103,149}
+\definecolor{NavyBlue}{RGB}{0,110,184}
+\definecolor{MidBlue}{rgb}{0.173,0.212,0.597}
+\definecolor{Dschungel}{cmyk}{0.99,0,0.52,0.2}
+
+
+%%% Palatino benörtigt größeren Raum zwischen den Zeilen
+\linespread{1.05}
+
+
+\onehalfspacing
+\typearea[current]{calc}
+
+
+
+%%% Schriften umdefinieren:
+
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\newcommand{\textemph}{\textsl{\textbf}}
+%%%----------------------------------------------------------------------
+\begin{document}
+
+\begin{spacing}{1}
+
+%%% Deckblatt Start
+\thispagestyle{empty}
+
+
+\begin{center}
+\Large{Geschichten, Kurzgeschichten und Reflexionen}\\
+\end{center}
+ 
+ 
+\begin{center}
+\Large{Gedanken zu mir selbst}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+\begin{center}
+\textbf{\LARGE{\changefont{ppl}{b}{n}
+\sffamily{Drifting Away}}}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+\begin{center}
+\textbf{\changefont{ppl}{b}{n}
+\sffamily{Reflexionen eines jungen Mannes über Menschen, Werte und das Leben}}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+ 
+\begin{flushleft}
+\begin{tabular}{lll}
+
+%\textbf{Thema:} & & Doppik \& Kameralistik --\\
+%& & Ein Vergleich im Kontext der Haushaltsgrundsätze \\
+%& & \\
+%& & \\
+%& & \\
+%& & \\
+
+
+
+\textbf{Autor:} & & Pascal Bernhard\\
+
+
+
+\end{tabular}
+
+\newpage
+
+\thispagestyle{empty}
+
+\textbf{Warum ich den ganzen Kram hier schreibe? Ich möchte mein Gedanken zum Leben mal aufzeichnen und die Abende zugleich produktiver nutzen.}
+
+\end{flushleft}
+
+\end{spacing}
+ 
+%Deckblatt Ende
+
+
+%%%Palatino als Standardschrift
+\renewcommand{\rmdefault}{ppl}
+
+\renewcommand\thesubsection{\thesection.\alph{subsection}}
+
+%%%Inhaltsverzeichnis----------------------------------------------------------------------
+
+\cleardoublepage
+\begingroup
+\renewcommand*{\chapterpagestyle}{empty}
+\pagestyle{empty}
+\tableofcontents
+\clearpage
+\endgroup
+
+%%%----------------------------------------------------------------------
+\setlength{\parindent}{30pt}
+\setlength{\parskip}{0pt}
+
+
+%%%-----------------------------------------------------------------------
+\chapter{Erste Geschichte}
+
+
+\section{Blick an die Wand}
+
+
+Ich wechselte zwischen zwei Positionen: meine Hände zu einem Pistolengriff zusammengefaltet, der Lauf aus gestreckten Zeigefingern berührte meine Nase. Es war kein Pistole, nur wusste ich nicht, wie meine Hände sonst halten konnte. Die Berührung spürte nur die Nase, nicht die Pistole, wie wenn sie tatsächlich aus Metall wäre. Nein, es war keine Pistole, in meinen Hände war keine Gewalt. Kein Druck, keine Spannung, keine Emotionen in meinen Fingern. Nicht schießen, niemanden verletzen, niemanden töten. Die Waffe hatte kein Ziel, es war nicht einmal eine Waffe. Es war eine Position, die einen eigenen Zustand im Diesseits ausdrückte. Es war eine Form  nicht zielgerichteter Konzentration. Die Konzentration hatte kein Ziel, dass man erreichen konnte, jedoch eine Richtung. Achtsamkeit hatte die Form meiner Hände angenommen. Ich hielt meine Konzentration in meinen Händen, sie war zu meinen Händen geworden. Finger und Händen hatten eine eigene Funktion angenommen, sie versuchten in Starre meine Gedanken zu erfassen. Ich griff nicht nach meinen Gedanken, völlige Bewegungslosigkeit. Nicht mal ein Zucken einer Bewegung. Der Versuch etwas ins Ziel zu nehmen, etwas zu greifen, nicht mit den Händen, sondern mit den Gedanken. Es durfte nicht entgleiten, es musste ins Visier genommen werden. Dort fixiert werden. Nicht Besitz, vielmehr eine Abformung der Gedanken zu machen. Eine Kopie zu speichern, sie zu behalten, kein Eigentum, Anteil. Nichts meins, sondern ein Teil von mir. Und doch gelingt es nicht: Drifting away.....
+
+Gedanken mit Gedanken erfassen... Wie war das möglich? Ist das nicht die einzige Möglichkeit, unsere Gedanken aufzunehmen, zu verstehen, sie dabei abzutasten. Behutsam, nicht anfassen, wir könnten Spuren hinterlassen, sie verfälschen. Gedanken sind wie weiches Wachs. Sobald wir sie berühren, versuchen, sie festzuhalten, um uns ein Bild von ihnen machen zu können, um sie nicht zu verlieren, hinterlassen wir Abdrücke in ihnen. Sie können Schaden nehmen, nicht einfach Abdrücke, Risse, Furchen. Gerissene, eingedrückte Gedanken. Es sind nicht mehr unsere Gedanken, sondern unser verfälschtes Bild der Gedanken. 
+
+Nur, wie wissen wir, wer wir sind, wenn wir uns kein Bild unserer Gedanken machen können? Wir brauchen dieses Bild von uns selbst, doch wissen wir zugleich, dieses Bild nicht wir sind. Statt dessen formen wir eine neue Version des Bildes von uns selbst. Ein formbarer Spiegel. Wir können unser Bild nur im Spiegel sehen, wenn wir ihn anfassen, wir können uns nur abtasten. Doch der Spiegel ist nicht massiv, weich wie Wachs. Jede Berührung eine Delle im Spiegel, ein Riss in der Oberfläche. Und das Bild, dass wir ertasten sind nicht wir selbst. Es ist das Ergebnis unserer Versuche es zu greifen. Der Spiegel wird zur tönernen Masse, jeder Fingerdruck des Töpfers ändert ihre Form. Wir müssen nachzeichnen, nicht abtasten. Unsere Gedanken müssen kurz vor dem Spiegel halt machen. Wir dürfen unsere Gedanken nicht berühren, wir sollten sie erspüren, ihren Linien, Vertiefungen folgen.
+
+
+Abends, die Sonne war schon untergegangen. Noch nicht spät, kurz nach neun Uhr. Aber es war Abends, die Stimmung, das Licht um mich herum, und ich als Mensch war auch schon Abends. Über den Tag will ich jetzt nicht nachdenken. Nichts wirklich negatives, oder bedenkliches, nein es war abends. Einfach die Gedanken zufließen lassen. In keine Richtung, aber sie müssen fortziehen, sich verflüchtigen, wie Benzin das verdampft. Nicht langsam, so dass es quälend wird, aber doch recht zügig. Man kann dabei zuschauen, den Prozess des Verflüchtigens genau beobachten. Ich nehme ihn wahr und zugleich auch nicht. Stoppen kann ich ihn nicht, auch wenn ein Teil von mir dadurch entschwindet. Ich kann die Gedanken nicht aufhalten zu gehen, nicht festhalten. Auch fehlt der Wille, es tut gut, sie gehen zu sehen. Ein Abschied, der ganz leicht schmerzt und dabei zugleich gut tut. 
+
+
+Gedanken sind wie ein Fluss. Das Leben ist ein Fluss, es fließt, in bestimmte Richtungen, nirgendwohin. Wir können auf dem Fluss navigieren, uns mal an das eine, mal an das andere Ufer halten. Zurückrudern können wir nicht, wer es versucht, wird müde, wird noch schneller alt. Sich auf dem Lebensfluss treiben lassen, heißt sich ergeben. Kann heißen sich ergeben. Wer nicht gelernt hat, zu steuern, gegenzusteuern, Schnellen zu passieren, der wird getrieben. Das ist kein sich Ergeben, diese Leute haben nicht gelernt zu rudern, zu kämpfen, zu steuern. Niemand hat es ihnen gezeigt, sie haben kein Boot,man hat ihnen die Ruder aus den Händen genommen. Ihnen nie welche gegeben.... Sie sind ins Wasser gefallen, ohne schwimmen zu können. Hilflos, machtlos in der Strömung des Lebensflusses. Treibholz des Lebens, der Gesellschaft, der Welt. Sie ordnen sich nicht die Flussbewegung. Sie sind sperriges Treibholz. Niemand versteht, wieso sich nicht rudern, kämpfen wie die anderen. Niemand sieht, dass sie kein Boot haben, keine Ruder. Wir sind blind....
+
+Dieses menschliche Treibholz stört, Kollisionen mit anderen Boote. Schmerzhafte Kollisionen. Die Boote nehmen Schaden, Kratzer, Lecks, sie werden in ihrem Kurs gestört. Auch wenn sie nicht wissen, welcher Kurs den Fluss hinunter das ist, sie spüren, das Treibholz im Wege ist. Das hilflose, um sich schlagende Treibholz aber geht unter, diese Menschen schlucken immer wieder das bittere Wasser des Lebensfluss. Sie schnappen nach Luft und schlucken Wasser. Es zieht sie hinunter, macht sie schwerer. Und irgendwann ertrinken sie...... Sie driften auf ihre Weise hinab in den Fluss.....
+
+Der Fluss hat sich nicht getragen wie die anderen, sie konnten nicht auf ihm schwimmen. Niemand hat sie an Bord genommen, sie aus dem Fluss gezogen. Und wenn sie untergehen, entschwinden sie in die Tiefe. Nicht in die Ferne, wie die Gedanken, nein, in den dunklen Fluss hinab. Vielleicht ein letzter Ton, ein Aufschrei vor dem letzten Atemzug. Kein Licht bleibt zurück, erinnert an das menschliche Treibholz, keine Glocken läuten zu ihrem Gedenken. Und der Fluss mit seinen Booten fließt leichter dahin ohne sie....
+
+Menschen, die wir verlieren, bleiben am Ufer zurück. Die Toten schauen uns nach, manche winken, manche stehen nahe am Ufer, andere weiter weg. Manche am Ufer zurückgeblieben, sind uns abgewandt. Haben sich weggedreht? Haben wir sie aufgefordert, wegzugehen? Die schmerzhaftesten Trennungen, keine guten Erinnerungen. Ihre Gesichter wären nicht zu ertragen. Es ist besser, wenn wir sie nicht mehr sehen.
+
+Sie alle entschwinden, driften langsam weg. Erst verblassen ihre Gesichter, dann ihre Körperformen. Sie werden Schatten.
+
+Gedanken können wir nicht festhalten, wir dürfen sie nicht festhalten. Dies hieße, sich an das Jetzt zu klammern. Im Jetzt Zuflucht zu suchen. Und all die Weil, fließt um uns herum weiter, Menschen treiben an uns vorbei, überholen uns. Sie kommen voran. Und wir bleiben hier. Nein, unsere Gedanken bleiben hier. Auch wir treiben weiter, nur wollen wir es nicht sehen. Wir können nur eine Abformung der Gedanken anfertigen, ihre Form, ihren Inhalt bewahren. 
+
+
+Gehören uns unsere Gedanken. Sind sie unser? Eine Form des Eigentums? Ich weiß es nicht. Ist es das, woran wir uns noch klammern können, wenn wir nichts mehr haben?
+
+
+Andere schalten den Fernseher ein und versuchen abzuschalten. Ist das nicht paradox, Einschalten und Abschalten.....
+
+
+Abschiede können so weh tun, und doch 
+
+
+\section{Blick aus der S-Bahn}
+
+Mein Blick ist aus dem Fenster gerichtet, kein Fokus, nur aus dem Fenster. Nach draußen, keine Richtung, kein Ziel. Nur möchte ich mich im Augenblick nicht mit den Menschen im Wagen beschäftigen. Zu anstrengend, der Blick nach draußen erfordert keine Energie, keine hungrigen Gedanken. Ich muss nicht abschätzen, Gesichter, Farben, Farbkombinationen, Gerüche, vor allem Mienen, Haltungen und die Gedanken, die hinter den Gesichtern stehen. Die Gedanken stehen nicht, auch bei diesen Menschen bewegen, entwickeln sie sich. Sie sind im Fluss. Driften sich auch immer wieder weg wie bei mir, ins die Welt hinaus, ins Nichts? Ich weiß es nicht, will es doch eigentlich nicht wissen. Das bedeutet vergleichen, werten und die Angst über das Urteil. Ist das Driften gut, schlecht, eine Form des Umgangs mit der Welt und ihren Problemen? Ich will mich nicht selbst stellen, nicht vergleichen mit anderen Menschen. So schaue ich aus dem Fenster....
+
+Die Häuser ziehen nicht vorbei, sie kommen heran und schwinden wieder weg. Wie die Gedanken. Nur sind sie keine Gedanken, sie sind Wirklichkeit. Sie sind nicht Teil von mir. Ich verliere nichts, mir entgleitet nichts. Ich kann dem Driften ohne Sorge zusehen. Keine Zeit, kein Leben zergeht, verflüchtigt sich. Ein Gefühl der spannungslosen Distanz, keine Emotionen, keine Energie.
+
+
+\section{Weit weg}
+
+
+Weg aus Berlin, im Ausland. Urlaub, eigentlich Urlaub. Es fühlt sich aber nicht so an. Ich bin weg vom Alltag, das Leben bleibt. Es hat mich fest im Griff. Es lässt mich nicht los. Nein, es ist nicht das Leben, nicht wirklich, es ist die Vergangenheit, und das Leben ist Ergebnis der Vergangenheit. Und sie lässt mich nicht los. Der Schmerz ist immer da, es ist etwas fundamental schief gegangen. Jetzt erst verstehe ich, dass es nicht hat sein sollen. Die Weichen waren von ganz früh an, auf falsch gestellt. Ein Wunder, dass nicht schon früher etwas passiert ist. Ich habe mich doch eigentlich ganz gut geschlagen. Ich bin nicht Amok gelaufen, habe niemanden zusammengeschlagen, niemanden vergewaltigt.
+
+
+\end{document}

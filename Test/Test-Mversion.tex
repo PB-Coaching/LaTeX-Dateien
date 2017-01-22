@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper,ngerman]{scrreprt} %%parskip- herausgenommen
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage[ansinew]{inputenc}
+
+
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{array}
+\usepackage[hidelinks,breaklinks=true]{hyperref}
+\usepackage{titleref}
+\usepackage{nameref}
+
+
+%\usepackage{mversion}
+
+%%%Gleiche Schriftart für Hyperlinks
+\urlstyle{same}
+
+
+%%%Gefrickel um URL-Links vernünftig umzubrechen
+\makeatletter
+\g@addto@macro\UrlBreaks{
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3
+  \do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+% \def\do@url@hyp{\do\-}
+
+%%%Hiermit soll einer übervolle Box verhindert werden -- funktioniert sogar irgendwie
+\g@addto@macro\UrlSpecials{\do\/{\mbox{\UrlFont/}\hskip 0pt plus 1pt}}
+\makeatother
+
+%%%Here comes the stuff for versioning
+
+
+%%%Macro which helps reading the fixed version number and the build number
+\def\parseline#1;#2 %this space is important
+{
+\def\versionnumber{#1}
+\def\buildnumber{#2}
+}
+
+
+%%%Test whether files exists
+\IfFileExists{version.dat}
+{}
+
+{
+\newwrite\outfile
+\immediate\openout\outfile=version.dat
+\immediate\write\outfile{0.0;0}
+\immediate\closeout\outfile
+}
+
+\newread\versionfile
+\openin\versionfile=version.dat
+\read\versionfile to \versionline
+\closein\versionfile
+
+\expandafter\parseline\versionline
+
+\newcounter{buildcounter}
+\setcounter{buildcounter}{\buildnumber}
+
+\newcommand{\version}{\versionnumber.\thebuildcounter}
+
+\newcommand{\setVersion}[1]
+
+{
+\newwrite\outfile
+\immediate\openout\outfile=version.dat
+\immediate\write\outfile{#1;\thebuildcounter}
+\immediate\closeout\outfile
+
+\newread\versionfile
+\openin\versionfile=version.dat
+\read\versionfile to \versionline
+\expandafter\parseline\versionline
+\closein\versionfile
+}
+
+
+\newcommand{\increaseBuild}
+{%
+\stepcounter{buildcounter}
+\newwrite\outfile
+\immediate\openout\outfile=version.dat
+\immediate\write\outfile{\versionnumber;\thebuildcounter}
+\immediate\closeout\outfile
+}
+
+%%%Redefine Fonts:
+
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\newcommand{\textemph}{\textsl{\textbf}}
+%%%----------------------------------------------------------------------
+\begin{document}
+
+\begin{spacing}{1}
+
+%Titlepage Start
+\thispagestyle{empty}
+
+
+\begin{center}
+\Large{Freie Universit\"{a}t Berlin (FU)}\\
+\end{center}
+ 
+ 
+\begin{center}
+\Large{Fachbereich Politikwissenschaft}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+\begin{center}
+\textbf{\LARGE{\changefont{ppl}{b}{n}
+\sffamily{Diplomarbeit}}}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+\begin{center}
+\textbf{\changefont{ppl}{b}{n}
+\sffamily{im Studiengang Politik}}
+\end{center}
+\begin{verbatim}
+ 
+ 
+\end{verbatim}
+ 
+\begin{flushleft}
+\begin{tabular}{lll}
+
+\textbf{Thema:} & & Energiepolitik im Baltikum --\\
+& & Umsetzung des 3. EU-Liberalisierungspakets zum\\
+& & Gasbinnenmarkt in Litauen \& Lettland\\
+& & \\
+& & \\
+& & \\
+
+
+
+\textbf{eingereicht von:} & & Pascal Bernhard \flq{}pascal.bernhard@belug.de\frq{}\\
+& & \\
+& & \\
+\textbf{eingereicht am:} & & 20. März 2014\\
+& & \\
+& & \\
+\textbf{Betreuer:} & & Herr Prof. Dr. Manfred Kerner\\
+\textbf{Betreuer:} & & Frau Prof. Dr. Miranda Schreurs
+\end{tabular}
+\end{flushleft}
+
+\end{spacing}
+ 
+%End of Titlepage
+
+
+Here is some sample text.
+
+
+\end{document}

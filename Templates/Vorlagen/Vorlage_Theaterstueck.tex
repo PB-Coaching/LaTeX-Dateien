@@ -1,0 +1,140 @@
+%Vorlage "dramatist", v1.05
+
+\documentclass[a4paper,DIV=calc,11pt]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{verse}
+\usepackage{dramatist} %das Paket "dramatist" ist nach "verse" zu laden
+	%als Optionen für das dramatist-Paket lassen sich laden:
+	%[lnpa] für eine Zeilennummerierung per Akt
+	%[lnps] für eine Zeilennummerierung per Szene
+\usepackage[osf]{libertine} %deaktivieren, falls die Schriftart "Libertine" nicht installiert ist
+\usepackage{microtype}
+
+\begin{document}
+
+%\poemlines{5}	%dieser Befehl erzeugt in Vers-Umgebungen
+				%(drama*, siehe unten) eine Zeilennummerierung
+
+%\renewcommand\casttitlename{Personen} 	%aktivieren, um die Personenliste
+										%anstatt mit "Dramatis Personae"
+										%mit "Personen" zu benennen
+										
+%\renewcommand\actname{Akt} 			%aktivieren zum Eindeutschen: 
+										%statt "Act" -> "Akt"
+										
+%\renewcommand\scenename{Szene} 		%aktivieren zum Eindeutschen: 
+										%statt "Scene" -> "Szene"
+
+%%%%%%%%%%Alternatives Aussehen für Akt und Szene%%%%%%%%%%
+%\renewcommand{\actnamefont}{\bfseries\Large}
+%\renewcommand{\theact}{\Roman{act}}
+%\renewcommand{\scenenamefont}{\bfseries\large}
+%\renewcommand{\thescene}{\Roman{scene}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%Alternatives Aussehen für Charaktere%%%%%%%%%%
+%\renewcommand{\castfont}{\bfseries}
+%\renewcommand{\speaksfont}{\itshape}
+%\renewcommand{\speaksdel}{:}
+%\renewcommand{\speaksdel}{.\\}
+%\renewcommand{\namefont}{\bfseries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%Alternatives Aussehen für Szenenbeschreibungen%%%%%%%%%%
+%\StageDirConf{\begin{center}\begin{minipage}{.4\textwidth}\bfseries}{\end{minipage}\end{center}}
+%oder:
+%\StageDirConf{\begin{center}\begin{minipage}{.7\textwidth}\bfseries\centering}{\end{minipage}\end{center}}
+%\renewcommand{\dirdelimiter}[1]{[#1]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%für zentriert über dem Gesprochenen stehende Charakternamen%%%%%
+%\Dlabelsep=0pt
+%\renewcommand{\speakslabel}[1]{\hbox to\textwidth{\hfill\speaksfont{#1}\hfill}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%Titelseite%%%%%%%%%%
+\title{Hermann, der Fleischer}
+\author{Wilhelm Wankel}
+\date{2002}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\tableofcontents %Inhaltsverzeichnis
+
+%%%%%%%%%%Charakterliste%%%%%%%%%%
+
+\Character[Hermann Windig, Fleischermeister]{Hermann Windig}{he}	%der Inhalt der 1.
+		%geschweiften Klammer (in der Personengruppen-Umgebung
+		%die 2. geschweifte Klammer!) steht bei den Dialogen
+		%vornweg. Aus "\hespeaks" und "\he" wird also "Hermann Windig".
+\begin{CharacterGroup}{Seine Enkel}
+	\GCharacter{Louisa Windig}{Louisa Windig}{lo} 	%man beachte das "G" 
+													%vor "Character" sowie
+													%die geschweiften Klammern 
+													%um das erste Argument anstatt 
+													%eckiger Klammern!
+	\GCharacter{Joachim Windig}{Joachim Windig}{jo}
+\end{CharacterGroup}
+\Character[Wilfried Windig, Bruder von Hermann]{Wilfried Windig}{wi}
+\Character[3 Verkäuferinnen]{}{} 	%spielen keine Rolle, brauchen deshalb
+									%auch keine Attribute
+\Character{Eric}{er} 	%dieser Charakter erscheint 
+						%nicht in der Drama-Personenliste
+
+\DramPer 	%erzeugt die Personenliste
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Act{-- Prologue}		%die großgeschriebene Form von "Act"
+						%sollte verwendet werden, wenn man einen
+						%Titel nachstehend angeben möchte. Will
+						%man, dass nur z.B. "Akt III" erscheint,
+						%verwendet man besser die kleingeschriebene
+						%Form "act" 
+
+\Act{-- Der Widerstand}
+
+\Scene{-- Am Strand} 	%auch bei "Scene" gibt es eine klein- und
+						%großgeschriebene Form (siehe Erläuterungen
+						%bei "Act" oben
+
+\StageDir{Am Strand geht die Sonne unter. Einige Möwen kreischten über ihnen und begleiteten ihr Gespräch. Die kalte Seeluft schmeckte salzig. \jo und sein Enkel \he und dessen Frau laufen am Wasser entlang.}
+
+\begin{drama}
+	\jospeaks Was habe ich nur verbrochen, dass du mich so quälst?
+	\hespeaks Ich weiß nicht, was du meinst! \direct{Schaut zu seiner Frau.} Aber was auch immer du ausgeheckt hast, ich finde es heraus! Und dann Gnade dir Gott!
+	\jospeaks Also schön, dann gestehe ich dir jetzt alles \dots \direct{Alle bleiben stehen und schauen gen Horizont.}
+\end{drama}
+
+\scene
+
+\StageDir{Zurück im Hotel. Der Portier versucht noch immer die Koffer der Gäste zu finden, während man im Foyer nach ihm ruft. Der arme Kerl hat's wirklich nicht leicht.}
+
+\act
+
+\scene
+
+\StageDir{\lo trägt \wi ein schönes Gedicht vor. Und er antwortet in gleicher Weise.}
+
+\begin{drama*} 	%werden Verse vorgetragen, verwendet man am Besten
+				%die Sternform der "drama"-Umgebung. (Man kann aber
+				%auch die nicht-Stern-Form verwenden.)
+	\lospeaks Wie kann ich es nur anders sagen,\\
+	ich kann besinnen, kann nicht klagen!	%beendet man einen Vers alternativ mit \\!
+							%erzeugt dies einen geringen Abstand zum
+							%nächsten Vers. Das funktioniert nur mit
+							%dem verse-Paket oder der "memoir"-Dokument-
+							%klasse. Andernfalls muss man von Hand einen
+							%Abstand einfügen, z.B. mit
+							%\renewcommand{\speakstab}{\bigskip\hspace{\speaksskip}}
+	
+	\direct{\he kommt herein und hört ihnen zu.}
+	
+	\wispeaks Wer hat mich gerufen?\\
+	Euch launenhafte Menschen zu besuchen?
+	
+	\lospeaks Ich schon wieder?
+\end{drama*}
+
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[paper=4a]{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[sc]{mathpazo}
+
+\typearea[current]{calc}
+
+\usepackage[ansinew]{inputenc}
+
+%\usepackage[bottom,flushmargin,hang,multiple]{footmisc}
+
+\usepackage[bookmarks=true,pdftoolbar=true,pdfmenubar=true,pdfstartview={FitH},pdftitle={
+Gasmarktliberalisierung im Baltikum},pdfauthor={Pascal Bernhard},pdfproducer={Texlive-LaTeX 2013 on 
+Sabayon GNU/Linu 3.12},citecolor=magenta,hidelinks,breaklinks=true]{hyperref}
+
+\usepackage{xcolor}
+\usepackage{titleref}
+\usepackage{nameref}
+
+\urlstyle{same}
+
+\definecolor{MidnightBlue}{rgb}{0.173,0.212,0.597}
+
+\begin{document}
+
+Here is a label to a footnote\footnote{\label{foot:Ownership_Unbundling}}
+
+
+Here I'm talking abou Ownership Unbundling (for a definition see:\textsf{\textcolor{MidnightBlue}{\ref{foot:Ownership_Unbundling}}})
+
+
+\section[Name of the section to be used by the reference]{Section 1}\label{sec:Section1}
+
+As you can see in section \textsf{\nameref{sec:Section1}}
+
+
+\end{document}

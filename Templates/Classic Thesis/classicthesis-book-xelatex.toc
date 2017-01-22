@@ -1,0 +1,9 @@
+\vspace {-\cftbeforepartskip }
+\contentsline {part}{\numberline {i}\spacedlowsmallcaps {Test Part}}{3}{part.1}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Test Chapter}}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}A Section}{5}{section.1.1}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Test Chapter}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}A Section}{7}{section.2.1}
+\contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Appendix}}{9}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix Chapter}}{11}{appendix.A}
+\contentsline {section}{\numberline {A.1}A Section}{11}{section.A.1}

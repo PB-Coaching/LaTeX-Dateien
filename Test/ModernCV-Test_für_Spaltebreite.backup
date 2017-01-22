@@ -1,0 +1,30 @@
+\documentclass[12pt, a4paper]{moderncv}
+\moderncvtheme[grey]{classic}
+\usepackage[latin1]{inputenc}
+\usepackage [ngerman] {babel}
+
+% nachfolgender Code sollte Spaltenbreite erweitern, funktioniert aber nicht
+%\newcommand*{\cvlanguage}[3]{%\cvline{#1}{\begin{minipage%{120pt}\textbf{#2}
+%\end{minipage}\hfill\begin{minipage[t]0.7\maincolumnwidth}
+%\raggedleft\footnotesize\itshape #3\end{minipage}}}
+
+\title{Lebenslauf}%
+\firstname{vorname}%
+\familyname{nachname}%
+\phone{festnetz}%
+\mobile{handynummer}%
+\email{vorname.nachname@web.de}%
+\newcommand*{\cvlanguage}[3]{%
+\cvline{#1}{\begin{minipage}[t]{.225\maincolumnwidth}\textbf{#2}\end{minipage}%
+\hfill%
+\begin{minipage}[t]{0.725\maincolumnwidth}\raggedleft\footnotesize\it shape #3\end{minipage}%
+}
+}
+
+\begin{document}
+\maketitle
+\section{Sprachkenntnisse}
+\cvlanguage{Sprache1}{Muttersprache}{}%
+\cvlanguage{Sprache2}{flieﬂend in Wort und Schrift}{}%
+\cvlanguage{Sprache3}{sehr gute Kentnisse}{X Jahre Sprachkurs an der Schule in Y}%
+\end{document}

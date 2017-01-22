@@ -1,0 +1,662 @@
+\documentclass[11pt,a4paper,english]{scrreprt}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ansinew]{inputenc}
+
+
+\usepackage{xcolor}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+
+
+%%%----------------------------------------------------------------------
+\definecolor{dunkelgrau}{gray}{0.20}
+\definecolor{hellgrau}{gray}{0.40}
+
+\onehalfspacing
+\typearea[current]{calc}
+
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\newcommand{\textemph}{\textsl{\textbf}}
+%%%----------------------------------------------------------------------
+\begin{document}
+
+\begin{spacing}{1}
+
+	\begin{titlepage}
+		
+		\begin{center}
+		{\large Freie Universit\"{a}t Berlin\\
+		Otto-Suhr\texttwelveudash
+		Institut f\"{u}r Politikwissenschaft\\
+		HS #####\\
+		\emph{TITLE OF TERM PAPER}\\
+		\textsmaller{\textbf{Lecturer:} LECTURER''}}\par
+		
+		\vspace{4cm}
+		
+\changefont{ppl}{b}{n}
+\sffamily{
+  {\Huge{\textsmaller{\textbf{Term Paper}}}\\
+ \bigskip	 
+ \textcolor{dunkelgrau}{The Need For Capacity Mechanisms In Liberalized
+Electricity Markets And Their Limits}}}
+		
+\par
+
+\vspace{4cm}
+		
+\changefont{lmr}{m}{n}
+		
+		{\large Pascal Bernhard\\
+		Schwalbacher Stra{\ss}e 7\\
+		12161 Berlin\\
+		Matrikelnummer: 3753179\\
+		pascal.bernhard@belug.de}
+		
+		
+		
+		\end{center}
+
+	\end{titlepage}
+	
+\end{spacing}
+
+%%%----------------------------------------------------------------------
+
+
+%%%----------------------------------------------------------------------
+\tableofcontents
+
+
+%%%----------------------------------------------------------------------
+\setlength{\parindent}{30pt}
+\setlength{\parskip}{0pt}
+
+
+%%%-----------------------------------------------------------------------
+
+\chapter{Introduction}
+
+As many developed countries around the world have been liberalizing their
+wholesale electricity markets to different degrees during the last three
+decades\footnote{Chile and UK were the first countries to abolish generation
+monopolies and opening up their markets to private companies introducing
+supply-side competition. Several US states and EU countries followed in the
+1990s and 2000s}, their governments, regulators and customers had to make the
+experience that not all the hoped-for benefits of these steps did
+materialize\footnote{see IEA (2002, 2003)}. Economic theory had predicted that
+competitive markets should lead to cheaper electricity as prices would
+eventually converge towards marginal production costs. The market mechanism was
+thought to provide the necessary price signals to give generators enough
+incentive to invest in new capacity so that supply and demand could be matched
+in the future\footnote{Finon \& Pignon (2006), p.3}.\par
+
+Alas, market designers didn't pay enough attention to intrinsic imperfections
+of electricity markets leading to insufficient investments in generation
+capacity. Inelasticities on the supply as well as the demand side and the
+difficulty to store larger amounts of electricity for later use result in high
+price volatility on the wholesale market\footnote{ibid (2006), p.9}.
+Together with regulators' unwillingness to allow spot prices to climb too high
+fearing that firms exercise market power, new investments became unattractive to
+power companies thus leading to what became called the 'missing-money
+problem'\footnote{The 'missing-money problem' refers to the issue that so-called
+peak power plants which are in use only for a small part of the year (during
+peak demand periods) need high prices to cover their considerable fixed costs.
+If there are price caps in place, these prices will not come about which in turn
+results in under-investment in capacity.}.\par
+
+This issue particularly concerns so-called peak power
+plants\footnote{B\"{o}ckers, Giesing, Haucap, Heimeshoff \& R\"{o}sch (2012a),
+p.4} whose short-term response times to sudden increases in demand make them
+indispensable for the system operator to ensure system reliability avoiding
+involuntary rationing by shedding load.\par
+
+Aggravating the situation is the increasing share of intermittent renewable
+sources especially in the German electricity market. Spot prices experience a
+downward pressure as renewables feature marginal production costs near zero and
+their bids on the wholesale market have to be taken according to German
+legislation\footnote{Diermann, Carsten, von Hammerstein, Christian, Hermann,
+Hauke Matthes, Felix Chr. \& Schlemmermeier, Ben (2012), p.36}. This development
+makes it even more difficult for peak power plants to recoup investment costs.
+As a result from the year 2020 on, several authors predict a lack of peak
+capacity in Germany\footnote{ibid (2012), p.25 also Grave, Lindenberger \&
+Paulus (2012)}.\par
+
+Capacity adequacy, defined as supply security in the long-run, can arguably be
+considered a public good, being non-rival but also non-excludable\footnote{Finon
+\& Pignon (2006), p.3}. System failure caused by insufficient generation imposes
+heavy losses on all market participants be they consumers or suppliers of
+electric power. Having the characteristics of a public good, private actors will
+not provide system reliability unless incentivized or forced to. Government
+intervention could be a solution to this problem of capacity shortages.\par
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Structure \& Research Question}
+	
+
+This paper looks into the issue whether capacity instruments\footnote{This paper
+will employ the terms \emph{capacity instrument}, \emph{capacity mechanism} and
+\emph{capacity market} interchangeably. Being linguistically accurate the
+expression \emph{capacity market} should refer to the entire market system,
+whereas \emph{capacity instruments} are the individual tools interacting with
+each other via \emph{capacity mechanisms} to constitute the \emph{capacity
+market}. For reasons of readibility I will use the three terms analogously.} can
+solve the aforementioned 'missing-money problem' in the long-term. This has to
+remain largely a theoretical discussion as the results and unintended effects of
+market liberalization\footnote{The term liberalization refers here to reforms to
+national electricity markets that attempted to introduce competition. Measures
+taken included vertical unbundling by which incumbent energy firms had to
+separate different business activities along the value chain (generation,
+transmission, distribution to end-consumers), granting access to monopoly
+network infrastructure to third parties and the creation of independent
+regulators. Liberalization often went along with full or partial privatization
+of state-owned electricity assets. Market liberalization has been implemented to
+varying degrees in different countries, and this paper will take the
+developments on Germany's electricity market as an illustration. Nonetheless the
+conclusion drawn should be applicable to a certain extent to any deregulated
+electricity market} have become fully visible only during the past decade in
+most countries\footnote{see IEA (2002)}. The idea of capacity mechanisms a
+fairly new approach to the problem and in many markets hasn't even been tried
+yet. Thus empirical data are rather thin and Germany which is to provide some
+exemplary illustrations for the questions at hand does not have any capacity
+market to date. On the other hand repeated interruptions in the wake of
+California's electricity market reforms in the 1990s\footnote{see Jurewitz
+(2002) as well as Woo (2001)} show that concern about how to guarantee future
+generation adequacy is not merely a theoretical thought experiment.\par
+
+
+In Germany and other countries the generation parc has not run through a
+complete investment cycle since market deregulation\footnote{The terms
+\emph{deregulation} and \emph{liberalization} will be used synonymously here,
+although deregulation, the removal of sector specific regulation, can be
+considered a subset of a more complex liberalization effort (see Sioshansi
+2006a)} in the late 1990s. So empirically no final judgment can be made
+whether 'energy-only'--markets\footnote{On an \emph{'energy-only'--market}
+solely electrical power is traded, generation and transmission capacity are not
+part of the transactions} provide sufficient incentives to build new plants or
+not.\par
+
+
+	\paragraph{Proceeding}
+
+After an overview of the specific characteristics of electricity and
+electricity markets the paper will describe the 'missing-money problem' and why
+liberalized 'energy-only'--markets may not be able to guarantee sufficient
+investment in capacity for ensuring adequate supply. In the third part I will
+present the challenges to the established 'merit-order' from the massive
+increase in renewable electricity generation and how this aggravates the
+'missing-money problem'.\par
+
+
+My paper argues that capacity mechanisms will fail to address the deficiencies
+of 'energy-only'--markets if regulators inhibit the free functioning of markets
+by maintaining caps on spot prices. The attempt to curb the unwelcome effects of
+market liberalization together with the expansion of renewable energy's market
+share will make it more difficult to ensure supply adequacy on the one hand. At
+the other hand this will drastically limit the potential welfare gains of a
+deregulated market.\par
+
+
+This paper does not have the scope to explore advantages and disadvantages of
+different capacity schemes, as there are many, but will highlight general
+shortcomings of this solution. For a thorough discussion on the effectiveness of
+specific designs see Battle \& Per\'{e}z-Arriaga (2008), Diermann et al. (2012)
+and Siegmeier (2012).\par
+
+
+
+
+	
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{The Need For Capacity Mechanisms}	
+	
+
+  \section{Electricity As A Good Unlike Others}
+  
+   
+Electric power is unlike other goods or commodities in that it is expensive
+to store for later use. Given the current technology level only pump storage
+plants allow this on a large scale, geographic conditions permitting, which
+limits the feasibility of the approach to mountainous areas. Electricity
+markets thus require continuous and above all instantaneous balancing between
+supply and demand\footnote{Creti \& Fabra (2007), p.259/260}, as there is only
+a very limited amount of stored power available to make up for generation
+shortfalls.\par
+
+
+Failure to balance supply and demand at any given time will put the system's
+stability at risk. This can result in disruptions for the entire
+electricity network due to involuntary load shedding as customers are
+forcibly cut off from power supplies by the system operator. As only in rare
+instances it is technically possible to suspend deliveries to specific
+end-consumers their willingness to pay higher prices to continue the service or
+else forgo supply cannot be acknowledged by the market.\par
+
+
+	\paragraph{Inelasticities On Both Sides}
+
+In addition, most households have fixed-price contracts with utilities making
+them unresponsive to price spikes caused by supply scarcity\footnote{Hughes \&
+Parece (2002), p.32}. This renders the demand side very inelastic in the short-
+as well as the long-run\footnote{Marty (2007), p.274}.  To introduce demand
+response to supply scarcity would be the installation of real-time meters which
+transmitted price signals from the wholesale market to customers\footnote{ibid
+(2007), p.273} would be one option. As neither utilities nor consumers are keen
+on paying for this solution, the idea has not made much progress. Thus the
+'traditional' function of market mechanisms to restore the equilibrium between
+demand and supply by price swings as classic economics would have it cannot be
+provided by the current market design.\par
+  
+  
+On the supply side we also find short-term inelasticities since lead-times for
+the construction of new power plants are considerable, ranging from between 2-3
+years for gas-fired installations to 10 years or more for nuclear
+reactors\footnote{Flinkerbusch \& Scheffer (2013), p.15}. The lump-sum nature of
+investments in generation capacity with hefty upfront costs for new
+infrastructure also leads to slow decision-making processes by power companies.
+By implication the system operator has to estimate future demand for specific
+time frames and then make sure that sufficient capacity will be available during
+that period.\par
+  
+  
+If capacity supply is inflexible and highly used at a certain point in time,
+even small changes in available capacity or demand can result in huge price
+swings\footnote{Hughes \& Parece (2002), p.32}. This inherent price volatility
+in the electricity sector is unwelcome to generation companies since it
+complicates estimating future revenues from new capacity very tricky thus making
+these investments less likely to be undertaken.\par
+
+
+    \paragraph{System Stability \textemdash{} A Public Good}
+  
+While scarcity of supply makes the available generation capacity very valuable
+when wholesale prices are high, it renders it utterly valueless in case the
+whole system collapses and no electricity can be sold anymore\footnote{Joskow
+\& Tirole (2007), p.63}. The mere possibility of extreme cases where the system
+breaks down under too much load or when the system operator resorts to
+involuntary load shedding to prevent this happening, gives capacity adequacy the
+character of a public good. No customer can be excluded from the benefits of a
+functioning electricity system since it is nearly always impossible to cut off
+individual consumers. By implication providing the good 'supply security' is not
+a profitable business in itself and will thus not be furnished by an
+'energy-only'--market.\par
+  
+
+Joskow and Tirole deem regulatory action all the more warranted as a single
+power plant not supplying the amount of electricity it was contracted for could
+potentially cause system failure. This would impose a severe negative
+externality on all market participants\footnote{ibid (2007),
+p.78} since they would all be affected immediately.\par
+  
+  
+  
+  \section{Electric Power Markets And Their Specific Nature}
+
+To serve peak loads at any time there needs to be idle reserve capacity
+available, which does not earn any income when not supplying electricity to
+the system\footnote{Hughes \& Parece (2002), p.33}. Therefore, peak power plants
+have to make high returns when called upon in order to recover not only
+marginal costs but also their long-term fixed costs which only high spot prices
+on the wholesale market could ensure. Operators that provide peak capacity will
+not bid their marginal costs as in that case the assets would not be
+profitable\footnote{Ni, Wen \& Wu (2004), p.366} without additional capacity
+payments to fund their investment expenses. 
+
+At the same time most electricity markets feature caps for wholesale prices
+imposed by regulators. Market supervisors fear that high prices are less a
+signal of scarce supply, but rather the result of strategic behavior by energy
+firms using their market power. By withholding some of their capacity,
+artificial scarcity can be induced which would in turn lead to higher prices if
+the price mechanism was totally flexible and free. 
+
+As policy makers and regulators resort to price limits on electricity, the
+chances of peak power plants becoming sufficiently profitable to give
+incentives for new investment\footnote{Keller \& Wild (2004):
+\textsl{\textquotedblleft Investment only makes sense (i.e. is profitable) when
+the discounted value of revenues from sales of new [\dots] capacity exceeds
+investment and operation costs\textquotedblright}, p.244} are significantly
+reduced. Thus peak power plants, although essential to ensure adequate
+generation capacity during periods of high demand, pose substantial investment
+risks for private actors\footnote{Finon \& Pignon (2006), p.4}. Adding to that
+problematic situation, construction of new conventional power plants is rarely
+feasible in incremental small-scale steps. Lump-sum investments imply higher
+risks and by easing undersupply via extra capacity may paradoxically undercut
+their initial economic rationale\footnote{Keller \& Wild (2004), p.244}.\par
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{The Effects Of Renewable Energy Sources}
+
+The existing system of selecting supply offers according to the 
+merit-order\footnote{\emph{Merit-Order:} Sorting of power plant types according
+to their marginal generation costs in increasing order} gets disrupted as
+renewable energy sources (photovoltaics, wind \& tidal power) increase their
+market share. These technologies combine high fixed-costs (in relation to the
+specific generation potential for an individual plant) with the advantage of
+very low marginal costs since their input factors are provided free by
+nature.\par
+
+Bidding with very low offers renewable energy pushes all bids by other generation
+technology rightwards in the merit-order. Thus the previously most expensive
+conventional plants (regarding marginal costs) are not contracted for by the
+system operator anymore, leaving this capacity unused and thus unprofitable. In
+general, spot prices, reflecting only marginal prices, are pushed lower during
+non-peak times. All participating plants are affected by this structural shift
+in the wholesale price level, since all receive the same unique amount
+established through the merit-order. These unique spot prices are insufficient
+though for expensive conventional power plants to recover their fixed costs via
+the difference between their marginal costs and spot prices. With these lower
+returns conventional capacity thus finds it more difficult to pay off investment
+expenses. Some plants will be even rendered entirely unprofitable since they get
+called upon too rarely\footnote{B\"{o}ckers, Giesing, Haucap, Heimeshoff \&
+R\"{o}sch (2012b) p.10}.
+
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+\chapter{Shortcomings Of Capacity Instruments}
+
+
+
+As this paper mentioned in its introductory part, we do not have extensive
+empirical data so far to make a thorough assessment of how successful capacity
+markets really are in practice. In most countries capacity instruments have not
+been in place for long enough to judge their performance over the entire period
+of an investment cycle in the electricity sector (20-30 years)\footnote{see
+Diermann, von Hammerstein, Hermann, Matthes \& Schlemmermeier (2012)}. The
+original 'energy-only'--market structures and the solutions politicians in
+different countries have found to tackle the 'missing-money problem' are so
+diverse that a \textsl{most-similiar} or \textsl{most-dissimiliar} empirical
+research design would be very difficult and probably unreliable to apply.\par
+
+
+Therefore I will limit the following discussion on capacity markets to a
+theoretical level, which should yield informative insights nonetheless. Even
+with the implementation of a certain capacity mechanism additional objectives
+policy makers may want the national electricity market to achieve cannot easily
+be squared with the aim to ensure future electricity supply. Low prices for
+industry to maintain international competitiveness and for households out of
+consideration for social policy purposes will barely provide the price signals
+we have seen are necessary to make investment in new capacity attractive.\par
+
+
+Several important aspects of supply adequacy will be left aside due to the
+limits of scope of this term paper. The effects of an increasingly integrated
+European electricity markets are to remain unexplored as will be the issue
+of insufficient transmission infrastructure, an essential facet of overall
+supply security as well.\par
+
+
+  \section{An Effective Solution To Defects Of Current Market Designs?}
+
+
+  
+First of all it should be mentioned that capacity instruments bring along their
+own issues which merit attention when making a judgment about their
+effectiveness in fixing the defects of existing market designs. Since planning
+and construction of new power plants is a lengthy process, calls for bids in an
+auction or contracts  in an administrative system should be launched far ahead
+of actually drawing upon the additional reserves. Long-term supply arrangements
+would also reduce investment risks for generators, which were identified as one
+of the causes for the 'missing-money' problem. At the same time this shifts
+risks like over-investment back to end-consumers\footnote{Hogan (2005), p.5} and
+would also reduce competition among generators to offer the most cost-effective
+solution to a lack of capacity\footnote{B\"{o}ckers, Giesing, Haucap, Heimeshoff
+\& R\"{o}sch (2012a) p.81}.\par
+  
+  
+  
+    \paragraph{Incentive Structures \textemdash{} Plus \c{C}a change?}
+\par
+Current market designs are marred by a lack of price signals due to price
+caps, be they inspired by regulatory or political motives. Policy makers and
+regulators may desire low electricity prices so as to keep the economy
+competitive in this respect in a globalized world. Or they may be concerned
+about the affordability of electricity for certain parts of society and shield
+them and business from the violent price swings a free market is prone to
+induce. These curbs deny market mechanisms the ability to offer sufficient
+incentives for private companies to invest in new power plants as they are
+unlikely to recover their total costs. In order for capacity instruments to
+provide these exact inducements they would at first have to come up with a
+different way to determine the appropriate level of generation
+capacity\footnote{Hogan (2005), p.5} if supply and demand cannot be balanced
+through flexible prices. A single authority, be it the system operator or market
+regulator, would have to decide upon the quantity of reserve power to contract
+for or oblige distribution companies to do so.\par
+   
+
+Having arrived at an estimate about future load a price for capacity
+needs to be established either by the contracting authority itself or via a
+separate market where demand and supply for extra generation potential settle
+on a specific price. The option of one institution deciding upon quantity and/or
+price of reserve capacity raises the basic question, whether a centralized
+decision process is able to accomplish this task in the first place. The same
+information asymmetries persist as in an 'energy-only'--market, and it is hard
+to imagine the responsible authority to correctly anticipate future demand and
+plant availability all the time. In addition, such a system opens
+opportunities for agency-capture by special interests, politicisation
+or simply misjudgments about market conditions with potentially severe
+consequences for the entire electricity market\footnote{Flinkerbusch \&
+Scheffer (2013), p.24}.\par
+ 
+
+How is a capacity market to discover the quantity of capacity necessary for
+system stability? Price-based designs, see Battle \& Per\'{e}z-Arriaga (2008),
+Diermann, von Hammerstein, Hermann, Matthes \& Schlemmermeier (2012) and
+Siegmeier (2012) for details, also try to harness demand- and supply-side
+valuations for finding a cost-effective solution to the 'missing-money' problem.
+However, with regulatory price caps still in place capacity instruments will,
+like traditional 'energy-only'--markets, fail to ensure enough generation power
+is available at any time. Constraints on market prices applied to capacity
+mechanisms will impede price signals to induce new investments like they do in
+today's market designs.\par
+
+
+To determine capacity requirements by administrative means and then to directly
+contract private actors to meet them is a different approach to tackling
+capacity shortages. But this would mean moving back closer towards the old model
+of command \& control policy via publicly owned generation companies. Then
+again, one of the initial aims of liberalization undertakings was to have
+the market decide which projects to finance thus transferring investment risks
+to the private sector. This objective would be undermined by a capacity
+design that relied only on bureaucratic assessment.\par
+
+
+ 
+ 
+\chapter{Conclusion}
+
+
+Implementing a capacity mechanism expresses a mistrust of
+'energy-only'--markets' ability to provide a satisfactory solution to the
+'missing-money' problem. This paper has attempted to show why current market
+designs fail to deliver adequate levels of electricity supplies during peak
+loads, although some authors take a different view.\par
+
+
+Hogan\footnote{Hogan (2005), p.8} for example argues that an
+'energy-only'--market does not necessarily have to rely on spot-pricing alone
+and that long-term supply contracts between generators and distribution
+companies can be envisaged. B\"ockers et al. for their part judge the argument
+that high electricity prices are politically unacceptable a false one because
+short-sighted\footnote{B\"{o}ckers, Giesing, Haucap, Heimeshoff \& R\"{o}sch
+(2012a) p.81}. Not the wholesale price is relevant they argue, but the total
+costs consisting of capacity payments via surcharges or taxes added to
+end-consumer prices. In the end these compound costs would equal peak prices in
+a free market environment. Their reasoning however omits the political-economy
+aspect of electricity market regulation. Since introducing complete cost
+transparency to the retail level would look like price spikes to customers,
+which are also voters, such a step will be less than appealing to politicians. A
+detailed study of electricity markets' political-economy merits further research
+but cannot be provided here.\par
+
+
+The cornerstone of a capacity mechanism is the ability of its designer or
+'master' to correctly assess current and future capacity requirements. If
+capacity instruments are not allowed to use prices to arrive at this
+estimation, they will fail to provide sufficient generation power like
+'energy-only'--designs. As market incentives through price adjustments are ruled
+out for political consideration the flaws of the existing market structure will
+not be overcome.\par
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Sources}
+
+  \begin{itemize}
+	
+	\sffamily
+	
+
+	\item [\Rectsteel] \textbf{B\"{o}ckers, Veit, Giesing, Leonie, Haucap,
+Justus, Heimeshoff, Ulrich \& R\"{o}sch, J\"{u}rgen (2012a):} Braucht
+Deutschland einen Kapazit\"{a}tsmarkt f\"{u}r Kraftwerke? Eine Analyse des
+deutschen Marktes f\"{u}r Stromerzeugung, in: \textsl{Ordnungspolitische
+Perspektiven}, Issue 24, D\"{u}sseldorf.
+
+
+	\item [\Rectsteel] \textbf{B\"{o}ckers, Veit, Giesing, Leonie, Haucap,
+Justus, Heimeshoff, Ulrich \& R\"{o}sch, J\"{u}rgen (2012b):} Vor- \& Nachteile
+alternativer Kapazit\"{a}tsmechanismen in Deutschland: Eine Untersuchung
+alternativer Strommarktsysteme im Kontext europ\"{a}ischer Marktkonvergenz und
+erneuerbarer Energien, \textsl{Study on behalf of RWE AG}, D\"{u}sseldorf.
+
+
+
+	\item [\Rectsteel] \textbf{Creti, Anna\& Fabra, Natalia (2007):} Supply
+Security And Short-Run Capacity Markets For Electricity, in: \textsl{Energy
+Economics}, Vol.29, p.259-276.
+	
+
+	\item [\Rectsteel] \textbf{Diermann, Carsten, von Hammerstein,
+Christian, Hermann, Hauke, Matthes, Felix Chr. \& Schlemmermeier, Ben (2012):}
+Fokussierte Kapazit\"atsm\"arkte. Eine neues Marktdesign f\"ur den \"Ubergang zu
+einem neuen Energiesystem, \textsl{Study on behalf of Umweltstiftung WWF
+Deutschland}, Berlin.	
+
+
+	\item[\Rectsteel] \textbf{Finon, Dominique \& Pignon, Virginie (2006):}
+Electricity And Long Term Capacity Adequacy. The Quest Of Regulatory Mechanism
+Compatible With Electricity Market, \textsl{Working Paper No.2}, Laboratoire
+d'Analyse \'{e}conomique des R\'{e}seaux et Syst\`{e}mes energ\'{e}tiques,
+Paris.
+	
+
+	\item[\Rectsteel] \textbf{Flinkerbusch, Kai \& Scheffer, Fabian
+(2013):} Eine Bewertung verschiedener Kapazit\"{a}tsmechanismen f\"{u}r den
+deutschen Strommarkt, in: \textsl{Zeitschrift f\"{u}r Energiewirtschaft},
+Vol.37, p.13-25.
+
+
+	\item[\Rectsteel] \textbf{Grave, Katharina, Lindenberger, Dietmar \&
+Paulus, Moritz (2012):} A Method For Estimating Security Of Electricity Supply
+From Intermittent Sources: Scenarios For Germany Until 2030, in: \textsl{Energy
+Policy}, Vol.46, p.193-202.
+
+
+	\item[\Rectsteel] \textbf{Hogan, William W. (2005):} On An
+'Energy-Only' Electricity Market Design, Harvard University, Cambridge, MA
+(USA).
+
+
+	\item[\Rectsteel] \textbf{Hughes, William R. \& Parece, Andrew (2002):}
+The Economics Of Price Spikes In Deregulated Power Markets, in: \textsl{The
+Electricity Journal}, July, p.31-44.
+
+
+	\item [\Rectsteel] \textbf{International Energy Agency (2002):} Security
+Of Supply In Electricity Markets: Evidence And Policy Issues, Paris.
+
+
+	\item [\Rectsteel] \textbf{International Energy Agency (2003):} Power
+Generation Investment In Electricity Markets, Paris.
+
+
+	\item [\Rectsteel] \textbf{Joskow, Paul L. (2008):} Capacity Payments In
+Imperfect Electricity Markets: Need And Design, in: \textsl{Utilities Policy},
+Vol.16, p.159-170.
+
+
+	\item [\Rectsteel] \textbf{Joskow, Paul L. \& Tirole, Jean (2007):}
+Reliable And Competitive Electricity Markets, in: \textsl{RAND Journal of
+Economics}, Vol.38, p.60-84.
+
+
+	\item [\Rectsteel] \textbf{Jurewitz, John L. (2002):} California's
+Electricity Debacle: A Guided Tour?, in: \textsl{The Electricity Journal}, May,
+p.10-29.
+
+
+	\item [\Rectsteel] \textbf{Keller, Katja \& Wild, J\"org (2004):}
+Long-Term Investment In Electricity: A Trade-Off Between Co-ordination And
+Competition?, in: \textsl{Utilities Policy}, Vol.12, p.243-251.
+
+
+
+	\item [\Rectsteel] \textbf{Marty, Fr\'{e}d\'{e}ric (2007):} La
+S\'{e}curit\'{e} de l'approvisionnement \'{e}lectrique: Quels enjeux pour la
+r\'{e}gulation?, in: \textsl{Revue de l'OFCE}, Vol.2007/2, Issue 101,
+p.421-452. 
+
+	
+	
+	\item [\Rectsteel] \textbf{Pollitt, Michael G. (2012):} The Role Of
+Policy In Energy Transitions: Lessons From The Energy Liberalisation Era,
+\textsl{Electricity Policy Research Group Working Paper No. 1208}, Cambridge,
+Cambridgeshire (UK).
+
+
+	\item[\Rectsteel] \textbf{Siegmeier, Jan (2011):}
+Kapazit\"{a}tsinstrumente in einem von erneuerbaren Energien gepr\"{a}gten
+Stromsystem, \textsl{Electricity Markets Working Papers No.45}, TU Dresden.
+	
+	
+	\item [\Rectsteel] \textbf{Sioshansi, Fereidoon P. (2006a):} Electricity
+Market Reform: What Has The Experience Taught Us So Far?, in:
+\textsl{Utilities Policy}, Vol.24, p.63-75.
+		
+	
+	\item [\Rectsteel] \textbf{Sioshansi, Fereidoon P. (2006b):} Electricity
+Market Reform: What Have We Learned? What Have We Gained?, in: \textsl{The
+Electricity Journal}, Vol.29, Issue 9, p.70-83.
+	
+	
+	\item [\Rectsteel] \textbf{Woo, Chi-Keung (2001):} What Went Wrong In
+California's Electricity Market?, in: \textsl{Energy}, Vol.26, p.747-758.	
+	
+
+
+
+  \end{itemize}
+
+
+
+
+
+
+
+\end{document}

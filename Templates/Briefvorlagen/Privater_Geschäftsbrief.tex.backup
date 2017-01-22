@@ -1,0 +1,69 @@
+\documentclass[foldmarks=on,%   Faltmarken setzen
+               paper=a4,%       Papierformat
+	       10pt,%		
+               fromphone=off,%  Telefonnummer im Absender
+               fromrule=off,%   keine Linie unter Absender
+               fromfax=off,%    keine Faxnummer
+               fromemail=on,%   Emailadresse
+               fromurl=off,%    keine Homepage
+	       subject=beforeopening%  Plazierung der Betreffzeile
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+%\usepackage[scaled]{helvet}
+%\usepackage{lmodern}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+
+
+
+\begin{document}
+
+\setkomafont{fromname}{\footnotesize}
+\setkomavar{fromname}{Pascal Bernhard}
+
+\setkomafont{fromaddress}{\footnotesize}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+
+%\setkomafont{fromphone}{\footnotesize}
+%\setkomavar{fromphone}{0511 55 71 15}
+
+%\setkomafont{fromemail}{\footnotesize}
+\setkomavar{fromemail}{pascal.bernhard@belug.de}
+
+
+\setkomavar{backaddressseparator}{%
+~\raisebox{0.25ex}{\textbf{\Large.}}~}
+\setkomafont{backaddress}{\tiny}
+%%\setkomavar{backaddress}{Dietrich% kuerzere Rueckaddresse
+%%\usekomavar{backaddressseparator}\usekomavar{fromaddress}}
+
+
+
+\begin{letter}{%         Empfaenger-Adresse
+
+Frodo Beutlin\\
+Im Bühl 23\\
+333 Hobbingen\\
+Mittelerde
+}
+
+\vspace{6mm}
+
+\opening{Sehr geehrte Damen und Herren,}% Anrede
+
+Das Bundesverfassungsgericht hat in einem Urteil vom November 2012 festgestellt, dass die gesetzliche Regelung für die Erhebung einer Rückmeldegebühr in Höhe von 100 DM bzw. später 51,13 EUR im Berliner Hochschulgesetz alter Fassung verfassungswidrig ist ? siehe BVerfG, 2 BvL 51/06 vom 6.11.2012, online unter: %http://www.bverfg.de/entscheidungen/ls20121106_2bvl005106.html
+
+Laut Bundesverfassungsgericht steht die Höhe der Gebühr in "grobem Missverhältnis zu dem Zweck, die Kosten für die Bearbeitung der Rückmeldung zu decken" und ist daher nichtig, erst mit einer Gesetzesänderung aus dem Jahr 2004 bestand wieder eine Rechtsgrundlage für die Gebühr.
+
+Ich beantrage daher auf Grundlage dieses Urteils die Rückzahlung der von mir in den Jahren ?.-.... geleisteten Rückmeldegebühren und weise darauf hin, dass ich diese stets nur unter Vorbehalt gezahlt habe. Die Gebühren wurden unter meiner damaligen Matrikelnummer .............. verbucht, es geht um folgende Semester:
+
+\closing{Mit freundlichen Grüßen,}
+
+
+\end{letter}
+
+\end{document}

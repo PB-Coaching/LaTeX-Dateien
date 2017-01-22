@@ -1,0 +1,518 @@
+\documentclass[11pt,compress,handout,blackandwhite]{beamer}
+
+\usepackage{beamerthemesplit}
+\usepackage[ansinew]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{fancybox}
+
+\definecolor{links}{HTML}{2A1B81}
+%%Farbe von Hyperlinks ändern
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+      
+
+
+
+%%Pakete für mathematische Symbole und Umgebungen
+\usepackage{amsmath,amsfonts,amssymb}
+
+%%Paket für Bilder
+\usepackage{epsfig}
+
+\usepackage{marvosym}
+
+\usepackage{textcomp}
+
+\usepackage{hyperref}
+
+\definecolor{ubuntu}{rgb}{0.99,0.5,0.2}
+\definecolor{dark-violet}{rgb}{0.40,0,0.48}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+
+
+\usepackage{pifont}
+
+%\renewcommand*{labelitemi}{\Circsteel}
+%\renewcommand*{labelitemii}{\textbullet}
+
+
+
+
+\title{Paketverwaltung unter Ubuntu}
+\author{Pascal Bernhard}
+\institute[BeLUG]{Berliner Linux User Group}
+\date{\today}
+
+\titlegraphic{\includegraphics[width=3.8cm,height=1.2cm]{Black-Ubuntu-Logo.png}}
+\logo{\pgfimage[width=1.9cm,height=0.6cm]{belug-ev.png}}
+
+\begin{document}
+
+
+%% Folie 1 (Titelfolie)
+\frame{\titlepage}
+
+
+\section{Softwareverwaltung unter Linux}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 2
+
+
+\frame
+{
+  \frametitle{Was bedeutet Paketmanagement?}
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+
+
+	  \begin{itemize}
+	    \item Linux-Software ist in Paketen organisiert
+	      \begin{itemize}
+		  \item [\textbullet] \textcolor{dunkelgrau.60}{Programme (z.B. Firefox) bestehen aus einer Mehrzahl an Paketen} 
+		  \newline
+		  \item [\textbullet] \textcolor{dunkelgrau.60}{Pakete setzen sich aus mehreren Dateien zusammen}
+		\end{itemize}
+
+	\vspace{0.5cm}
+
+	    \item Pakete sind häufig voneinander abhängig
+
+	      \begin{itemize}
+		\item [\textbullet] \textcolor{dunkelgrau.60}{Programme teilen sich Pakete}
+	      \end{itemize}
+
+	  \end{itemize}
+
+
+	\column{4cm}
+
+      \end{columns}
+
+	
+
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 3
+
+
+
+\frame
+{
+  \frametitle{Wie installiere ich Programme?}
+
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+
+	\begin{itemize}  
+	  \item Softwareinstallation erfolgt über das Paketmanagement-Tool \textsl{\textcolor{dark-violet}{Apt}} (Ubuntu)
+	    
+	\vspace{0.5cm}
+
+	  \item \textsl{\textcolor{dark-violet}{Ubuntu Software-Center}}
+
+	\vspace{0.5cm}
+
+	  \item Kommandozeilentool: \textsl{\textcolor{dark-violet}{Apt}}
+
+	\vspace{0.5cm}
+  
+	  \item GUI für Apt: \textsl{\textcolor{dark-violet}{Synaptic}}
+	\end{itemize}
+
+	\column{4cm}
+      \end{columns}
+
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 4
+
+
+
+\begin{frame}
+
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+      \begin{itemize}
+	\item Repositories sind Distributions-spezifisch
+    
+	  \begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\textbf{Repository bzw. Paketquelle} \textsl{Softwarearchiv mit Paketen speziell für eine Ubuntu-Version}}
+
+	    \item [\textbullet] \textbf{\textcolor{ubuntu}{Bitte nur für Ubuntu gedachte Paketquellen verwenden!}}
+	  \end{itemize}
+
+
+	\item Konfiguration der Paketquellen in \framebox{\texttt{\textcolor{dark-violet}{/etc/apt/sources.list}}}
+      \end{itemize}
+
+
+	\column{4cm}
+      \end{columns}
+
+\end{frame}
+	
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 5
+
+
+
+\begin{frame}
+
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+      \begin{itemize}
+	\item Repository-Bereiche für unterschiedlich klassifizierte Pakete unter Ubuntu
+
+	  \begin{enumerate}
+	    \item \textcolor{blue}{main}: offiziell unterstützte Pakete mit freier Lizenz
+	    \item \textcolor{green}{restricted}: offiziell unterstützte Pakete, die nicht einer freien Lizenz unterliegen
+	    \item \textcolor{yellow}{universe}: von der Linux-Community unterstützte Pakete unter freier Lizenz
+	    \item \textcolor{magenta}{multiverse}: nicht-freie Software
+	  \end{enumerate}
+	  
+
+      \end{itemize}
+
+
+	\column{4cm}
+      \end{columns}
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 6
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item Repository-Bereich für Bug-Fixes
+
+	
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ Precise-updates main restricted}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://de.archive.ubuntu.com/ubuntu/ Precise-updates main restricted}}
+	\end{itemize}
+
+      \end{itemize}
+
+
+\end{frame}
+
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 7
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item Repository-Bereich \textcolor{yellow}{universe}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ Precise universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://de.archive.ubuntu.com/ubuntu/ Precise universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ Precise-updates universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://de.archive.ubuntu.com/ubuntu/ Precise-updates universe}}
+	\end{itemize}
+
+      \end{itemize}
+
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 8
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item Repository-Bereich \textcolor{magenta}{multiverse}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ Precise multiverse}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://de.archive.ubuntu.com/ubuntu/ Precise multiverse}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ Precise-updates multiverse}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://de.archive.ubuntu.com/ubuntu/ Precise-updates multiverse}}
+	\end{itemize}
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 9
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item Sicherheitsupdates für \textcolor{yellow}{universe} \& \textcolor{magenta}{multiverse}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://security.ubuntu.com/ubuntu Precise-security universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://security.ubuntu.com/ubuntu Precise-security universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://security.ubuntu.com/ubuntu Precise-security multiverse}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://security.ubuntu.com/ubuntu Precise-security multiverse}}
+	\end{itemize}
+
+
+
+
+
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 9
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+
+      \begin{itemize}
+	\item Repository-Bereich für Nicht-Ubuntu - Software
+
+	
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb http://archive.canonical.com/ubuntu Precise partner}}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\texttt{deb-src http://archive.canonical.com/ubuntu Precise partner}}
+	\end{itemize}
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+	
+%--------------------------------------------------------------------------------------%
+%%%Folie 7	
+	
+
+
+\frame
+{
+  \frametitle{Wie halte ich mein Ubuntu auf dem aktuellen Stand?}
+  
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+
+	  \begin{itemize}
+	    \item Updates/Upgrades werden zentral über das Paketmanagement gemacht für alle Pakete
+
+	    \item Update auf der Kommandozeile mit\\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update}}} \& \\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get --dry-run upgrade}}} \& \\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get upgrade}}}
+
+	
+	    \item Update über Synaptic
+	  \end{itemize}
+
+
+
+	\column{4cm}
+      \end{columns}
+}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 10
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& entferne ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Update der Paketquellen: \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update}}}
+
+   \vspace{1.5cm}
+
+   \item Suche nach Paketen: \Ovalbox{\texttt{\textcolor{ubuntu}{(sudo) apt-cache search PAKETNAME}}}
+   
+   \vspace{1.5cm}
+
+   \item Installation von Paketen: \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get install PAKETNAME1 PAKETNAME2}}}
+  \end{itemize}
+
+\end{frame}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 9
+
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{PPAs: Personal Package Archives}
+
+
+  \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+	  \begin{itemize}
+	    \item nicht-offizielle Repositories - keine Unterstützung durch Ubuntu/Cannonical
+
+	  \vspace{0.5cm}
+
+	    \item Beispiel: \textcolor{dark-violet}{Ubuntu Tweak}
+	   \end{itemize}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-apt-repository ppa:tualatrix/ppa}}}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-get update}}}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get install ubuntu-tweak}}}
+
+
+
+	\column{4cm}
+
+  \end{columns}
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 11
+
+
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+	\item \textbf{Repository:} \textcolor{dunkelgrau.60}{Softwarearchiv mit Paketen speziell für eine Linux-Distribution}
+
+      \vspace{1.0cm}
+
+	\item \textbf{Paketabhängigkeiten:} \textcolor{dunkelgrau.60}{Programme setzen jeweils bestimmte Pakete voraus. Die Paketverwaltung hat die Aufgabe diese Abhängigkeiten zu managen. Werden die Paketabhängikeiten verletzt, weil zwei unterschiedliche Programme ein bestimmtes Paket in jeweils anderer Version benötigen, wird eines dieser Programme entweder entfernt, bzw. dieses erst gar nicht installiert.}
+      \end{itemize}
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 11
+
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+	\item \textbf{proprietäre Software/Pakete:} \textcolor{dunkelgrau.60}{Proprietäre Software/Pakete stehen nicht unter einen freien Lizenz (z.B. GPL, LGPL, Afero-Lizenz, etc.) und können dementsprechend nicht wie freie Software im Quellcode eingesehen, verändert und weitergegeben werden oder dies ist nur sehr eingeschränkt möglich.}
+
+	\vspace{0.5cm}
+
+	\item Weitere Informationen:
+
+	  \begin{itemize}
+	    \item [\textbullet] \textsl{Erläuterung freier Software:} \url{https://www.gnu.org/philosophy/categories.html.en}{}
+	    \item [\textbullet] \textsl{Softwarelizenzen:} \\
+	    \url{http://www.ifross.org/lizenz-center}{}
+	  \end{itemize}
+	          
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 12
+
+
+\begin{frame}[containsverbatim]
+
+\frametitle{Begriffserklärung}
+      
+	  \begin{itemize}
+	    \item Weitere Informationen:
+
+	      \begin{itemize}
+		\item [\textbullet] \textsl{Konzept der Vier Freiheiten:} \url{https://fsfe.org/about/basics/freesoftware.de.html}{}
+	      \end{itemize}
+
+	    \item Links zu Paketmanagement unter Ubuntu:
+
+	      \begin{itemize}
+		\item [\textbullet] \textsl{Hilfe zum Umgang mit Repositories:}\\	    \url{https://help.ubuntu.com/community/Repositories/CommandLine}{}
+		\item [\textbullet] \textsl{Anleitung zu Paketen unter Ubuntu allgemein:}\\
+		\url{http://ubuntuguide.org/wiki/Ubuntu:Precise#Aptitude}{}
+	      \end{itemize}
+
+
+	  \end{itemize}
+
+	 
+\end{frame}
+
+
+\end{document}

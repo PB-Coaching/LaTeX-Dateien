@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{pst-fit}
+\usepackage{pst-plot}
+
+\begin{document}
+\savedata{\mydata}[
+{{0, 0}, {0.25, 0.2646083}, {0.5, 0.560541}, {0.75, 0.784865}, {1., 
+1.07582},{1.25, 1.254993},
+{1.7, 1.59014}, {1.8, 1.753661}, {1.9, 1.851863}, {2., 1.954824}}]
+\pstScalePoints(1,0.5){}{2 add}
+\pspicture(4,3)
+\listplot[plotstyle=dots, dotstyle=x]{\mydata}
+\listplot[plotstyle=GLLSR, EqPos=0 -1]{\mydata}
+\psaxes(3,3)
+\endpspicture
+%
+\pspicture(4,3)
+\rput(0,-0.5){%
+   \listplot[plotstyle=dots, dotstyle=x]{\mydata}
+   \listplot[plotstyle=GLLSR, EqPos=0 -1]{\mydata}}
+\psaxes[dy=0.5,Dy=1](3,3)
+\endpspicture
+\end{document}

@@ -1,0 +1,82 @@
+%%Vorlage "Buch", v1.05 %%
+
+\documentclass[a5paper 	%Papierformat
+,DIV=13		%Einstellungen für den Satzspiegel
+,twoside		%zweiseitiger Satzspiegel; bei der
+						%book-Dokumentklasse automatisch
+						%so eingestellt, dass neue Kapitel
+						%immer auf der rechten (ungeraden)
+						%Seite beginnen
+,11pt % Schriftgröße
+,headsepline	%erzeugt eine Trennlinie in der
+						%Kopfzeile. Gibts natürlich auch
+						%als "footsepline"
+]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext} %zur Erzeugung von unsinnigen Textkolonnen
+\usepackage[colorlinks=false,pdfborder={0 0 0},bookmarksnumbered]{hyperref}
+\usepackage[Lenny]{fncychap} % huebsche Kapitelstyles
+\usepackage{lettrine} 	%Initiale
+\usepackage{setspace}
+\usepackage{ellipsis} 	%verbesserter Abstand bei 3 Punkten ...
+\usepackage[osf]{libertine} 	%deaktivieren, falls Schriftart
+						%"Libertine" nicht installiert ist.
+						%Die Option "osf" (old school font)
+						%bewirkt, dass alle Ziffern als
+						%Minuskelziffern (Mediävalziffern)
+						%gesetzt werden.
+\usepackage{microtype}
+
+\begin{document}
+
+\hypersetup{
+	pdftitle={Vom ersten Versuch},
+	pdfauthor={Geoffrey Kline},
+	pdfsubject={Selbstversuch}
+	}
+	
+\begin{titlepage}
+	\subject{Aus der Serie: \\
+		Unheimliche Krimis}
+	\title{\Huge \textsc{Vom ersten Versuch}}
+	\subtitle{Oder: wie man das Leben findet}
+	\author{Geoffrey Kline}
+	\date{Herbst 2005}
+\end{titlepage}
+
+\maketitle
+\onehalfspace % 1,5-facher Zeilenabstand
+
+\frontmatter % Gliederungsoption bei Dokumentklasse Book für alles, das vor dem Haupttext kommt
+
+\section*{Danksagung}
+
+Vor allem meiner Oma.
+
+\chapter{Vorwort}
+
+Herzlich willkommen zu meinem ersten Roman!
+
+\tableofcontents
+
+\mainmatter % Gliederungsmöglichkeit bei Dokumentklasse Book für den Hauptteil
+
+\chapter{Wie alles begann}
+
+\lettrine[lines=1]{E}{s war eine kalte}, dunkle Nacht. \blindtext\blindtext\blindtext
+
+\chapter{Mittendrin}
+
+\lettrine[lines=3]{U}{nser Held trifft nun auf Olga.} \blindtext\blindtext\blindtext
+
+\backmatter
+
+\chapter{Noch was letztes}
+
+\blindtext\blindtext
+
+% \backmatter %(falls benötigt)
+
+\end{document}

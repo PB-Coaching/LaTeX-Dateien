@@ -1,0 +1,43 @@
+\documentclass[17pt]{extarticle}
+\usepackage[showframe]{geometry} % just_4_demo
+\usepackage[demo]{graphicx} % just_4_[demo]
+\usepackage{xcolor}
+\usepackage[absolute]{textpos}
+%% Set the x- and y- units mit 1 cm
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{\TPHorizModule}
+%\pagestyle{empty}
+
+\begin{document}
+\section{The \texttt{textpos} environment}
+here comes the text ...
+
+\begin{textblock}{10}(1,6)
+{\color{red!65!black!100!}
+Eine Textbox}
+\end{textblock}
+
+\begin{textblock}{14}(14,6)
+\includegraphics[scale=.35]{image}
+\end{textblock}
+
+\begin{textblock}{10}(6,13)
+{\color{red!65!black!100!}
+\huge\textbf{Eine Textbox}}
+\end{textblock}
+
+\begin{textblock}{14}(7,14)
+{\color{blue!65!black!100!}} %\includegraphics[scale=.35]{image}
+\end{textblock}
+
+\begin{textblock}{10}(13,23.5)
+{\color{red!65!black!100!}
+Eine Textbox}
+\end{textblock}
+
+\begin{textblock}{14}(1,22.5)
+\includegraphics[scale=.35]{image}
+\end{textblock}
+
+\vfill\hfill ... \the\textheight
+\end{document}

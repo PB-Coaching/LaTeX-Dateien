@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pst-plot}
+\begin{document}
+\begin{figure}
+\centering
+  \begin{pspicture}(-5,-5)(8,5)
+    %Pie chart
+    \psChart[chartSep=15pt,chartColor=color,
+             chartNodeO=1.15,shadow=true,
+             shadowsize=5pt]{15,20,30,20,15}
+             {3}{4.75}
+    %The Label for the outraged piece
+    \ncline[linecolor=-chartFillColor3]
+            {psChartI3}{psChartO3}
+    \uput[l](psChartO3){\textcolor{chartFillColor3}
+                        {\large The Most}
+                       }
+    %The legends
+    \psframe[fillcolor=chartFillColor1,fillstyle=solid]
+             (5.25,-5)(6.5,-4.5)
+    \uput[r](6.5,-4.75){Traffic}
+    \psframe[fillcolor=chartFillColor2,fillstyle=solid]
+             (5.25,-4)(6.5,-3.5)
+    \uput[r](6.5,-3.75){Clothes}
+    \psframe[fillcolor=chartFillColor3,fillstyle=solid]
+             (5.25,-3)(6.5,-2.5)
+    \uput[r](6.5,-2.75){Food}
+    \psframe[fillcolor=chartFillColor4,fillstyle=solid]
+             (5.25,-2)(6.5,-1.5)
+    \uput[r](6.5,-1.75){Rent}
+    \psframe[fillcolor=chartFillColor5,fillstyle=solid]
+             (5.25,-1)(6.5,-0.5)
+    \uput[r](6.5,-0.75){Others}
+  \end{pspicture}
+\end{document}

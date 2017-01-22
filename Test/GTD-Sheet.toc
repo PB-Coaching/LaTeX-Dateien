@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}General description}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Package inclusion and options}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Making a citation}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}The \texttt {bst} styles}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}The \texttt {bib} file fields}{3}{subsection.2.4}
+\contentsline {section}{\numberline {3}Customization}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Dimensions}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Flags and formats}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}Using both \texttt {directory} and \texttt {bibliography}}{6}{section.4}
+\contentsline {section}{\numberline {5}Generating directories with hypertext links}{6}{section.5}
+\contentsline {section}{\numberline {6}Generating HTML, vCard or LDIF directories}{6}{section.6}
+\contentsline {section}{\numberline {7}Example}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}Source file}{8}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Output}{9}{subsection.7.2}
+\contentsline {section}{\numberline {8}Contributors}{9}{section.8}
+\contentsline {section}{\numberline {9}Versions}{9}{section.9}

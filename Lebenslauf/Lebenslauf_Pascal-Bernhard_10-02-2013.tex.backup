@@ -1,0 +1,218 @@
+\documentclass[11pt,a4paper,titlepage]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[english,ngerman]{babel}
+\usepackage[ansinew]{inputenc}                   % replace by the encoding you are using
+
+\usepackage{marvosym}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{graphicx}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+\firstname{Pascal}
+% NACHNAME
+\familyname{Bernhard}
+%TITEL (optional, ggf. einfach die Zeile löschen!)
+\title{Lebenslauf}    
+%ADRESSE  (optional, ggf. einfach die Zeile löschen!)
+\address{Schwalbacher Strasse 7}{12161 Berlin}
+%HANDYNUMMER  (optional, ggf. einfach die Zeile löschen!)
+\mobile{0152 / 38 50 23 63} 
+%FESTNETZNUMMER  (optional, ggf. einfach die Zeile löschen!)
+\phone{030 / 32 66 58 00}
+%EMAIL-ADRESSE  (optional, ggf. einfach die Zeile löschen!)
+\email{pascal.bernhard@belug.de} 
+%HOMEPAGE  (optional, ggf. einfach die Zeile löschen!)
+\homepage{www.secunergy.com}
+%FOTO  (optional, ggf. einfach die Zeile löschen!)
+%  64pt = Höhe des Bildes, 'picture' = Name des Bildes
+\photo[120pt]{sepia}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%Spaltenbreite von \cvline ändern:
+\renewcommand*{\cvlanguage}[3]{%
+\cvline{#1}{\begin{minipage}[t]{.225\maincolumnwidth}\textbf{#2}\end{minipage}%
+\hfill%
+\begin{minipage}[t]{.725\maincolumnwidth}\raggedleft\footnotesize\it shape #3\end{minipage}%
+}
+}
+
+%Spaltenbreite von \cvline ändern - zweiter Versuch
+\setlength{\hintscolumnwidth}{3.5cm} 
+
+
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+\begin{document}
+
+
+    \vspace*{\fill}
+    
+      \maketitle
+      \section{Zu meiner Person}
+	\cvline{Geboren}{am 08.04.1982 in Berlin}
+	\cvline{Studienfach}{Politikwissenschaft}
+	\cvline{Auslandserfahrung} {USA (1 Jahr) \& Frankreich (3 Jahre)}
+	\cvline{Sprachkenntnisse}{Englisch \& Französisch (verhandlungssicher)}
+	\cvline{IT}{Linux, Office-Suite (MS Office, OpenOffice), Content Management Systeme (Contao, Joomla), LaTeX}
+
+    \vspace*{\fill}
+
+
+
+\newpage
+
+
+
+\section{Praktische Erfahrungen}
+%\cvline{11/2011 - 3/2012}{Werkstudent \newline bei Startup-Unternehmen AKM3 in Berlin (Search Engine Optimization) 					\newline 
+%			\begin{itemize}
+%			  \item Suchmaschinenoptimierung von Webseiten
+%			\end{itemize} }
+
+\cvline{6/2009 - 9/2011}{Associate Consultant \newline bei der Unternehmensberatung SCI Verkehr GmbH in Berlin \newline
+			\begin{itemize} 
+			  \item Erstellung von Newslettern \& Unternehmensprofilen
+			  \item Recherchearbeiten \& Erstellen von Marktstudien
+			  \item Korrespondenz \& telef. Kontakt mit Kunden
+			  \item Büroorganisation (Bestellung von Materialien, Arbeitsstundenplanung)
+			\end{itemize} }
+
+\cvline{10/2008 - 4/2009}{Werkstudent \newline bei Startup-Unternehmen hiogi GmbH in Berlin (Anbieter von 						  Dienstleistungen für mobile Geräte) \newline
+			\begin{itemize}
+			  \item Sekretariatsarbeiten
+			  \item Auswertung von Nutzer-Bewertungen
+			  \item Informationsaustausch und Kontakt mit Nutzer-Community
+			\end{itemize} }
+
+\cvline{07/2007 - 01/2008}{Praktikum \newline am Forschungsinstitut Jean-Monnet Centre for European Integration in 					   Berlin \newline
+			\begin{itemize}
+			  \item {Unterstützung des von der EU-Kommission in Auftrag gegebenen Forschungsprojektes	\textsl{The Political Economy of EuroMed Governance}: Datenrecherche, Verfassen von Länderberichten, Vorbereitung von Vorträgen und Konferenzen}
+			  \item Sekretariatsarbeiten: Korrespondenz, Dokumentenverwaltung
+			  \item Unterstützung der Forschungsaktivitäten der hauptamtlichen Mitarbeiter: Erstellen von Präsentationen, Schaubildern sowie Excel-Tabellen 
+			\end{itemize} }
+
+\cvline{7/2006 - 6/2007}{Praktikum \newline bei der American Chamber of Commerce in Paris \newline
+			\begin{itemize}
+			  \item Mitarbeit an Marktstudien (Privatisierung von Infrastruktur \& Utilities in Frankreich)
+			  \item Erstellung von monatlichem Newslettern
+			  \item Pflege der Kontaktdatenbank
+			  \item Betreuung von Kunden
+			\end{itemize} }
+
+\cvline{4/2005 - 10/2005}{Praktikum \newline am Wissenschaftszentrum für Sozialforschung Berlin \newline
+			\begin{itemize}
+			  \item Recherchearbeiten für Studie zu Arbeitsmarktreformen
+			  \item Lehrtätigkeit durch Tutorien für Studenten
+			\end{itemize}
+}
+
+\bigskip 
+
+\section{Studium}
+
+\subsection{Hauptstudium "`Politikwissenschaft"'}
+\cvline{ab 10/2012}{Diplomarbeit}
+\cvline{Titel}{\emph{Energie-Versorgungssicherheit der Baltischen Staaten: Potentiale der Europäischen Integration}}
+\cvline{Betreuer}{Dr. Prof. Schröder \& Dr. Prof. Kerner}
+
+
+
+\subsection{Hauptstudium "`Politikwissenschaft"'}
+\cvline{9/2009 - 8/2011}{an der FU Berlin}
+
+
+
+\subsection{Hauptstudium "`Master Finance et Stratégie"'}
+\cvline{9/2005 - 8/2007}{an Science Po Paris}
+
+
+
+\subsection{Grundstudium "`Politikwissenschaft"'}
+\cvline{9/2002 - 8/2005}{an der FU Berlin \emph{Note: 1,6}}
+\cvline{13.06.2009}{Vordiplom}
+\cvline{Titel}{\emph{Transformationsprozesse in Lettland}}
+\cvline{Betreuer}{Dr. Prof. Kerner}
+
+\bigskip
+
+\section{Sprachkenntnisse}
+\cvline{Deutsch}{Muttersprache}
+\cvline{Englisch}{Verhandlungssicher in Wort und Schrift}
+\cvline{Französisch}{Verhandlungssicher in Wort und Schrift}
+\cvline{Russisch}{Grundkenntnisse}
+
+\bigskip
+
+\section{Schulbildung}
+\cvline{8/1992 - 7/2001}{Gymnasium Freiburg im Breisgau}
+\cvline{8/1988 - 7/1992}{Grundschule Freiburg im Breisgau}
+
+%\section{Erfahrung \& Kenntnisse}
+%----------------------------------------------------------------------------------
+%            ACHTUNG: Bei Änderungen das "}" am Ende nicht vergessen!!!
+%----------------------------------------------------------------------------------
+%\cvline{}{Büroorganisation 
+%	  \newline Jean-Monnet Centre, American Chamber of Commerce \&
+%	  \newline Unternehmensberatung SCI Verkehr}
+%												 Tätigkeiten:
+%												 % Aufzählung
+%												 \begin{itemize}
+%													\item %Entwicklung von Prototypen auf der Basis von PHP, (X)HTML, JavaScript (jQuery) und MySQL
+%													\item %Entwicklung von Applikationen mittels PHP und XML
+% 											 \end{itemize}
+%}%-- Gehört zu \cvline
+%\cvline{2/2011 - 7/2001}{Typo3 Developer \newline bei BummbBumm KG in Mannstedt \newline
+%												 Tätigkeiten:
+%												 % Aufzählung
+%												 \begin{itemize}
+%													\item %Optimierung der Templates und Struktur
+%													\item %Beratung und Unterstützung der Redaktion, Vermarktung und der Marketingabteilung
+%  											 \end{itemize}
+%}%-- Gehört zu \cvline
+
+%\subsection{Sonstiges}
+%\cvline{11/2006 - 12/2008}{IT-Helpdesk Servicekraft \newline bei Musterverwaltung in Musterstadt}
+
+\bigskip
+
+
+\section{IT-Kenntnisse}
+\cvline{}{GNU/Linux}
+\cvline{}{MS Office Suite}
+\cvline{}{LaTeX}
+\cvline{}{Content Management Systeme (Joomla \& Contao)}
+
+\bigskip
+
+\section{Interessen}
+\renewcommand{\listitemsymbol}{-} % Das Aufzählungszeichen für die folgende Liste
+\cvlistdoubleitem{Open Source Software}{UNIX-Systeme}
+\cvlistdoubleitem{Klavier}{Fotographie}
+\cvlistdoubleitem{Literatur}{}
+
+%Berlin, \today\\ % Aktuelles Datum und Stadt
+
+\end{document}
+
+
+%% end of file `Lebenslauf_Template.tex'.

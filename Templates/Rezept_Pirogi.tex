@@ -1,0 +1,48 @@
+\documentclass[a4paper]{recipe}
+
+\usepackage{ngerman}
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,enumerate,ifthen}
+\usepackage{enumitem}
+\usepackage[usenames]{color}
+\usepackage{textcomp}
+
+\renewcommand{\ttdefault}{pcr}
+
+\renewcommand{\inghead}{\textbf{Zutaten (ergibt ungefähr 6 große Pirogi)}:\ }
+%\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+\renewcommand{\rechead}{\centering\huge\sffamily\bfseries\color{firstnamecolor}}
+\makeatletter \setlength{\@totalleftmargin}{0pt}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother \setlength\parindent{0pt} \setlength\parskip{2ex plus 0.5ex}
+ \pagestyle{empty}
+
+% Farben werden hier definiert
+\definecolor{yellowcolor}{RGB}{210,160,0}
+\definecolor{firstnamecolor}{RGB}{56,115,179}
+\definecolor{bluecolor}{RGB}{56,115,179}
+
+% Serifenlose Schrift für das gesamte Dokument
+\renewcommand*\familydefault{\sfdefault}
+
+ 
+\begin{document}
+\recipe{Gefüllte Pirogi} \ingred{etwa 100ml lauwarmes Wasser (für den Hefeteig), \textonehalf TL Zucker, 20g Hefe, 230g Mehl,
+1 TL Salz, 50g Schmalz, 2 Zwieblen, 20g Butter, 200g Champignons, 100ml Weißwein, 2 EL Sauerrahm, Basilikum oder Petersilie, 50g geriebener Emmentaler Käse, 1 Ei, 1 EL Milch,  [optional: 8 Scheiben roher Schinken]}
+
+\begin{enumerate}[label=\textbf{\color{yellowcolor}\Roman*}.]
+\addtolength{\itemindent}{2em}
+ \item \textbf{Teig:} Lauwarmes Wasser in eine Schüssel geben, den Zucker darin auflösen, und die Hefe hineinbröckeln. Einige Esslöffel des Mehls abnehmen und mit der Flüssigkeit zum Vorteig verrühren. Den Backofen auf circa 50\textcelsius{} aufwärmen und den Hefeteig dort 15 Minuten gehen lassen. Das übrige Mehl in eine Schüssel sieben und ebenfalls im Backofen vorwärmen. 
+%
+ \item Den Vorteig zusammen mit Schmalz und Salz zum Mehl geben und alles zu einem glatten Teig verkneten. Mit einem Küchentuch bedeckt an einem warmen Ort für 30 Minuten gehen lassen. 
+%
+\item \textbf{Füllung:} In der Zwischenzeit für die Füllung die Zwiebeln schälen und würfeln und in der Butter glasig anbraten. Gegebenenfalls den Schinken in Streifen schneiden. Die gewaschenen Champignons in Blätter schneiden und mit den Zwiebeln für 2-3 Minuten andünsten (\textsl{Tipp: Die Champignons nach dem Waschen trocknen, das heißt ohne Fett, in einer gesonderten Pfanne erhitzen um ihnen so das enthaltene Wasser zu entziehen. Die Füllung wird sonst zu wässrig}). Alles mit dem Weißwein ablöschen und mit Sauerrahm andicken. Basilikum oder Petersilie fein schneiden. Jetzt den Schinken beifügen und alles mit Salz und Pfeffer abschmecken. Gute 5 Minuten abkühlen lassen und dann erst den geriebenen Käse beifügen. Je weniger flüssig die Füllung, desto besser.
+%
+\item \textbf{Pirogi-Taschen:} Den Teig etwa 3mm dick auf einer gemehlten Unterlage dünn ausrollen (\textsl{Tipp: wirklich dünn ausrollen, sonst sind die Taschen am Ende mehr Teig als Füllung}) und runde Plätzchen etwas mehr als handflächengroß ausstechen. Die Füllung auf die ausgestochenen Plätzchen geben und den Teig darüber zu Halbmonden zusammenklappen. Die Teigränder vorsichtig mit einer Gabel zusammendrücken. Ei und Milch miteinander verquirlen und die Pirogi damit bestreichen.
+
+\item \textbf{Backen:} Die Pirogi auf einem gefetteten Backblech bei 200\textcelsius{} circa 15 Minuten backen.
+
+\end{enumerate}
+\end{document}

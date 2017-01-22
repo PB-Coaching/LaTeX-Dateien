@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pst-plot}
+\begin{document}
+  \begin{pspicture}(-5,-5)(5,5)
+    \psChart{5,4,4,3,3}{}{3}
+    \rput(psChartI1){\textcolor{red}{5}}
+    \rput(psChartI2){\textcolor{red}{4}}
+    \rput(psChartI3){\textcolor{red}{4}}
+    \rput(psChartI4){\textcolor{red}{3}}
+    \rput(psChartI5){\textcolor{red}{3}}
+    \psset{nodesepA=5pt,nodesepB=-10pt}
+    \rput(psChartO1){{US}}
+    \rput(psChartO2){{EU}}
+    \rput(psChartO3){{China}}
+    \rput(psChartO4){{Japan}}
+    \rput(psChartO5){{Others}}
+  \end{pspicture}
+\end{document}

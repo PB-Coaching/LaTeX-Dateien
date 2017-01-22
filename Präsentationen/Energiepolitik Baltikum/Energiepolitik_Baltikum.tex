@@ -1,0 +1,271 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ngerman}
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage{pifont}
+\usepackage{ifpdf}
+\usepackage{enumitem}
+\usepackage{fancybox}
+\usepackage[pdftex]{color}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}\fi
+
+\usepackage{scrextend} % Paket notwendig um Einzug bei Fußnoten zu unterbinden
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Pascal}
+\def\familyname{Bernhard}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname~\familyname Energiepolitik im Baltikum}
+\def\FileSubject{Energiepolitik Baltikum}
+\def\FileKeyWords{\firstname~\familyname, Energiepolitik Baltikum}
+
+\renewcommand{\ttdefault}{pcr}
+\hyphenation{ins-be-son-de-re}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+% Farben werden hier definiert
+\definecolor{yellowcolor}{RGB}{210,160,0}
+\definecolor{firstnamecolor}{RGB}{56,115,179}
+\definecolor{bluecolor}{RGB}{56,115,179}
+\definecolor{purplecolor}{RGB}{156,15,86}
+\hypersetup{pdfborder=0 0 0}
+
+% Gleiche Schriftart für Hyperlinks
+\urlstyle{same}
+
+
+%  Gefrickel um URL-Links vernünftig umzubrechen
+\makeatletter
+\g@addto@macro\UrlBreaks{
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3
+  \do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+% \def\do@url@hyp{\do\-}
+
+% Hiermit soll einer übervolle Box verhindert werden -- funktioniert sogar irgendwie
+\g@addto@macro\UrlSpecials{\do\/{\mbox{\UrlFont/}\hskip 0pt plus 1pt}}
+\makeatother
+
+% Kein Einzug bei Fußnoten
+\deffootnote[2em]{2em}{1em}{\textsuperscript{\thefootnotemark}\,}
+
+% Serifenlose Schrift für das gesamte Dokument
+\renewcommand*\familydefault{\sfdefault}
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+\includegraphics[width=0.55\textwidth]{Andreas_Hofer.jpg}
+
+\end{minipage}\\[0.5em]
+%
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}}
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedright%
+	% {\bfseries {\color{firstnamecolor}
+	\vspace*{1em}
+	\textbf{\color{bluecolor} {\Large Andreas Hofer -- Tirols Nationalheld}} \\
+%	 \\[.35ex]
+	% }}
+	\small%
+
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedleft % US style
+%	\today
+	%April 6, 2006 % US informal style
+	%05/04/2006 % UK formal style
+\end{minipage}\\[2.2em]
+
+
+
+\subsection*{\color{purplecolor} Das Leben Andreas Hofers}
+
+
+\begin{itemize}
+
+\item am 22. November 1767 am Sandhof bei Sankt Leonhard geboren war Andreas Hofer Wirt und Viehhändler
+
+\item im Tiroler Volksaufstand von 1809 führte er die Tiroler dreimal erfolgreich gegen die Truppen Napoleons 
+
+\item Tirol kam 1806 nach der Niederlage Österreich im Dritten Koalitionskrieg gegen das revolutionäre Frankreich unter die Herrschaft Bayerns
+
+\item Bayern initiierten eine Reihe von Reformen im militärischen und religiösen Bereich\\
+	$\blacktriangle$ Einführung der Wehrpflicht in das bayrische Heer\\
+	$\blacktriangle$ religiöse Praktiken in Tirol wie Prozessionen wurden untersagt\\
+	$\blacktriangleright$ in Bevölkerung und Klerus regte sich Widerstand gegen die bayrischen Reformen
+
+\end{itemize}
+
+\subsubsection*{\color{bluecolor} Der Tiroler Aufstand}
+
+\begin{itemize}
+
+\item mit der Zwangsrekrutierung für die Bayrische Armee brach der Tiroler Aufstand am 9. April 1809 in Innsbruck offen aus
+
+\item Andreas Hofer wurde als Oberkommandant der Tiroler Truppen gewählt
+
+\item in den folgenden Tagen waren die Tiroler in drei Schlachten erfolgreich gegen französisch-bayrische Truppen
+
+\item der \emph{Frieden von Schönbrunn}\footnote{Österreich musste nach der verlorenen Schlacht von Wagram seine Küstengebiete an der Adria abgeben und wurde zu einem Militärbündnis mit Napoleon gegen Russland gezwungen.} zwischen Frankreich und Österreich wurde in Tirol nicht anerkannt und galt als Betrug, da Tirol ein weiteres Mal an Bayern vergeben wurde\\
+	$\blacktriangle$ Andreas Hofer rief am 1. November 1809 erneut zum Widerstand gegen Frankreich auf, jedoch unterlagen die Tiroler am \textsl{Bergisel} den bayrischen Truppen
+
+\item Andreas Hofer musste fliehen, wurde jedoch verraten und am 10. Januar 1810 auf Mähderhütte gefangen genommen\\
+	$\blacktriangle$ Hofer wurde nach Mantua in ein Militärgefängnis gebracht
+
+\item der Vizekönig von Italien \textsl{Eugène Beauharnais} wollte eigentlich Hofers Leben verschonen, jedoch ordnete Napoleon persönlich die Verurteilung und Hinrichtung des Tirolers an
+
+\item nach kurzem Prozess mit vorher diktiertem Urteil wurde Andreas Hofer durch ein Erschießngskommando hingerichtet\\
+	$\blacktriangle$ dramatisches Ende, da Hofer erst nach der dritten Versuch tot war
+
+\item Andreas Hofer wurde noch zu Lebzeiten vom österreichischen Kaiser in den Adelsstand erhoben (am 15. Mai 1809), jedoch hatte er selbst hiervon wahrscheinlich keine Kenntnis, da die entsprechende Urkunde Tirol erst nach dem Krieg erreichte
+
+
+\end{itemize}
+
+
+\subsection*{\color{purplecolor} Kritische Würdigung Andreas Hofers}
+
+\begin{itemize}
+
+\item die Person Andreas Hofer wurde nach seinem Tod stark verklärt
+
+\item seine letzten Wort vor dem Erschießungskommando sollen gewesen sein: \glqq\emph{Franzl, Franzl, das verdank ich Dir!}\grqq
+
+\item das Andreas Hofer-Lied aus dem Jahre 1831 wurde zur Nationalhymne Tirols und beschreibt seinen Freiheitskampf
+
+\item jedes Jahr wird in Tirol am 20. Februar als Volksheld gefeiert
+
+\item allerdings steht die Person Andreas Hofer nicht nur für den Freiheitskampf, sondern auch für religiösen Fundamentalismus\\
+	$\blacktriangle$ er forderte das abgeschaffte Glaubensmonopol der katholischen Kirche zurück\\
+	$\blacktriangle$ Andreas Hofer hatte auch für die damalige Zeit ein sehr konservatives Frauenbild\\
+	$\blacktriangle$ nach den ersten Siegen gegen die bayrisch-französischen Truppen verbot er alle Feste in Tirol\\
+	$\blacktriangle$ Intoleranz der jüdischen Bevölkerung gegenüber
+
+\item in der Revolution von 1848 galt Andreas Hofer keineswegs als Nationalheld und wurde wegen seines letzendlichen Misserfolgs eher belächelt
+
+\item später wurde die Figur Andreas Hofers für politische Zwecke verklärt:
+
+	\begin{itemize}
+
+	\item durch Anordnung des österreichischen Kaisers \textsl{Franz Joseph I.} von 1863 wurde Andreas Hofer in die Liste der \emph{berühmtesten, zur immer währenden Nacheiferung würdiger Kriegsfürsten und Feldherren Österreichs} aufgenommen
+
+	\item die Nationalsozialisten stellten Andreas Hofer als Verteidiger des Deutschtums gegen Italien und Frankreich dar\\
+		$\blacktriangle$ Bozen wurde am Ende des Krieges als Mythos als \emph{letzte deutsche Stadt, die Andreas Hofer verteidigte}, aufgebaut
+
+	\end{itemize}
+
+\item die Autonomiebewegung in Südtirol benutzt Andreas Hofer gerne als Symbolfigur für ihren politischen Kampf
+
+\end{itemize}
+
+
+\subsubsection*{\color{bluecolor} Das Andreas Hofer-Lied}
+
+\begin{itemize}
+
+
+\item es gibt unterschiedliche Versionen des Andreas Hofer-Liedes, darunter einer sozialistische (Mit der Liedzeile: \emph{Der Morgenröte entgegen})
+
+
+\end{itemize}
+
+
+
+\begin{verse}
+
+1. Zu Mantua in Banden
+Der treue Hofer war,
+In Mantua zum Tode
+Führt ihn der Feinde Schar.
+Es blutete der Brüder Herz,
+Ganz Deutschland, ach, in Schmach und Schmerz.
+|: Mit ihm das Land Tirol,
+Mit ihm das Land Tirol. :|
+
+2. Die Hände auf dem Rücken
+Der Sandwirt Hofer ging,
+Mit ruhig festen Schritten,
+Ihm schien der Tod gering.
+Der Tod, den er so manchesmal,
+Vom Iselberg geschickt ins Tal,
+|: Im heil’gen Land Tirol,
+Im heil’gen Land Tirol. :|
+
+3. Doch als aus Kerkergittern
+Im festen Mantua
+Die treuen Waffenbrüder
+Die Händ’ er strecken sah,
+Da rief er laut: „Gott sei mit euch,
+Mit dem verrat’nen Deutschen Reich,
+|: Und mit dem Land Tirol,
+Und mit dem Land Tirol.“ :|
+
+4. Dem Tambour will der Wirbel
+Nicht unterm Schlegel vor,
+Als nun der Sandwirt Hofer
+Schritt durch das finst’re Tor,
+Der Sandwirt, noch in Banden frei,
+Dort stand er fest auf der Bastei.
+|: Der Mann vom Land Tirol,
+Der Mann vom Land Tirol. :|
+
+5. Dort sollt’ er niederknien,
+Er sprach: „Das tu ich nit!
+Will sterben, wie ich stehe,
+Will sterben, wie ich stritt!
+So wie ich steh’ auf dieser Schanz’,
+Es leb’ mein guter Kaiser Franz,
+|: Mit ihm das Land Tirol!
+Mit ihm das Land Tirol!“ :|
+
+6. Und von der Hand die Binde
+Nimmt ihm der Korporal;
+Und Sandwirt Hofer betet
+Allhier zum letzten Mal;
+Dann ruft er: „Nun, so trefft mich recht!
+Gebt Feuer! - Ach, wie schießt ihr schlecht!
+|: Ade, mein Land Tirol!
+Ade, mein Land Tirol!“ :|
+
+
+\end{verse}
+
+
+\end{document}
+

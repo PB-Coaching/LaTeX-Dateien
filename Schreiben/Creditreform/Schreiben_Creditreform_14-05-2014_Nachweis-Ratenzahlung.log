@@ -1,0 +1,326 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.20)  14 MAY 2014 10:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.tex
+(./Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 80 languages loaded.
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlttr2.cls
+Document Class: scrlttr2 2012/07/29 v3.11b KOMA-Script document class (letter)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2012/06/15 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+Class scrlttr2 Info: File `scrsize10pt.clo' used to setup font sizes on input l
+ine 1174.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (10p
+t)
+)
+(/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2012/07/29 v3.11b KOMA-Script package (type area)
+
+Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 502.0pt
+(typearea)              \topmargin      = 33.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1213.
+))
+Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 41.
+ (/usr/share/texmf-dist/tex/latex/koma-script/DIN.lco
+File: DIN.lco 2012/07/29 v3.11b KOMA-Script letter-class-option
+)
+(/usr/share/texmf-dist/tex/generic/german/ngerman.sty v2.5e 1998-07-08
+Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
+\grmnU@D=\dimen102
+ngerman -- \language number for naustrian undefined, default 47 used.
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(./Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.aux)
+\openout1 = `Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 56.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+Package scrbase Info: `\ccname' at language `english' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\enclname' at language `english' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\headtoname' at language `english' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\pagename' at language `english' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\ccname' at language `USenglish' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\enclname' at language `USenglish' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\headtoname' at language `USenglish' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\pagename' at language `USenglish' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: No captions found for `american'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `american'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `british'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `british'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `UKenglish'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `UKenglish'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `german'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `german'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: `\ccname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\enclname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\headtoname' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\pagename' at language `ngerman' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: No captions found for `austrian'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `austrian'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: `\ccname' at language `naustrian' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\enclname' at language `naustrian' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\headtoname' at language `naustrian' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\pagename' at language `naustrian' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\ccname' at language `french' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\enclname' at language `french' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\headtoname' at language `french' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: `\pagename' at language `french' already defined
+(scrbase)             --> skipped on input line 56.
+Package scrbase Info: No captions found for `italian'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `italian'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `spanish'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `spanish'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `croatian'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `croatian'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `dutch'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `dutch'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `finnish'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `finnish'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `norsk'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `norsk'
+(scrlttr2)           --> skipped on input line 56.
+Package scrbase Info: No captions found for `swedish'
+(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `swedish'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: used language is `ngerman'.
+(scrlttr2)           Supported languages are `english', `UKenglish',
+(scrlttr2)           `british', `american', `USenglish',
+(scrlttr2)           `german', `ngerman', `austrian', `naustrian',
+(scrlttr2)           `dutch', `italian', `spanish',
+(scrlttr2)           `croatian', `finnish', `norsk' on input line 56.
+\big@size=\dimen103
+Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 59.
+
+(/usr/share/texmf-dist/tex/latex/koma-script/DIN.lco
+File: DIN.lco 2012/07/29 v3.11b KOMA-Script letter-class-option
+)
+
+Class scrlttr2 Warning: Deprecated usage of \firsthead.
+(scrlttr2)              You should use \setkomavar{firsthead}
+(scrlttr2)              instead of \firsthead on input line 83.
+
+Foldmarks: yes
+Head of first page
+Foot of first page
+Address (backaddress, addressee)
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 11
+5.
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 11
+5.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 11
+5.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 11
+5.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 115.
+
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
+
+Location field: empty
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 115.
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Title: no
+Subject: before opening
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.aux) ) 
+Here is how much of TeX's memory you used:
+ 1886 strings out of 493301
+ 28297 string characters out of 6142879
+ 127302 words of memory out of 5000000
+ 5343 multiletter control sequences out of 15000+600000
+ 19511 words of font info for 39 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 35i,8n,46p,289b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/te
+xmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/
+enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfss07
+00.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Schreiben_Creditreform_14-05-2014_Nachweis-Ratenzahlung.pdf (
+1 page, 25470 bytes).
+PDF statistics:
+ 18 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,31 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\newlength\OrigParskip\OrigParskip=\parskip
+\newcolumntype{P}[1]{>{\setlength\parskip{\OrigParskip}}p{#1}}
+\newcolumntype{R}[1]{>{\RaggedRight\setlength\parskip{1ex}}p{#1}}
+\renewcommand\tabularxcolumn[1]{R{#1}}
+\begin{document}
+
+\begin{tabularx}{\linewidth}{P{4cm}R{4cm}X}
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen soll.
+&
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen soll.
+&
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen
+soll.\par
+Dies ist ein kleiner Absatz, der das Problem in Tabellen verdeutlichen soll.
+\end{tabularx}
+
+\end{document}

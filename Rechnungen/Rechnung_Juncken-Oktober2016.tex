@@ -1,0 +1,191 @@
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=11pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   %enlargefirstpage=on,%%    Erste Seite anders
+   %pagenumber=headright,%%   Seitenzahl oben mittig  
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=off,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Was kommt in den Briefkopf und in die Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=on,%%           Telefonnummer im Absender
+   fromrule=aftername,%%     Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=on,%%           Emailadresse
+   fromurl=off,%%            Homepage
+   fromlogo=on,%%            Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%         ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+   firstfoot=on,%%           Footerbereich
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=off%%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage[english, ngerman]{babel}  
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc} 
+% symbols: (cell)phone, email
+\RequirePackage{marvosym} 
+% for gray color in header
+\RequirePackage{color}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage[pdftex]{xcolor}
+\usepackage{graphicx}
+%---------------------------------------------------------------------------
+% Schriften werden hier definiert
+\renewcommand*\familydefault{\sfdefault} % Latin Modern Sans
+\setkomafont{fromname}{\sffamily\color{mygray}\LARGE}
+%\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\setkomafont{fromaddress}{\small\sffamily\mdseries\color{mygray}}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{sigbeforevskip}{17mm} % Abstand der Signatur von dem closing
+\@setplength{firstheadvpos}{17mm} % Abstand des Absenderfeldes vom Top
+\@setplength{firstfootvpos}{275mm} % Abstand des Footers von oben
+\@setplength{firstheadwidth}{\paperwidth}
+\@setplength{locwidth}{70mm}   % Breite des Locationfeldes
+\@setplength{locvpos}{65mm}    % Abstand des Locationfeldes von oben
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Farben werden hier definiert
+% define gray for header
+\definecolor{mygray}{gray}{.55}
+% define blue for address
+\definecolor{myblue}{rgb}{0.25,0.45,0.75}
+
+%---------------------------------------------------------------------------
+% Absender Daten
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+\setkomavar{fromphone}[\Mobilefone~]{+49\,(0)\,162\,32\,38\,557}
+%\setkomavar{fromfax}[\FAX~]{+49\,(0)\,123\,456\,789\,1}
+\setkomavar{fromemail}[\Letter~]{pascal.bernhard@rppr.de}
+%\setkomavar{fromurl}[]{http://ichunddu.de}
+%\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{myblue}}
+
+\setkomavar{backaddressseparator}{ - }
+%\setkomavar{backaddress}{Tim Metzner, Felderhof 112, 40880 Ratingen} % wenn erwünscht kann hier eine andere Backaddress eingetragen werden
+\setkomavar{signature}{Pascal Bernhard} 
+% signature same indention level as rest
+\renewcommand*{\raggedsignature}{\raggedright}
+%\setkomavar{location}{\raggedleft
+
+%Kundennummer: 12345678 \\}
+
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlagen}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+%pagenumber=footmiddle
+\pagestyle{plain}%% keine Header in der Kopfzeile bzw. plain
+\pagenumbering{arabic}
+%---------------------------------------------------------------------------
+%---------------------------------------------------------------------------
+\firstfoot{\footnotesize%
+\rule[3pt]{\textwidth}{.4pt} \\
+\begin{tabular}[t]{l@{}}% 
+\usekomavar{fromname}\\
+\usekomavar{fromaddress}\\
+\end{tabular}%
+\hfill
+\begin{tabular}[t]{l@{}}%
+  \usekomavar[\Mobilefone~]{fromphone}\\
+   \usekomavar[\Letter~]{fromemail}\\
+\end{tabular}%
+\ifkomavarempty{frombank}{}{%
+\hfill
+\begin{tabular}[t]{l@{}}%
+\usekomavar{frombank}
+\end{tabular}%
+}%
+}% 
+%---------------------------------------------------------------------------
+% Bankverbindung
+\setkomavar{frombank}{\textbf{IBAN:} DE 77 1009 0000 7043 0037 50\\
+\textbf{BIC:} BEVODEBB\\
+Berliner Volksbank}
+%---------------------------------------------------------------------------
+%\setkomavar{yourref}{}
+%\setkomavar{yourmail}{}
+%\setkomavar{myref}{}
+%\setkomavar{customer}{}
+\setkomavar{invoice}{03-2016}
+%---------------------------------------------------------------------------
+% Datum und Ort werden hier eingetragen
+\setkomavar{date}{\today}
+\setkomavar{place}{Berlin}
+%---------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------
+% Hier beginnt der Brief, mit der Anschrift des Empfängers
+
+\begin{letter}
+{
+Frau Rian Quantmeyer-Juncken\\
+Trautenaustraße 11\\
+10717 Berlin\\
+}
+%---------------------------------------------------------------------------
+% Der Betreff des Briefes
+\setkomavar{subject}{\bf{
+Rechnung Oktober 2016
+}
+}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Frau Quantmeyer-Juncken,}
+
+Für Nachhilfeunterricht im Fach Mathematik (Klasse 6) erlaube ich mir zu berechnen:
+
+
+\vspace{35pt}
+\begin{tabularx}{\textwidth}{ccXrr}
+\hline
+%\rowcolor[gray]{.95}
+\tiny {Menge} & \tiny {Einheit} & \tiny {Beschreibung} & \tiny {Einzelpreis} & \tiny {Gesamtpreis} \\ \hline
+ 5,5 & Std. & Nachhilfe Mathematik & \multicolumn{1}{r}{20,00 EUR} & \multicolumn{1}{r}{110,00 EUR} \\ \hline \hline
+%\multicolumn{ 4}{l}{\small{Summe ohne MwSt.}} & 82,50 EUR \\ \hline
+%\multicolumn{ 4}{l}{\small{MwSt. 19\% }} & 15,76 EUR \\ \hline \hline
+%\multicolumn{ 4}{l}{ \textbf{Gesamtsumme inkl. MwSt.} } & \textbf{98,26 EUR} \\ \hline
+\end{tabularx}
+
+\closing{Mit freundlichen Grüßen,}
+
+
+
+
+%---------------------------------------------------------------------------
+%\ps{PS:}
+%\encl{Lebenslauf\\ Zeugnisse}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

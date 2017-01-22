@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Hilfe!!!!}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{License}{3}{0}{1}
+\beamer@sectionintoc {2}{Installation}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Source files}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Local and Global installation}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Required Packages}{8}{0}{2}
+\beamer@sectionintoc {3}{User Interface}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Loading the Theme and Theme Options}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Feather image}{11}{0}{3}

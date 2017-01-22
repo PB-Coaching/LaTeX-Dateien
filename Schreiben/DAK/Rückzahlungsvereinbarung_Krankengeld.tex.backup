@@ -1,0 +1,216 @@
+\documentclass[10pt,foldmarks=true,parskip=half]{scrlttr2}
+
+\usepackage[ansinew]{inputenc}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{xcolor}
+\usepackage[german]{babel}
+\usepackage[top=8mm, bottom=8mm]{geometry}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{relsize}
+
+%%%herausgenommene Pakete
+%\usepackage{fontenc}
+
+
+
+%Paket für farbige Tabellen
+\usepackage{colortbl}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+
+
+%%Definition von Grautönen
+\definecolor{dunkelgrau}{rgb}{0.82,0.82,0.82}
+\definecolor{hellgrau}{rgb}{0.92,0.92,0.92}
+
+%Farbdefinitionen
+\definecolor{dunkelgrau.80}{gray}{0.20}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+
+
+%\KOMA-Optionen
+
+%Schrift für Kopf- & Fusszeile anpassen:
+
+
+
+
+%%%_________________________________________________________________________________________________
+
+\begin{document}
+
+\begin{letter}
+ 
+%\pagestyle{empty}
+
+
+
+	\begin{flushright}
+
+		 
+
+
+		\scriptsize
+
+		\begin{tabular}{rl}
+						 & \includegraphics[width=3cm]{DAK-Gesundheit_logo.png} \\
+						 & \\
+						 & \textbf{DAK} \\
+						 & \textbf{22778 Hamburg} \\
+		   \textbf{Telekontakt} 	 & Telefon: 030 911292980 \\
+						 & Telefax: 030 9120298-7090\\
+		   \textbf{Email}		 & service723300@dak.de \\
+		   \textbf{Internet}		 & www.dak.de \\
+		   \textbf{persönlicher Kontakt} & Tempelhofer Damm 158-160 \\
+						 & 12099 Berlin \\
+
+
+		\end{tabular} 
+
+			     
+		
+	\end{flushright}
+
+
+		\scriptsize
+
+		  \setlength{\tabcolsep}{28pt}
+		  \renewcommand{\arraystretch}{0.9}
+
+
+		\noindent
+		\begin{tabularx}{\textwidth}{@{}XXXX@{}}
+		 \textbf{Datum} & \textbf{Unser Zeichen} 	& \textbf{Vorgang}	& \textbf{Sachbearbeiter(-in)} \\
+		 02.04.2013	& 327 393 799 000-4		& 106560-13000-Pki	& Herr Hoffmann \\		\end{tabularx}
+
+			      
+\vspace{6mm}	
+
+\normalsize
+
+
+
+Pascal Bernhard \\
+Schwalbacher Straße 7 \\
+12161 Berlin
+
+\vspace{18mm}
+
+
+Sehr geehrter Herr Bernhard,\\
+
+basierend auf unserem gemeinsamen Gespr\"ach vom 28. M\"arz 2013 und der dort getroffenen m\"undlichen R\"uckzahlungsvereinbarung, gew\"ahren wir Ihnen folgende Modalit\"at zur R\"uckerstattung des \"uberzahlten Krankengeldes (siehe Schreiben vom 5. M\"arz 2013). Der Gesamtbetrag von 11043,00 \EUR ist in 36 Monatsraten zu 300,00 \EUR zu erstatten beginnend mit April 2013. Die Abschlussrate im April 2016 bel\"auft sich auf 243,00 \EUR. Der Betrag ist bis zum 4. Kalendertag des jeweiligen Monats zu \"uberweisen.
+
+
+
+\vspace{8mm}
+
+
+\small
+
+
+%Tabelle
+%\setlength{\tabcolsep}{15pt}
+\renewcommand{\arraystretch}{1.4}
+
+
+  \begin{tabularx}{\textwidth}{XXr}
+    \rowcolor{dunkelgrau}
+
+    \multicolumn{2}{l}{\textbf{R\"uckerstattung: Krankengeld}} \\
+    \hline
+    \cellcolor{hellgrau} {\smaller{monatliche Rate:}} & \cellcolor{hellgrau}  {\smaller{monatlich}} & \cellcolor{hellgrau}  {\smaller{Summe}} \\
+
+    {\smaller{\textsl{April 2013 -- M\"arz 2016}}} & {\smaller{300,00 \EUR{}}} \\
+    {\smaller{\textsl{April 2016}}} & {\smaller{243,00 \EUR{}}} \\
+    \hline
+    {\smaller{\textbf{Gesamtbetrag:}}}	 & {\smaller{11043,00 \EUR{}}} \\
+    
+  \end{tabularx}
+
+
+
+
+\par
+\vspace{12mm}	
+
+
+Mit freundlichen Grüßen,\\
+\\
+H. Hoffmann
+			
+Berlin, den 2. April 2013
+
+\vspace{2cm}
+
+
+
+		\scriptsize
+
+		  \setlength{\tabcolsep}{30pt}
+		  \renewcommand{\arraystretch}{1.0}
+
+
+		\noindent
+
+		\begin{tabularx}{\textwidth}{@{}XXX@{}}
+		 \toprule
+		 \textcolor{dunkelgrau.60}{\textbf{Bankverbindung}} & \textcolor{dunkelgrau.60}{\textbf{Commerzbank Hamburg}} & \\
+		 & \textcolor{dunkelgrau.60}{Konto: \emph{6202261}}	& \textcolor{dunkelgrau.60}{IBAN:  \emph{DE552004000006202261}}	\\
+		  &  \textcolor{dunkelgrau.60}{BLZ: \emph{200 400 00}} & \textcolor{dunkelgrau.60}{BIC: \emph{COBA DE HHXXX}} \\
+
+		\end{tabularx}
+\newpage
+
+	\begin{flushright}
+	 
+	\includegraphics[width=3cm]{DAK-Gesundheit_logo.png}
+
+	\end{flushright}
+
+\vspace{15mm}
+
+\normalsize
+
+\textbf{Rechtsbehelfsbelehrung:} \par
+
+Gegen diesen Bescheid kann jeder Betroffene oder ein von diesem	bevollmächtigter Dritter innerhalb eines Monats nach Bekanntgabe Widerspruch erheben. Für Minderjährige oder nicht geschäftsfähige Personen handelt deren gesetzlicher Vertreter. Der Widerspruch ist schriftlich oder zur Niederschrift bei der im Briefkopf genannten Stelle einzureichen.
+
+
+
+
+\vspace{20cm}
+
+
+
+		\scriptsize
+
+		  \setlength{\tabcolsep}{30pt}
+		  \renewcommand{\arraystretch}{1.0}
+
+
+		\noindent
+
+		\begin{tabularx}{\textwidth}{@{}XXX@{}}
+		 \toprule
+		 \textcolor{dunkelgrau.60}{\textbf{Bankverbindung}} & \textcolor{dunkelgrau.60}{\textbf{Commerzbank Hamburg}} & \\
+		 & \textcolor{dunkelgrau.60}{Konto: \emph{6202261}}	& \textcolor{dunkelgrau.60}{IBAN:  \emph{DE552004000006202261}}	\\
+		  &  \textcolor{dunkelgrau.60}{BLZ: \emph{200 400 00}} & \textcolor{dunkelgrau.60}{BIC: \emph{COBA DE HHXXX}} \\
+
+		\end{tabularx}
+
+
+
+
+
+\end{letter}
+
+
+\end{document}
+

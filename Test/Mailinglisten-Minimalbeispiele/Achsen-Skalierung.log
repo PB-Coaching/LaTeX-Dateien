@@ -1,0 +1,58 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.6.24)  25 JUN 2013 00:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Achsen-Skalierung.tex
+(./Achsen-Skalierung.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, arabic, farsi, pinyin, croatian, bulgarian, russian, ukrainian, czech, 
+slovak, danish, dutch, ukenglish, usenglishmax, finnish, basque, french, german
+-x-2012-05-30, ngerman-x-2012-05-30, german, ngerman, swissgerman, ancientgreek
+, ibycus, greek, monogreek, hungarian, assamese, bengali, gujarati, hindi, kann
+ada, malayalam, marathi, oriya, panjabi, tamil, telugu, sanskrit, italian, latv
+ian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, afrikaans, armenian,
+ coptic, esperanto, estonian, friulan, icelandic, indonesian, interlingua, iris
+h, kurmanji, romanian, romansh, serbianc, serbian, slovenian, turkish, uppersor
+bian, welsh, polish, portuguese, catalan, galician, spanish, swedish, loaded.
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+! LaTeX Error: File `pst-fit.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.3 \usepackage
+               {pst-plot}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 200 strings out of 493506
+ 2143 string characters out of 3147769
+ 48120 words of memory out of 3000000
+ 3595 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 23i,0n,17p,168b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

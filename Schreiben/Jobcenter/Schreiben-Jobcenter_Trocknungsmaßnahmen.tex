@@ -1,0 +1,134 @@
+% !TeX encoding = ISO-8859-1
+
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%
+%---------------------------------------------------------------------------
+  [fontsize=10pt,%          Schriftgröße
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%               Papierformat
+   enlargefirstpage=on,%    Erste Seite anders
+%   pagenumber=headright,%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%         Linie unter der Seitenzahl
+   parskip=half,%           Abstand zwischen Absätzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%        Plazierung des Briefkopfs
+   fromphone=on,%           Telefonnummer im Absender
+   fromrule=off,%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%            Faxnummer
+   fromemail=off,%          Emailadresse
+   fromurl=off,%            Homepage
+%   fromlogo=on,%           Firmenlogo
+   addrfield=on,%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%          ...und Absender im Fenster
+   subject=beforeopening,%  Plazierung der Betreffzeile
+   locfield=narrow,%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%           Faltmarken setzen
+   numericaldate=off,%      Datum numerisch ausgeben
+   refline=narrow,%         Geschäftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=on%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}% Schrift Times
+%\usepackage{mathpazo}% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} % oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{+49 30 32 66 58 00}
+\renewcommand{\phonename}{Telefon}
+%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{backaddressseparator}{ - }
+\setkomavar{signature}{(Pascal Bernhard)}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+\firsthead{} %LEER LASSEN
+%---------------------------------------------------------------------------
+%\firstfoot{Fußzeile}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+%\setkomavar{place}{Ort}
+%\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
+\setkomavar{yourref} {621}%    'Ihr Zeichen...'
+%\setkomavar{myref}{}%      Unser Zeichen
+%\setkomavar{invoice}{123}% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlage}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+\pagestyle{plain}% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\begin{letter}{Jobcenter Berlin Tempelhof-Schöneberg\\z.H. Frau Dittmann\\Wolframstraße 89-92\\12105 Berlin}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{BG 94406BG0094952}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Frau Dittmann,}
+
+Sie baten mich in Ihrem Schreiben vom 20.05.2014 um Auskunft über eine Abschlagseinstufung von Vattenfall zu einer Trockenheizung. Im vergangen Jahr machte ein Wasserschaden der Mieter aus dem 1. Stock über meiner Wohnung Trocknungsmaßnahmen über einen Zeitraum von 4 Monaten erforderlich. Die Trocknungsgeräte verursachten dementsprechend einen stark erhöhten Stromverbrauch, der jedoch nicht auf einen allgemein höheren Verbrauch meinerseits zurückzuführen war. Die Abschlagseinstufung von Vattenfall berücksichtigt diesen außerordentlichen Stromverbrauch.
+
+Das Formular zur Aufschlüsselung der Miethöhe habe ich an meinen Vermieter weitergeleitet und warte auf Antwort.
+
+
+
+\closing{Mit freundlichen Grüßen,}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+%\encl{Anlage über Aufwendungen zu Unterkunft und Heizung}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

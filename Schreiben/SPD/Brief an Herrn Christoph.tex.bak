@@ -1,0 +1,71 @@
+\documentclass[foldmarks=on,%   Faltmarken setzen
+               paper=a4,%       Papierformat
+	       10pt,%		
+               fromphone=on,%  Telefonnummer im Absender
+               fromrule=off,%   keine Linie unter Absender
+               fromfax=off,%    keine Faxnummer
+               fromemail=off,%   Emailadresse
+               fromurl=off,%    keine Homepage
+	       subject=titled%  Plazierung der Betreffzeile
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+%\usepackage[scaled]{helvet}
+\usepackage{lmodern}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+						
+
+\begin{document}
+
+\setkomafont{fromname}{\footnotesize}
+\setkomavar{fromname}{Pascal Bernhard}
+
+\setkomafont{fromaddress}{\footnotesize}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+
+%\setkomafont{fromphone}{\footnotesize}
+\setkomavar{fromphone}{0162 32 39 557}
+
+%\setkomafont{fromemail}{\footnotesize}
+\setkomavar{fromemail}{pascal.bernhard@rppr.de}
+
+
+\setkomavar{subject}{Feedback zu Einzelfallhilfe}
+
+\setkomavar{backaddressseparator}{%
+~\raisebox{0.25ex}{\textbf{\Large.}}~}
+\setkomafont{backaddress}{\tiny}
+%%\setkomavar{backaddress}{Dietrich% kuerzere Rueckaddresse
+%%\usekomavar{backaddressseparator}\usekomavar{fromaddress}}
+
+
+
+\begin{letter}{%         Empfaenger-Adresse
+
+\textbf{Frau Yadi}\\
+Gesundheitsamt Berlin Tempelhof-Schöneberg\\
+10832 Berlin
+}
+
+\vspace{6mm}
+
+\opening{Hallo Herr  Christoph,}
+
+ich habe mir lange schwer getan, dieses Schreiben zu verfassen, aber ich denke, dass es für alle Seiten letztendlich doch sehr erkenntnisreich sein wird, dass ich (wenn auch etwas verspätet) 
+
+dies war auch das einzige Mal in meinem Leben, dass jemand wirklich stolz auf mich war. Dies hat mir wirklich gut getan, dafür möchte ich Ihnen aufrichtig danken.
+
+
+Ich fand es sehr betrübend erfahren zu müssen, dass Sie über keinerlei Gerechtigkeitsverständnis verfügen. Gerade für einen Einzelfallhelfer wäre dies sehr wünschenswert. 
+
+
+\closing{Mit freundlichen Grüßen,}
+
+
+\end{letter}
+
+\end{document}

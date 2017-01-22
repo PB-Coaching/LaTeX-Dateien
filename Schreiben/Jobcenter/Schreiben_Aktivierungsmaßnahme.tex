@@ -1,0 +1,143 @@
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=10pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   enlargefirstpage=on,%%    Erste Seite anders
+%   pagenumber=headright,%%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=on,%%           Telefonnummer im Absender
+   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=off,%%          Emailadresse
+   fromurl=off,%%            Homepage
+%   fromlogo=on,%%           Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%          ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=on%%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+
+%---------------------------------------------------------------------------
+% Eigene definierte KOMA-Variablen
+\newkomavar*[Kundennummer]{kundennummer}
+\newkomavar*[BG-Nummer]{bg-nummer}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{0152 38 50 23 63}
+\renewcommand{\phonename}{Telefon}
+%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{backaddressseparator}{ - }
+\setkomavar{signature}{(Pascal Bernhard)}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+\firsthead{Anhörung zum möglichen Eintritt von Sanktionsmaßnahmen}
+%---------------------------------------------------------------------------
+%\firstfoot{Fußzeile}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+%\setkomavar{place}{Ort}
+%\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
+\setkomavar{yourref} {614-TS.D-922D303889}%%    'Ihr Zeichen...'
+\setkomavar{kundennummer}{922D303889}
+\setkomavar{bg-nummer}{94406BG0094952}
+%\setkomavar{myref}{}%%      Unser Zeichen
+%\setkomavar{invoice}{123}%% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlage}
+%\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+\pagestyle{plain}%% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\begin{letter}{Jobcenter Berlin Tempelhof-Schöneberg\\
+BG-Nummer: 94406BG0094952
+\\Wolframstraße 89-92
+\\12105 Berlin}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{Stellungnahme zur Aktivierungsmaßnahme AVIBA}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Frau Ecke,}
+
+Hiermit möchte ich mich zur Maßnahme AVIBA und ihren Inhalten bzw. Zweck äußern. Die Aktivierungsmaßnahme AVIBA entspricht nicht den Bedürfnissen und Qualifikationen von Hochschulabsolventen und trägt nicht dazu bei, mich an den Ausbildungs- \& Arbeitsmarkt heranzuführen. Die Inhalte wie zum Beispiel die Behebung von Schwächen in der deutschen Rechtschreibung und sprachlichem Ausdruck in den Bewerbungsunterlagen richten sich an einen anderen Personenkreis. Hierin ist keine Verbesserung meiner Chancen auf dem Berliner Arbeitsmarkt zu erkennen. 
+
+Laut Aussage eines Mitarbeiters des Bildungsträgers \textsl{Mikro Partner} auf Nachfrage in den gesamten acht Wochen lediglich Bewerbungsunterlagen zusammengestellt, überarbeitet und Einzelgespräche geführt. Somit enthält die Maßnahme AVIBA auch keine Elemente der Weiterqualifizierung, die eine Integration in den Arbeitsmarkt erleichtern. Grundsätzlich stellt sich die Frage, wie effizient die Maßnahme AVIBA bei der Heranführung an den Arbeitsmarkt ist. Beispielsweise wurden wir Teilnehmer am ersten Tag bereits nach einer halben Stunde, in welcher wir lediglich ein Formular mit Angaben zu unsere beruflichen Situation ausgefüllt haben, nach Hause geschickt, um dort unsere Bewerbungsunterlagen zusammenzustellen. Sicher gibt es eine zweckmäßigere Verwendung der Mittel des Jobcenters, um meine Arbeitsmarktschancen zu verbessern. 
+
+Ich bitte um ein Gespräch mit Ihnen, um meine beruflichen Möglichkeiten und wie mich das Jobcenter bei der Arbeitsplatzsuche und potentieller Weiterqualifizierung unterstützen kann, zu erörtern.
+
+
+\closing{Mit freundlichen Grüßen,}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+%\encl{}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

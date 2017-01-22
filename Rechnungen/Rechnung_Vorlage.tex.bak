@@ -1,0 +1,183 @@
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=11pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   %enlargefirstpage=on,%%    Erste Seite anders
+   %pagenumber=headright,%%   Seitenzahl oben mittig  
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=off,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Was kommt in den Briefkopf und in die Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=on,%%           Telefonnummer im Absender
+   fromrule=aftername,%%     Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=on,%%           Emailadresse
+   fromurl=off,%%            Homepage
+   fromlogo=on,%%            Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%         ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+   firstfoot=on,%%           Footerbereich
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=off%%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage[english, ngerman]{babel}  
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc} 
+% symbols: (cell)phone, email
+\RequirePackage{marvosym} 
+% for gray color in header
+\RequirePackage{color}
+\usepackage[T1]{fontenc}
+%---------------------------------------------------------------------------
+% Schriften werden hier definiert
+\renewcommand*\familydefault{\sfdefault} % Latin Modern Sans
+\setkomafont{fromname}{\sffamily\color{mygray}\LARGE}
+%\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\setkomafont{fromaddress}{\small\sffamily\mdseries\color{mygray}}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{sigbeforevskip}{17mm} % Abstand der Signatur von dem closing
+\@setplength{firstheadvpos}{17mm} % Abstand des Absenderfeldes vom Top
+\@setplength{firstfootvpos}{275mm} % Abstand des Footers von oben
+\@setplength{firstheadwidth}{\paperwidth}
+\@setplength{locwidth}{70mm}   % Breite des Locationfeldes
+\@setplength{locvpos}{65mm}    % Abstand des Locationfeldes von oben
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Farben werden hier definiert
+% define gray for header
+\definecolor{mygray}{gray}{.55}
+% define blue for address
+\definecolor{myblue}{rgb}{0.25,0.45,0.75}
+
+%---------------------------------------------------------------------------
+% Absender Daten
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+\setkomavar{fromphone}[\Mobilefone~]{+49\,(0)\,162\,32\,38\,557}
+%\setkomavar{fromfax}[\FAX~]{+49\,(0)\,123\,456\,789\,1}
+\setkomavar{fromemail}[\Letter~]{pascal.bernhard@rppr.de}
+%\setkomavar{fromurl}[]{http://ichunddu.de}
+%\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{myblue}}
+
+\setkomavar{backaddressseparator}{ - }
+%\setkomavar{backaddress}{Tim Metzner, Felderhof 112, 40880 Ratingen} % wenn erwünscht kann hier eine andere Backaddress eingetragen werden
+\setkomavar{signature}{Pascal Bernhard} 
+% signature same indention level as rest
+\renewcommand*{\raggedsignature}{\raggedright}
+%\setkomavar{location}{\raggedleft
+
+%Kundennummer: 12345678 \\}
+
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlagen}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+%pagenumber=footmiddle
+\pagestyle{plain}%% keine Header in der Kopfzeile bzw. plain
+\pagenumbering{arabic}
+%---------------------------------------------------------------------------
+%---------------------------------------------------------------------------
+\firstfoot{\footnotesize%
+\rule[3pt]{\textwidth}{.4pt} \\
+\begin{tabular}[t]{l@{}}% 
+\usekomavar{fromname}\\
+\usekomavar{fromaddress}\\
+\end{tabular}%
+\hfill
+\begin{tabular}[t]{l@{}}%
+  \usekomavar[\Mobilefone~]{fromphone}\\
+   \usekomavar[\Letter~]{fromemail}\\
+\end{tabular}%
+\ifkomavarempty{frombank}{}{%
+\hfill
+\begin{tabular}[t]{l@{}}%
+\usekomavar{frombank}
+\end{tabular}%
+}%
+}% 
+%---------------------------------------------------------------------------
+% Bankverbindung
+\setkomavar{frombank}{Kto. 123456789\\
+BLZ 123\,123\,12\\
+Berliner Volksbank}
+%---------------------------------------------------------------------------
+%\setkomavar{yourref}{}
+%\setkomavar{yourmail}{}
+%\setkomavar{myref}{}
+%\setkomavar{customer}{}
+%\setkomavar{invoice}{}
+%---------------------------------------------------------------------------
+% Datum und Ort werden hier eingetragen
+\setkomavar{date}{den \today}
+\setkomavar{place}{Berlin}
+%---------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------
+% Hier beginnt der Brief, mit der Anschrift des Empfängers
+
+\begin{letter}
+{
+Maxi Musterfrau\\
+Nebenstraße  2\\
+12345 Musterhausen\\
+}
+%---------------------------------------------------------------------------
+% Der Betreff des Briefes
+\setkomavar{subject}{\bf{
+Was ich Maxi sagen will
+}
+}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Maxi,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet varius blandit. Sus-
+pendisse ligula tortor, feugiat in dapibus a, dictum vel risus. Nulla at justo vitae velit sodales
+dignissim. Curabitur volutpat porttitor pulvinar. Quisque vulputate massa vitae dui sagittis
+at ultrices lorem sagittis. Nullam lobortis tincidunt libero, et tincidunt urna consectetur ac.
+Proin laoreet commodo auctor. Nullam nec eros enim. Maecenas commodo sem consectetur
+neque ullamcorper vel iaculis massa hendrerit. Integer et sem et justo pharetra mattis ut id
+ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hime-
+naeos. Donec elementum pulvinar diam in accumsan. Nam laoreet tincidunt tincidunt. Nam
+hendrerit, lorem vel gravida fringilla, tellus augue vulputate neque, eu laoreet magna metus
+eu ante. Nullam auctor arcu augue, sed fringilla velit. Nunc auctor mattis nisl, sed iaculis
+dolor auctor faucibus. Cras libero ligula, dapibus vel egestas non, porta et ante. Nulla dolor
+sapien, mollis sed sodales a, posuere vitae ante.
+
+\closing{Mit freundlichen Grüßen}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+%\encl{Lebenslauf\\ Zeugnisse}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

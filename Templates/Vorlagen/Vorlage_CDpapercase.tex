@@ -1,0 +1,45 @@
+%CD-Papercase-Vorlage, v1.03
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=0pt]{geometry}
+\usepackage{papercdcase}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{libertine}
+\usepackage{microtype}
+
+\pagestyle{empty}
+
+\begin{document}
+	
+	\setcdspinematter{Das steht auf der Kante der CD-Hülle.} %Schmalseite der Hülle, an der Oberkante der Lasche, sodass die CD leicht irgendwo abgestellt werden kann, wo sie nur von oben zu sehen ist.
+	
+	\setcdlatchmatter{
+	
+		\begin{center}
+			{\Huge\bf Künstler -- Albumname\par}
+			\vspace*{1cm}
+			Extra-Infos
+		\end{center}
+	
+		} %Vorderseite der Hülle/Haupttitel
+		
+	\setcdpouchmatter{} %Vorderseite der Hülle: linke obere Ecke der CD-Tasche, direkt unterhalb der Lasche
+	
+	\setcdbackmatter{
+	
+		\begin{center}
+			{\LARGE\bf Künstler -- Titel}
+		\end{center}
+		
+		\begin{enumerate}
+			\item Lied 1
+			\item Lied 2 usw.
+		\end{enumerate}
+		
+		} %Rückseite der Hülle / Trackliste / Inhalt der CD
+
+	\centering\papercdcase*
+	
+\end{document}

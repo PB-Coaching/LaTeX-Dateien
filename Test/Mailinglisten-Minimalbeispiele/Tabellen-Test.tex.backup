@@ -1,0 +1,45 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ansinew]{inputenc}
+
+
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{amsmath}
+%\usepackage{tabular}
+\usepackage{array}
+\usepackage{booktabs}
+%opening
+\title{}
+\author{Pascal Bernhard}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+
+\begin{tabular}{@rrrr@{}} \toprule}
+  \multicolumn{2}{c}{Zahlungsbilanz--Lettland} \\ \cmidrule(r) {1-2}
+  2006	& 2007	& 2008	& 2009 \\ \midrule
+  1300	& 1689	& 1298	& 987	\\
+  \bottomrule
+\end{tabular}
+
+
+
+
+
+\end{document}
+\end{abstract}
+
+\section{}
+
+\end{document}

@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Softwareverwaltung unter Linux}{2}{0}{1}

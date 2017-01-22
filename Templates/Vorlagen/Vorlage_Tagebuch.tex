@@ -1,0 +1,40 @@
+%%Vorlage "Tagebuch", v1.03 %%
+
+\documentclass[a4paper,11pt,DIV=calc]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[osf]{libertine}
+\usepackage{microtype,setspace}
+\usepackage[colorlinks=false,pdfborder={0 0 0},bookmarksnumbered]{hyperref} 
+\begin{document}
+
+\hypersetup{
+	pdftitle={Tagebuch des Jahres 1988},
+	pdfauthor={Pjotr Orlov},
+	pdfsubject={Tagebuch}
+	}
+	
+\title{Tagebuch der Jahre 1988--1989}
+\subtitle{Sommer 1988 bis Frühjahr 1989}
+\author{Pjotr Orlov}
+\date{}
+\maketitle
+
+\onehalfspace % 1,5-facher Zeilenabstand
+
+%Definition eines neues Kommandos:
+%\bigskip = ganze Leerzeile Abstand zum vorherigen Absatz
+%\noindent = kein Einzug am Beginn eines Eintrags
+%\textbf = fetter Schnitt
+%\textsf = serifenlose Schrift
+%\quad = kleiner anschließender Abstand, wahlweise auch \qquad
+\newcommand{\tag}[1]{\bigskip\noindent\textbf{\textsf{#1}}\quad}
+	
+\tag{Sonntag, 2. Juni 1988} Erster Eintrag in diesem heißen Sommer. Hatte heute eine Menge Arbeit. Aber es geht mir schon wieder besser, seitdem meine Grippe abgeklungen ist.
+
+\tag{Dienstag, 4. Juni 1988} Heute hat mich Emma besucht und Wunderbares von ihrer Nichte berichtet. Sie wird wohl bald heiraten. Ich hoffe, dass Ludwig der Richtige für sie ist.
+
+\tag{Mittwoch, 12. Juni 1988} Friedrich rief mich vorhin an und war relativ wütend. Warum, das weiß ich nicht. Auf jedem Fall meinte er, wir werden unser gemeinsames, entferntes Schachspiel nicht länger über postalischen Weg fortführen können. Ich muss unbedingt herausfinden, was wirklich vorgefallen ist. Ich hatte ihn doch fast Matt gesetzt!
+
+\end{document}

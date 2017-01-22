@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper,ngerman]{report}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\pagestyle{empty}
+\usepackage[ansinew]{inputenc}
+\linespread{0.9}
+
+
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{layouts}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{framed}
+
+\definecolor{shadecolor}{gray}{0.55}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+\definecolor{midblue}{rgb}{0.173,0.212,0.597}
+
+
+\usepackage[top=10mm,bottom=10mm,left=12mm,right=12mm,marginparsep=8pt]{geometry}
+
+
+
+%%%-----------------------------------------------------------------------
+\begin{document}
+
+
+
+ 
+ 	\begin{flushright}
+ 			{\scriptsize \textcolor{dunkelgrau.60}{\emph{Referent: Pascal Bernhard}\\
+ 							HS 15361: Die EU als Forschungsgegenstand\\
+ 							\emph{Dozentin: PD Dr. Eug\'{e}nia da Concei\c{c}\~{a}o-Held}}}
+ 	\end{flushright}						
+
+\vspace{0.3cm}
+	
+
+	\begin{center}
+			{\shadowbox{\textbf{\large{\textcolor{midblue}{\sffamily{da Concei\c{c}\~{a}o-Heldt$\colon$ {}Assessing the Impact of Issue Linkage in the Common Fisheries Policy}}}}}}
+	\end{center} 	
+
+	
+\vspace{0.5cm} 
+		
+		\begin{itemize}
+		 \item{erst Issue-Linkage macht \textit{positive-sum bargaining} m\"{o}glich}
+
+		    \begin{itemize}
+		     \item{Konzeptionalisierung des institutionellen Rahmens der Verhandlungen (\textsl{formell/informell})}
+		     \item{Auswirkungen auf die Wahl der Taktiken und Werkzeuge in Verhandlungen}
+		    \end{itemize}
+
+		   \item{\textbf{Typologisierungen von Issue-Linkage \textendash {} Situationen$\colon$}}
+
+		    \begin{enumerate}
+		      \item{Unterteilung nach betroffenen Politikfeldern (\textsl{Haas, Li})} 
+		      \item{Issue-Linkages werden nach den Pr\"{a}ferenzen der Akteure unterschieden (\textsl{Tollison \& Willett})} 
+
+			\begin{itemize}
+			 \item{\textsl{ex post}-Ergebnis ist Grundlage der Analyse}
+			\end{itemize}
+
+		      \item{da Concei\c{c}\~{a}o-Heldt unterscheidet zwischen \textsl{externen} und \textsl{internen} Issue-Linkages \textendash {} Verkn\"{u}pfungen innerhalb eines Politikfeldes oder \"{u}ber verschiedene Dimensionen hinweg}
+
+		    \end{enumerate}
+
+		  \item{vier S\"{a}ulen der europ\"{a}ischen Fischereipolitik$\colon$}
+
+		    \begin{enumerate}
+		     \item{Strukturpolitik} 
+		     \item{gemeinsamer Fischereimarkt}
+		     \item{Abkommen mit Drittstaaten}
+		     \item{Umweltschutz \& Resourcenbewahrung}
+		    \end{enumerate}
+
+
+		  \item{Abschaffung von Binnenz\"{o}llen und gemeinsamer Au\ss{}enzoll machte Koordination erforderlich}
+
+		  \item{gemeinsame Position f\"{u}r GATT-Verhandlungen gefragt}
+
+		  \item{bevorstehender Beitritt neuer Mitglieder (Gro\ss{}britanien, D\"{a}nemark, Spanien, Griechenland)}
+
+
+		  \item{\emph{zwei Koalitionen von Mitgliedsstaaten$\colon$}}
+
+		    \begin{enumerate}
+		     \item{Frankreich \& Italien}
+		     \item{Deutschland, Niederlande, Belgien \& Luxemburg}
+		    \end{enumerate}
+		  
+
+		
+	      \end{itemize}
+
+\vspace{0.8cm}
+
+
+\textbf{Annahmen\hspace{0.16cm}}	\quad
+	\doublebox{\parbox[t]{12cm}{Pr\"{a}ferenzen werden abgeleitet aus Anfangspositionen der 			    Akteure\\%
+				    \begin{shaded}Akteure wollen Nutzen maximieren\end{shaded}\\%
+				    Akteure handeln rational, jedoch unter \textsl{bounded-rationality}\\%
+  				    kein strategisches Abstimmungsverhalten}}
+\vspace{0.8cm}
+
+
+\textbf{Hypothesen}	\quad
+	\doublebox{\parbox[t]{12cm}{ Anzahl der Issues muss mindestens gleich Anzahl der 	                            Koalitionen sein\\%
+				    nur wenn die Akteure den Themen unterschiedliche Bedeutung beimessen, kommt es zu einem Ergebnis\\%
+				    je mehr Issues miteinander verkn\"{u}pft werden, desto gr\"{o}\ss{}er das Winset\\%
+				    der erwartete Nutzen muss die Transkationskosten \"{u}bersteigen\\%
+				    Issue-Linkage sollte erfolgreicher sein bei der Verteilung von Gewinnen, als bei Lastenverteilung}}
+
+
+\vspace{0.5cm}
+\begin{itemize}
+ \item{\textbf{Kritik$\colon$}
+        \begin{itemize}
+         \item{Artikel stellt Modell vor, liefert aber keine empirischen Belege}
+	 \item{kaum eigene Hypothesen}
+	 \item{Issue-Linkage k\"{o}nnte auch intertempor\"{a}r erfolgen, Akteure k\"{o}nnen    auch strategisch handeln}
+        \end{itemize}
+} 
+\end{itemize}
+
+
+	   
+		    
+
+  
+\end{document}
