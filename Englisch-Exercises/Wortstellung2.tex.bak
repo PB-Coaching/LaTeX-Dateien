@@ -4,7 +4,7 @@
 \usepackage{lmodern}
 \usepackage{ngerman}
 \usepackage{amssymb}
-\usepackage[pdftex]{xcolor}
+\usepackage[pdftex]{color}
 
 % Serifenlose Schrift für gesamtes Dokument
 \renewcommand*{\familydefault}{\sfdefault}
@@ -33,7 +33,7 @@
 % \def\do@url@hyp{\do\-}
 
 % Rahmen um Hyperlinks unterbinden
-\usepackage[bookmarks=true,pdftoolbar=true,pdfmenubar=true,pdfstartview={FitH},urlcolor=magenta,breaklinks=true]{hyperref} %,hidelinks
+\usepackage[bookmarks=true,pdftoolbar=true,pdfmenubar=true,pdfstartview={FitH},citecolor=magenta,hidelinks,breaklinks=true]{hyperref}
 
 \begin{document}
 
@@ -65,7 +65,7 @@
 \end{itemize}
 
 Hier gibt es ein kurze Erklärung, wie Fragesätze im Englischen gebildet werden:\\
-\url{https://www.ego4u.de/de/cram-up/grammar/word-order/questions}
+\color{blue}{\url{https://www.ego4u.de/de/cram-up/grammar/word-order/questions}}
 
 
 \section*{Wortstellung in Fragesätzen}
