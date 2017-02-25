@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.10.28)  25 FEB 2017 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.10.28)  25 FEB 2017 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Rechnung_Juncken-Dezember2016.tex
-(./Rechnung_Juncken-Dezember2016.tex
+**Rechnung_Juncken-Januar_Februar2017.tex
+(./Rechnung_Juncken-Januar_Februar2017.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlttr2.cls
@@ -549,8 +549,8 @@ LaTeX Info: Redefining \it on input line 64.
 LaTeX Info: Redefining \sl on input line 65.
 LaTeX Info: Redefining \sc on input line 66.
 
-(./Rechnung_Juncken-Dezember2016.aux)
-\openout1 = `Rechnung_Juncken-Dezember2016.aux'.
+(./Rechnung_Juncken-Januar_Februar2017.aux)
+\openout1 = `Rechnung_Juncken-Januar_Februar2017.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
@@ -565,7 +565,8 @@ LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 71.
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Class scrlttr2 Info: no date found for language `american'
@@ -642,6 +643,7 @@ Class scrlttr2 Info: used language is `ngerman'.
 (scrlttr2)           `dutch', `italian', `spanish', `polish',
 (scrlttr2)           `croatian', `finnish', `norsk', `swedish',
 (scrlttr2)           `czech'. `slovak'  on input line 71.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count84
@@ -779,22 +781,23 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 190--191
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Rechnung_Juncken-Dezember2016.aux) ) 
+(./Rechnung_Juncken-Januar_Februar2017.aux) ) 
 Here is how much of TeX's memory you used:
  4981 strings out of 493013
- 71246 string characters out of 6135681
+ 71300 string characters out of 6135681
  202444 words of memory out of 5000000
  8401 multiletter control sequences out of 15000+600000
  45943 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,10n,50p,310b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-
-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marv
-osym/marvosym.pfb>
-Output written on Rechnung_Juncken-Dezember2016.pdf (1 page, 109883 bytes).
+ 49i,10n,50p,316b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/
+lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+s8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/font
+s/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/marvosym/marvosym.pfb>
+Output written on Rechnung_Juncken-Januar_Februar2017.pdf (1 page, 109615 bytes
+).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
