@@ -1,50 +1,54 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.20)  7 MAY 2014 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.22)  19 DEC 2017 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Schreiben-DAK_Mitgliedsbeiträge.tex
 (./Schreiben-DAK_Mitgliedsbeiträge.tex
-LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 80 languages loaded.
-(/usr/share/texmf-dist/tex/latex/koma-script/scrlttr2.cls
-Document Class: scrlttr2 2012/07/29 v3.11b KOMA-Script document class (letter)
-(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent 
+LaTeX2e <2017-04-15>
+Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlttr2.cls
+Document Class: scrlttr2 2017/04/13 v3.23 KOMA-Script document class (letter)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
-
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2012/06/15 v3.12 KOMA-Script package (loading files)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2017/04/13 v3.23 KOMA-Script package (loading files)
 
-Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
+Package scrlfile, 2017/04/13 v3.23 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `locfield=narrow'
+(scrbase)             of member `.scrlttr2.cls' of family
+(scrbase)             `KOMA' doesn't set
+(scrbase)             a valid state. This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 1382.
 Class scrlttr2 Info: File `scrsize10pt.clo' used to setup font sizes on input l
-ine 1174.
- (/usr/share/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (10p
-t)
+ine 1783.
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2017/04/13 v3.23 KOMA-Script font size class option (10pt
 )
-(/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2012/07/29 v3.11b KOMA-Script package (type area)
+)
+LaTeX Info: Redefining \textsubscript on input line 1924.
 
-Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
-                  Copyright (C) Frank Neukam, 1992-1994
-                  Copyright (C) Markus Kohm, 1994-
-
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2017/04/13 v3.23 KOMA-Script package (type area)
 \ta@bcor=\skip41
 \ta@div=\count79
 \ta@hblk=\skip42
 \ta@vblk=\skip43
 \ta@temp=\skip44
+\footheight=\skip45
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 8
 (typearea)             BCOR = 0.0pt
@@ -61,37 +65,43 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 1213.
-))
-Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 41.
- (/usr/share/texmf-dist/tex/latex/koma-script/DIN.lco
-File: DIN.lco 2012/07/29 v3.11b KOMA-Script letter-class-option
+(typearea)              on input line 1647.
 )
-(/usr/share/texmf-dist/tex/generic/german/ngerman.sty v2.5e 1998-07-08
+\c@letter=\count80
+)
+Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/DIN.lco
+File: DIN.lco 2017/04/13 v3.23 KOMA-Script letter-class-option
+)
+(/usr/share/texlive/texmf-dist/tex/generic/german/ngerman.sty v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen102
-ngerman -- \language number for naustrian undefined, default 47 used.
-)
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+ngerman -- \language number for naustrian undefined, default 14 used.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/share/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(/usr/share/texmf-dist/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package scrkbase Info: You've told me to redefine the font selection of the
+(scrkbase)             element `subject' that is an alias of element
+(scrkbase)             `lettersubject' on input line 50.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
@@ -112,108 +122,86 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 56.
 
-(/usr/share/texmf-dist/tex/latex/psnfss/t1ppl.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-Package scrbase Info: `\ccname' at language `english' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\enclname' at language `english' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\headtoname' at language `english' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\pagename' at language `english' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\ccname' at language `USenglish' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\enclname' at language `USenglish' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\headtoname' at language `USenglish' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\pagename' at language `USenglish' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: No captions found for `american'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `american'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `british'
-(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `australien'
+(scrlttr2)           --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `british'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `UKenglish'
-(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `canadian'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `newzealand'
+(scrlttr2)           --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `UKenglish'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `german'
-(scrbase)             --> skipped on input line 56.
+Package scrbase Info: activating ngerman \yourrefname on input line 56.
+Package scrbase Info: activating ngerman \yourmailname on input line 56.
+Package scrbase Info: activating ngerman \myrefname on input line 56.
+Package scrbase Info: activating ngerman \customername on input line 56.
+Package scrbase Info: activating ngerman \invoicename on input line 56.
+Package scrbase Info: activating ngerman \subjectname on input line 56.
+Package scrbase Info: activating ngerman \headfromname on input line 56.
+Package scrbase Info: activating ngerman \datename on input line 56.
+Package scrbase Info: activating ngerman \phonename on input line 56.
+Package scrbase Info: activating ngerman \mobilephonename on input line 56.
+Package scrbase Info: activating ngerman \faxname on input line 56.
+Package scrbase Info: activating ngerman \emailname on input line 56.
+Package scrbase Info: activating ngerman \wwwname on input line 56.
+Package scrbase Info: activating ngerman \bankname on input line 56.
 Class scrlttr2 Info: no date found for language `german'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: `\ccname' at language `ngerman' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\enclname' at language `ngerman' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\headtoname' at language `ngerman' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\pagename' at language `ngerman' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: No captions found for `austrian'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `austrian'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: `\ccname' at language `naustrian' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\enclname' at language `naustrian' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\headtoname' at language `naustrian' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\pagename' at language `naustrian' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\ccname' at language `french' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\enclname' at language `french' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\headtoname' at language `french' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: `\pagename' at language `french' already defined
-(scrbase)             --> skipped on input line 56.
-Package scrbase Info: No captions found for `italian'
-(scrbase)             --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `swissgerman'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `nswissgerman'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `acadian'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `canadien'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `francais'
+(scrlttr2)           --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `italian'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `spanish'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `spanish'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `croatian'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `croatian'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `dutch'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `dutch'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `finnish'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `finnish'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `norsk'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `norsk'
 (scrlttr2)           --> skipped on input line 56.
-Package scrbase Info: No captions found for `swedish'
-(scrbase)             --> skipped on input line 56.
 Class scrlttr2 Info: no date found for language `swedish'
 (scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `polish'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `czech'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: no date found for language `slovak'
+(scrlttr2)           --> skipped on input line 56.
+Class scrlttr2 Info: trying to activate captions and date
+(scrlttr2)           of language `ngerman' on input line 56.
 Class scrlttr2 Info: used language is `ngerman'.
-(scrlttr2)           Supported languages are `english', `UKenglish',
-(scrlttr2)           `british', `american', `USenglish',
+(scrlttr2)           Supported languages are: `english', `UKenglish',
+(scrlttr2)           `british', `american', `USenglish', `australian`,
+(scrlttr2)           `canadian', `newzealand',
 (scrlttr2)           `german', `ngerman', `austrian', `naustrian',
-(scrlttr2)           `dutch', `italian', `spanish',
-(scrlttr2)           `croatian', `finnish', `norsk' on input line 56.
+(scrlttr2)           `swissgerman', `nswissgermsn',
+(scrlttr2)           `acadian', `canadien', `francais', `french', 
+(scrlttr2)           `dutch', `italian', `spanish', `polish',
+(scrlttr2)           `croatian', `finnish', `norsk', `swedish',
+(scrlttr2)           `czech'. `slovak'  on input line 56.
 \big@size=\dimen103
 Class scrlttr2 Info: Letter-Class-Option `DIN' loaded on input line 59.
 
-(/usr/share/texmf-dist/tex/latex/koma-script/DIN.lco
-File: DIN.lco 2012/07/29 v3.11b KOMA-Script letter-class-option
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/DIN.lco
+File: DIN.lco 2017/04/13 v3.23 KOMA-Script letter-class-option
 )
 
 Class scrlttr2 Warning: Deprecated usage of \firsthead.
@@ -226,58 +214,60 @@ Foot of first page
 Address (backaddress, addressee)
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 115.
 
-(/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 115
 .
 
-(/usr/share/texmf-dist/tex/latex/psnfss/omlzplm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 115
 .
 
-(/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 115
 .
 
-(/usr/share/texmf-dist/tex/latex/psnfss/omxzplm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 115
 .
 
-(/usr/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 Location field: empty
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 115.
 
-(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Title: no
 Subject: before opening
 [1
 
+
+
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./Schreiben-DAK_Mitgliedsbeiträge.aux) ) 
 Here is how much of TeX's memory you used:
- 1916 strings out of 493301
- 28381 string characters out of 6142879
- 127883 words of memory out of 5000000
- 5374 multiletter control sequences out of 15000+600000
+ 2262 strings out of 492990
+ 35336 string characters out of 6135004
+ 168682 words of memory out of 5000000
+ 5826 multiletter control sequences out of 15000+600000
  14819 words of font info for 36 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 35i,8n,46p,771b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Schreiben-DAK_Mitgliedsbeiträge.pdf (1 page, 30360 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,50p,771b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-
+super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on Schreiben-DAK_Mitgliedsbeiträge.pdf (1 page, 30866 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream

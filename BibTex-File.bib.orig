@@ -1,0 +1,1107 @@
+%%% Bib-Tex Einträge %%%
+
+
+%%% Jahr 1982%%%
+
+
+@article{10.2307/2010133,
+ ISSN = {00438871, 10863338},
+ URL = {http://www.jstor.org/stable/2010133},
+ abstract = {The concept of a "strategic triangle" is useful in an analysis of the internal logic of the relationship between the United States, the Soviet Union, and China. The preconditions for a triangular relationship are that each player recognize the strategic salience of the three principals, and the relationship between any two will be affected by each player's relationship to the third. Within the triangle, there are three distinct pattern dynamics: the menage a trois, consisting of mutually positive relationships among all three; the stable marriage, consisting of a bilateral relationship excluding the third, and the romantic triangle, consisting of one pivot player playing off two suitors. Each of these pattern dynamics has specific rules of rational play. The shift from one pattern dynamic to another is a function of the attempts of the players to freeze a given configuration through commitment to a treaty or a common ideology, interacting with periodic crises that test their commitments.},
+ author = {Lowell Dittmer},
+ journal = {World Politics},
+ number = {4},
+ pages = {485-515},
+ publisher = {Cambridge University Press},
+ title = {The Strategic Triangle: An Elementary Game-Theoretical Analysis},
+ volume = {33},
+ year = {1981}
+}
+
+
+
+%%% Jahr 2000%%%
+
+
+%%% Jahr 2001%%%
+
+@article{10.2307/3078661,
+ ISSN = {00208183, 15315088},
+ URL = {http://www.jstor.org/stable/3078661},
+ abstract = {Some of the most important phenomena in international conflict are coded as "rare events": binary dependent variables with dozens to thousands of times fewer events, such as wars and coups, than "nonevents." Unfortunately, rare events data are difficult to explain and predict, a problem stemming from at least two sources. First, and most important, the data-collection strategies used in international conflict studies are grossly inefficient. The fear of collecting data with too few events has led to data collections with huge numbers of observations but relatively few, and poorly measured, explanatory variables. As it turns out, more efficient sampling designs exist for making valid inferences, such as sampling all available events (wars, for example) and a tiny fraction of nonevents (peace). This enables scholars to save as much as 99 percent of their (nonfixed) data-collection costs or to collect much more meaningful explanatory variables. Second, logistic regression, and other commonly used statistical procedures, can underestimate the probability of rare events. We introduce some corrections that outperform existing methods and change the estimates of absolute and relative risks by as much as some estimated effects reported in the literature. We also provide easy-to-use methods and software that link these two results, enabling both types of corrections to work simultaneously.},
+ author = {Gary King, Langche Zeng},
+ journal = {International Organization},
+ number = {3},
+ pages = {693-715},
+ publisher = {Cambridge University Press},
+ title = {Explaining Rare Events In International Relations},
+ volume = {55},
+ year = {2001}
+}
+
+
+%%% Jahr 2002%%%
+
+
+%%% Jahr 2003%%%
+
+
+%%% Jahr 2004%%%
+
+
+%%% Jahr 2005%%%
+
+
+%%% Jahr 2006%%%
+
+
+%%% Jahr 2007%%%
+
+
+%%% Jahr 2008%%%
+
+
+%%% Jahr 2009%%%
+
+@article{10.2307/40345947,
+ ISSN = {00208183, 15315088},
+ URL = {http://www.jstor.org/stable/40345947},
+ abstract = {International relations research has regarded networks as a particular mode of organization, distinguished from markets or state hierarchies. In contrast, network analysis permits the investigation and measurement of network structures—emergent properties of persistent patterns of relations among agents that can define, enable, and constrain those agents. Network analysis offers both a toolkit for identifying and measuring the structural properties of networks and a set of theories, typically drawn from contexts outside international relations, that relate structures to outcomes. Network analysis challenges conventional views of power in international relations by defining network power in three different ways: access, brokerage, and exit options. Two issues are particularly important to international relations: the ability of actors to increase their power by enhancing and exploiting their network positions, and the fungibility of network power. The value of network analysis in international relations has been demonstrated in precise description of international networks, investigation of network effects on key international outcomes, testing of existing network theory in the context of international relations, and development of new sources of data. Partial or faulty incorporation of network analysis, however, risks trivial conclusions, unproven assertions, and measures without meaning. A three-part agenda is proposed for future application of network analysis to international relations: import the toolkit to deepen research on international networks; test existing network theories in the domain of international relations; and test international relations theories using the tools of network analysis.},
+ author = {Emilie M. Hafner-Burton, Miles Kahler, Alexander H. Montgomery},
+ journal = {International Organization},
+ number = {3},
+ pages = {559-592},
+ publisher = {Cambridge University Press},
+ title = {Network Analysis For International Relations},
+ volume = {63},
+ year = {2009}
+}
+
+
+%%% Jahr 2010%%%
+
+
+%%% Jahr 2011%%%
+
+
+%%% Jahr 2012%%%
+
+
+%%% Jahr 2013%%%
+
+
+@article{Harsem2013784,
+title = "The Interdependence Of European–Russian Energy Relations",
+journal = "Energy Policy ",
+volume = "59",
+number = "",
+pages = "784 - 791",
+year = "2013",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2013.04.035",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421513002851",
+author = "Øistein Harsem and Dag Harald Claes",
+keywords = "Interdependence",
+keywords = "Natural gas",
+keywords = "Europe–Russia "
+}
+
+
+%%% Jahr 2014%%%
+
+@article{Biresselioglu2014,
+title = "Investigating The Natural Gas Supply Security: A New Perspective",
+journal = "Energy",
+volume = "",
+number = "0",
+pages = " - ",
+year = "2014",
+note = "",
+issn = "0360-5442",
+doi = "http://dx.doi.org/10.1016/j.energy.2014.11.060",
+url = "http://www.sciencedirect.com/science/article/pii/S0360544214013152",
+author = "Mehmet Efe Biresselioglu and Tezer Yelkenci and Ibrahim Onur Oz",
+keywords = "Natural gas",
+keywords = "Supply security Indexing",
+keywords = "Policy implementation ",
+abstract = "Abstract This paper assesses the natural gas supply security of 23 importing countries from divergent regions of the world for the period between 2001 and 2013. The indicators used for the study are the volume of imported natural gas, the number of natural gas suppliers, the level of dependency on one country, import dependency, the fragility of supplier countries, and the share of natural gas in primary energy consumption. The method used to establish the supply security index is the \{PCA\} (principal component analysis) over the indicators in the model for each country on a yearly basis for the period 2001 to 2013. The dispersed country sample enables the established index to measure the sensitivity of specific natural gas importer countries using a uniform framework. According to the results, the most effective indicators for the measurement of supply security are the number of supplier countries, supplier fragility, and the overall volume of imported gas. "
+}
+
+
+
+
+
+@article{Timma20142180,
+title = "Index Decomposition Analysis For Energy Sectors In Latvia ",
+journal = "Energy Procedia ",
+volume = "61",
+number = "0",
+pages = "2180 - 2183",
+year = "2014",
+note = "International Conference on Applied Energy, \{ICAE2014\} ",
+issn = "1876-6102",
+doi = "http://dx.doi.org/10.1016/j.egypro.2014.12.104",
+url = "http://www.sciencedirect.com/science/article/pii/S1876610214031336",
+author = "Lelde Timma and Dagnija Blumberga",
+keywords = "decomposition analysis",
+keywords = "Divisia index",
+keywords = "energy intensity",
+keywords = "energy policy",
+keywords = "\{LMDI\}",
+keywords = "sustainable development. ",
+abstract = "Abstract: This study explores the causes of changes in energy intensity in Latvia by applying logarithmic mean Divisia index decomposition analysis for energy sectors. Analysis on the latest data (2008-2012) reveals if any technological or structural changes have occurred during and after economic downturn in Latvia. The results show that the reduction in energy intensity before the year 2008 can be largely attributed to decline in energy intensities within sectors, but the increase in energy intensity after the year 2008 is regarded to expansion of energy demanding sectors. "
+}
+
+@article{Biresselioglu2014,
+title = "Investigating The Natural Gas Supply Security: A New Perspective ",
+journal = "Energy",
+volume = "",
+number = "0",
+pages = " - ",
+year = "2014",
+note = "",
+issn = "0360-5442",
+doi = "http://dx.doi.org/10.1016/j.energy.2014.11.060",
+url = "http://www.sciencedirect.com/science/article/pii/S0360544214013152",
+author = "Mehmet Efe Biresselioglu and Tezer Yelkenci and Ibrahim Onur Oz",
+keywords = "Natural gas",
+keywords = "Supply security Indexing",
+keywords = "Policy implementation ",
+abstract = "Abstract This paper assesses the natural gas supply security of 23 importing countries from divergent regions of the world for the period between 2001 and 2013. The indicators used for the study are the volume of imported natural gas, the number of natural gas suppliers, the level of dependency on one country, import dependency, the fragility of supplier countries, and the share of natural gas in primary energy consumption. The method used to establish the supply security index is the \{PCA\} (principal component analysis) over the indicators in the model for each country on a yearly basis for the period 2001 to 2013. The dispersed country sample enables the established index to measure the sensitivity of specific natural gas importer countries using a uniform framework. According to the results, the most effective indicators for the measurement of supply security are the number of supplier countries, supplier fragility, and the overall volume of imported gas. "
+}
+
+
+
+
+
+
+
+
+
+%%% Jahr 2015%%%
+
+@article{doi:10.1080/13569775.2015.1061242,
+author = {Rafael Leal-Arcas and Juan Alemany Ríos & Costantino Grasso},
+title = {The European Union And Its Energy Security Challenges: Engagement through And With Networks},
+journal = {Contemporary Politics},
+volume = {0},
+number = {0},
+pages = {1-21},
+year = {2015},
+doi = {10.1080/13569775.2015.1061242},
+
+URL = { 
+        http://dx.doi.org/10.1080/13569775.2015.1061242
+   
+},
+eprint = { 
+        http://dx.doi.org/10.1080/13569775.2015.1061242
+  
+}
+,
+    abstract = { Energy security remains a vital issue for the European Union (EU), even more so in the wake of the events that unfolded in early 2014 in Ukraine. The EU's already fragile position in the international energy arena in terms of security of supply appears to be more uncertain than ever after its umpteenth fallout with its historic energy supplier, Russia. This situation is untenable and calls for swift and decisive action to adequately tackle the issue once and for all. The article looks at the creation of a single EU energy market through the integration of energy networks in the EU. This article then examines various ways to diversify its energy supply, whether through increasing the import of liquefied natural gas or through its relations with the Eurasian Union. It then explores the International Energy Charter as an example of the EU's engagement with transnational policy networks. It concludes that from energy transit, to technology transfer, to investment protection, energy and trade present interplays across various fields. Improvements can be made to the EU trading system to ensure greater energy security and more efficient energy markets. }
+}
+
+
+
+
+@article{
+year={2015},
+issn={2095-1701},
+journal={Frontiers in Energy},
+doi={10.1007/s11708-014-0340-8},
+title={Current Situation And Future Perspectives Of European Natural Gas Sector},
+url={http://dx.doi.org/10.1007/s11708-014-0340-8},
+publisher={Higher Education Press},
+keywords={natural gas; natural gas market; oil-linked contracts; supply infrastructures; gas hubs},
+author={Bianco, Vincenzo and Scarpa, Federico and Tagliafico, LucaA.},
+pages={1-6},
+language={English}
+}
+
+
+
+@article{Calvert21012015,
+author = {Calvert, Kirby}, 
+title = {From ‘Energy Geography’ To ‘Energy Geographies’: Perspectives On A Fertile Academic Borderland},
+year = {2015}, 
+doi = {10.1177/0309132514566343}, 
+abstract ={This paper takes stock of geographical contributions to the study of energy and energy futures. The paper is written in two parts. First, I trace the methodological and philosophical traditions that underpin geographical approaches to energy studies. I argue that while ‘energy geography’ is arguably a pragmatic shorthand with which to communicate to the broader energy studies community, geographical studies of energy have expanded in scope and theoretical plurality so that ‘energy geographies’ is a more appropriate label. Energy geographers are well positioned to contribute to scientific and policy debates surrounding energy due to their privileged position at the borderland between various philosophical and methodological traditions. Second, I identify some of the problems, opportunities and uncertainties that contemporary energy geographers are helping to identify, understand, and resolve. Past contributions and critical issues for future scholarship are highlighted in four themes: (1) using advanced socio-spatial theory to better understand the energy-society relationship; (2) geo-political and geo-economic assessments of (changing) global energy trade networks; (3) geographical perspectives on socio-technical (energy) transitions; and (4) advanced spatial decision-support for energy planning and technology implementation. While this discussion is by no means exhaustive, it aims to bring some clarity and specificity to the policy and academic relevance of geographical thought and practice as it relates to energy issues.}, 
+URL = {http://phg.sagepub.com/content/early/2015/01/13/0309132514566343.abstract}, 
+eprint = {http://phg.sagepub.com/content/early/2015/01/13/0309132514566343.full.pdf+html}, 
+journal = {Progress in Human Geography} 
+}
+
+
+@article{
+year={2015},
+issn={0343-5377},
+journal={Zeitschrift für Energiewirtschaft},
+doi={10.1007/s12398-014-0145-9},
+title={An Embargo Of Russian Gas And Security Of Supply In Europe},
+url={http://dx.doi.org/10.1007/s12398-014-0145-9},
+publisher={Springer Fachmedien Wiesbaden},
+author={Hecking, Harald and John, Christopher and Weiser, Florian},
+pages={1-11},
+language={English}
+}
+
+
+@incollection{
+year={2015},
+isbn={978-0-230-30800-8},
+booktitle={Europe’s Infrastructure Transition},
+series={Making Europe: Technology And Transformations, 1850–2000},
+doi={10.1007/978-1-137-31891-6_3},
+title={Fueling Europe},
+url={http://dx.doi.org/10.1007/978-1-137-31891-6_3},
+publisher={Palgrave Macmillan UK},
+author={Högselius, Per and Kaijser, Arne and Vleuten, Erik van der},
+pages={65-104},
+language={English}
+}
+
+
+
+@article{Holz24012015,
+author = {Holz, Franziska and Richter, Philipp M. and Egging, Ruud}, 
+title = {A Global Perspective On The Future Of Natural Gas: Resources, Trade, And Climate Constraints},
+year = {2015}, 
+doi = {10.1093/reep/reu016}, 
+abstract ={Natural gas plays an important role in the global energy system as an input to power generation, heating, and industry. This article identifies key drivers and uncertainties for natural gas markets in the coming decades. These include the availability of natural gas from conventional and unconventional sources, the role of international trade, and the impact of climate policies. We build on model-based research as well as an up-to-date survey of natural gas resource availability. We find that natural gas is an abundant fossil fuel and that the Asia-Pacific region will be most important in future global natural gas markets, especially under stringent international climate change mitigation. This means that an increasingly large share of future natural gas trade flows and infrastructure expansions will be directed to the Asia-Pacific region and that the role of liquefied natural gas will continue to increase globally. (JEL: C61, L71, Q33, Q37, Q54)}, 
+URL = {http://reep.oxfordjournals.org/content/early/2015/01/24/reep.reu016.abstract}, 
+eprint = {http://reep.oxfordjournals.org/content/early/2015/01/24/reep.reu016.full.pdf+html}, 
+journal = {Review of Environmental Economics and Policy} 
+}
+
+
+%%% Jahr 2016%%%
+
+
+@article{Roberts22012016,
+author = {Roberts, John}, 
+title = {Russia’s Gas Challenge: The Consequences For China, Central Asia, Europe And The USA},
+year = {2016}, 
+doi = {10.1093/jwelb/jwv040}, 
+abstract ={Russia is posing a series of challenges to gas consumers and gas producers alike. But the effectiveness of these challenges remains a matter of considerable debate. Overall, prospective Russian actions and policies have profound implications for the development of the European gas market in general, and thus for potential US LNG exports to Europe.Moreover, underlying all this is the most worrisome question of all: do Russia’s policies and actions enable gas consumers—and indeed, some Central Asian gas producers—to regard Russia as a reliable energy partner?This article therefore addresses:
+Prospects for the full implementation of the Russia–China gas accords;Prospects for Turkmen gas supply to both Russia and China;Prospects for the development of both Gazprom’s Turkish Stream project and the EU-backed Southern Gas Corridor;Prospects for US LNG in Europe;The potential challenge that a change in Russian gas export policies could pose to European gas prices.The article also seeks to answer the question as to whether Russia can be considered a reliable partner, particularly in connection with long-term deliveries to Europe.}, 
+URL = {http://jwelb.oxfordjournals.org/content/early/2016/01/21/jwelb.jwv040.abstract}, 
+eprint = {http://jwelb.oxfordjournals.org/content/early/2016/01/21/jwelb.jwv040.full.pdf+html}, 
+journal = {The Journal of World Energy Law & Business} 
+}
+
+
+﻿@article {GPOL:GPOL12301,
+author = {Johnson, Juliet and Köstem, Seçkin},
+title = {Frustrated Leadership: Russia's Economic Alternative To The West},
+journal = {Global Policy},
+issn = {1758-5899},
+url = {http://dx.doi.org/10.1111/1758-5899.12301},
+doi = {10.1111/1758-5899.12301},
+pages = {n/a--n/a},
+year = {2016},
+abstract = {The Russian government saw the 2008 global financial crisis as both a repudiation of western neoliberalism and as an ideal opportunity to promote its own international economic leadership. Russia's alternative vision encompasses multipolarity, financial nationalism and political illiberalism. These policies are symbiotic. The state uses its control over financial flows to build and maintain political and economic power at home as well as to project its influence abroad, all justified with a strong dose of great power nationalism positioning Russia as the Eurasian pole in an emerging multipolar world order. However, the Kremlin is doomed to frustration in its quest to assert international economic leadership. The Russian government has the ability to shake up the existing international order but lacks the credibility, stability, or economic clout to lead the creation of a new one. This has troubling implications for the future of international economic cooperation and reform, as Russia's frustrations have increasingly turned it in reactive and confrontational directions.},
+}
+
+
+@article{doi:10.1080/09668136.2015.1113509,
+author = {Pami Aalto},
+title = {Modernisation Of The Russian Energy Sector: Constraints On Utilising Arctic Offshore Oil Resources},
+journal = {Europe-Asia Studies},
+volume = {68},
+number = {1},
+pages = {38-63},
+year = {2016},
+doi = {10.1080/09668136.2015.1113509},
+
+URL = { 
+        http://dx.doi.org/10.1080/09668136.2015.1113509
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/09668136.2015.1113509
+    
+}
+,
+abstract = { AbstractThis essay examines the modernisation of the Russian energy sector as revealed in the case of Arctic offshore oil. The Russian actors involved have various interests but their simultaneous realisation is impeded by the structural constraints within the policy environment of Arctic offshore oil projects. Russia’s foreign policy choices vis-à-vis Ukraine, leading to sanctions targeting Arctic oil projects, and global oil market developments amplify the constraints on the resource geographical, financial, institutional and ecological dimensions of the policy environment or structure. This delays Arctic offshore oil projects, and hampers the oil industry’s modernisation and its capacity to generate income for Russia’s overall modernisation. }
+}
+
+@article{doi:10.1080/00396338.2016.1142141,
+author = {Alexander Lukin},
+title = {Russia In A Post-Bipolar World},
+journal = {Survival},
+volume = {58},
+number = {1},
+pages = {91-112},
+year = {2016},
+doi = {10.1080/00396338.2016.1142141},
+
+URL = { 
+        http://dx.doi.org/10.1080/00396338.2016.1142141
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/00396338.2016.1142141
+    
+}
+
+}
+
+
+﻿@article {PA:PA1602,
+author = {Aihonsu, Olatubosun Matthew},
+title = {Boisterous Russia In Emerging Europe},
+journal = {Journal of Public Affairs},
+issn = {1479-1854},
+url = {http://dx.doi.org/10.1002/pa.1602},
+doi = {10.1002/pa.1602},
+pages = {n/a--n/a},
+year = {2016},
+abstract = {Russia is permanently at a crossroads in its history, or standing in exasperation at a fork in the road but failing to resolve a geographical, historical and metaphysical dilemma: is Russia part of Europe or not? Russia holds a key but vulnerable strategic position in the heartland of Eurasia. Its geographical existence within a larger zone of Eurasian civilization meant that Russian culture had been shaped to a not insignificant extent by influences coming from Asia, that Russia was Eurasian and not European not only by virtue of its cultural patterns but also in terms of anthropological–racial considerations as well. The Eurasian Customs Union is clearly seen by Russia as a vehicle for reintegrating the post-Soviet space, including the countries that fall within the sphere of the European Union's (EU)'s eastern neighbourhood.The Eurasian Customs Union is the vehicle through which Russia increasingly engages in ‘normative rivalry’ with the EU in the so-called ‘shared neighbourhood’. These geopolitical and economic contraptions underpin the strategic calculations that have influenced largely the crisis of Russian Lebensraum escapade in Ukraine and EU's reaction. Copyright © 2016 John Wiley & Sons, Ltd.},
+}
+
+
+@article{Knaut2016,
+title = "The Reference Forecast Of The German Energy Transition — An outlook On Electricity Markets",
+journal = "Energy Policy ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2016",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.02.010",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516300519",
+author = "Andreas Knaut and Christian Tode and Dietmar Lindenberger and Raimund Malischek and Simon Paulus and Johannes Wagner",
+keywords = "Climate protection",
+keywords = "Renewable energy",
+keywords = "Policy evaluation",
+keywords = "Electricity market modelling ",
+abstract = "Abstract The enactment of the Energy Concept by the German Government in 2010 set ambitious targets for the future energy transition in Germany. The most prominent goals include a greenhouse gas (GHG) emission reduction of the economy and an increase in the share of renewable energy in the whole energy sector. Since the long run effects of these policy measures are hard to assess, science-based policy evaluation methods are needed to identify weak points and areas with a need for action. This paper presents the results of the German Energy Reference Forecast with a focus on the electricity sector. It is based on an investment and dispatch model for the European electricity sector over the planning horizon of the ‘Energiewende’ up to 2050, with an emphasis on the time period up to 2030. We find that almost all targets of the German ‘Energiewende’ are not reached, for the case in which no further measures are undertaken. In particular reductions in \{GHG\} emissions fall short to the target value. Contrary to the negative results, e.g., regarding GHG-emissions as well as gross electricity consumption, generation from renewable energy sources will exceed the policy's target value. "
+}
+
+
+@article{Esen2016101,
+title = "Natural Gas Reserve/Production Ratio In Russia, Iran, Qatar And Turkmenistan: A Political And Economic Perspective",
+journal = "Energy Policy ",
+volume = "93",
+number = "",
+pages = "101 - 109",
+year = "2016",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.02.037",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516300775",
+author = "Vedat Esen and Bulent Oral",
+keywords = "Natural gas",
+keywords = "R/P ratio",
+keywords = "Russia",
+keywords = "Iran",
+keywords = "Qatar",
+keywords = "Turkmenistan ",
+abstract = "Abstract In this study, changes in natural gas reserve/production ratio (R/P) of the four countries having the highest natural gas reserves (Russia, Iran, Qatar, Turkmenistan), the importance of which increases in the world market each day due to developing technology and the demand for clean energy, has been analyzed depending on the economic and political developments in national and international fields. Change of R/P ratio depending on years has been displayed on graphics from different sources and these alterations have been tried to be associated with such issues as natural gas agreements in history, handover of political authority, economic crises etc. Therefore; it has been put forward whether or not political and economic changes of the countries are factors on the amount of natural gas production and the discovery of new reserve fields with the addition aim of providing a general overview on natural gas market. "
+}
+
+
+@article {SPSR:SPSR12202,
+author = {Grabau, Martina and Hegelich, Simon},
+title = {The Gas Game: Simulating Decision-Making In The European Union's External Natural Gas Policy},
+journal = {Swiss Political Science Review},
+issn = {1662-6370},
+url = {http://dx.doi.org/10.1111/spsr.12202},
+doi = {10.1111/spsr.12202},
+pages = {n/a--n/a},
+year = {2016},
+}
+
+@article{Green20062016,
+author = {Green, Richard and Staffell, Iain}, 
+title = {Electricity In Europe: Exiting Fossil Fuels?},
+volume = {32}, 
+number = {2}, 
+pages = {282-303}, 
+year = {2016}, 
+doi = {10.1093/oxrep/grw003}, 
+abstract ={There are many options for generating electricity with low carbon emissions, and the electrification of heat and transport can decarbonize energy use across the economy. This places the power sector at the forefront of any move away from fossil fuels, even though fossil-fuelled generators are more dependable and flexible than nuclear reactors or intermittent renewables, and vital for the second-by-second balancing of supply and demand. Renewables tend to supplement, rather than replace, fossil capacity, although output from fossil-fuelled stations will fall and some will have to retire to avoid depressing wholesale power prices. At times of low demand and high renewable output prices can turn negative, but electricity storage, long-distance interconnection, and flexible demand may develop to absorb any excess generation. Simulations for Great Britain show that while coal may be eliminated from the mix within a decade, natural gas has a long-term role in stations with or without carbon capture and storage, depending on its cost and the price of carbon.}, 
+URL = {http://oxrep.oxfordjournals.org/content/32/2/282.abstract}, 
+eprint = {http://oxrep.oxfordjournals.org/content/32/2/282.full.pdf+html}, 
+journal = {Oxford Review of Economic Policy} 
+}
+
+@article{Siddi2016,
+author={Siddi, Marco},
+title={The EU's Gas Relationship With Russia: Solving Current Disputes And Strengthening Energy Security},
+journal={Asia Europe Journal},
+year={2016},
+pages={1--11},
+abstract={This article analyses the current state of the gas relationship between the European Union (EU) and Russia and assesses its future prospects. It highlights that Russia has been an important supplier of gas to the European Union for more than four decades. However, the EU-Russia gas trade currently faces uncertainty over the regular transit of Russian gas via Ukraine, the construction of new pipelines and the implementation of EU legislation concerning the Union's gas market. As the EU and Russia will remain interdependent in the gas sector at least for the next decade, it is in both sides' interest to resolve these issues. The EU should both strengthen the security of its import routes for Russian gas and reduce the vulnerability of individual member states to supply shocks. Simultaneously, the EU would do well to increase the production of renewable energy and boost energy efficiency, which would reduce its dependence on external suppliers of fossil fuels.},
+issn={1612-1031},
+doi={10.1007/s10308-016-0452-3},
+url={http://dx.doi.org/10.1007/s10308-016-0452-3}
+}
+
+@article{doi:10.1080/09592318.2016.1175141,
+author = {Licínia Simão},
+title = {The Ukrainian Conflict In Russian Foreign Policy: Rethinking The Interconnections Between Domestic And Foreign Policy Strategies},
+journal = {Small Wars \& Insurgencies},
+volume = {27},
+number = {3},
+pages = {491-511},
+year = {2016},
+doi = {10.1080/09592318.2016.1175141},
+
+URL = { 
+        http://dx.doi.org/10.1080/09592318.2016.1175141
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/09592318.2016.1175141
+    
+}
+,
+    abstract = {This article analyses Russia’s role in the Ukrainian crisis in the context of Moscow’s foreign policy historical development, underlining patterns of continuity and change in its policies towards the CIS. It argues that Russian foreign policy towards Ukraine results from a combination of two trends, reinforcing a Russian interventionist agenda: perceived threats to Russia’s interests in the near abroad and a radicalised and conservative national spectrum shaping foreign policy decisions. The combination of domestic and external factors driving Russia’s agenda in the near abroad raises important challenges for Russian society and its leaders as it does for its neighbours and partners.}
+}
+
+
+@article{doi:10.1080/23745118.2016.1171285,
+author = {Vsevolod Samokhvalov},
+title = {The New Eurasia: Post-Soviet Space Between Russia, Europe And China},
+journal = {European Politics and Society},
+volume = {0},
+number = {0},
+pages = {1-15},
+year = {0},
+doi = {10.1080/23745118.2016.1171285},
+
+URL = { 
+        http://dx.doi.org/10.1080/23745118.2016.1171285
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/23745118.2016.1171285
+    
+}
+,
+    abstract = {The research of Eurasian regionalism mostly focuses on the Eurasian core, for example, Russia, Belarus, Kazakhstan, which have been pursuing a more exclusive and closer form of integration – Customs Union/Eurasian Economic Union. Other countries of the post-Soviet space are often described as post-Soviet ‘escapists’ or ‘isolationists’ and mostly discounted in the analyses of the Eurasian regionalism. The paper looks at six post-Soviet states, who opted out from the Eurasian Economic Union, and analyse their interaction with the EEU. The paper argues that despite tensions in relations with Russia, most of these countries are reluctant to entirely disrupt their economic relations with the post-Soviet Eurasia. The paper argues that six countries of the post-Soviet Eurasian periphery effectively pursue policies of a looser form association with the Eurasian core. This finding allows to argue that Eurasian regionalism, similarly to its European model, consists of the core and outer circle. The outer circle is featured by overlapping regional arrangements and growing presence of external powers and growing number of transit and trade flows linking this Eurasian periphery with the West and Asia.}
+}
+
+
+@article {INTA:INTA12600,
+author = {WIGELL, MIKAEL and VIHMA, ANTTO},
+title = {Geopolitics Versus Geoeconomics: The Case Of Russia's Geostrategy And Its Effects On The EU},
+journal = {International Affairs},
+volume = {92},
+number = {3},
+issn = {1468-2346},
+url = {http://dx.doi.org/10.1111/1468-2346.12600},
+doi = {10.1111/1468-2346.12600},
+pages = {605--627},
+year = {2016},
+abstract = {Geopolitics and geoeconomics are often addressed together, with the latter seen as a sub-variant of the former. This article shows the usefulness of differentiating them at a conceptual level. By juxtaposing traditional geopolitics and geoeconomics, we suggest that they have remarkably different qualities and implications for their targets, on both national and international levels. Importantly, these include the formation of alliances, and whether they are driven by balancing, bandwagoning or underbalancing dynamics. An analysis of Russia's shifting geostrategy towards Europe shows these differences in practice. Russian geoeconomics has long been successful as a ‘wedge strategy’, dividing the EU. As a result, the EU has underbalanced and its Russia policies have been incoherent. The observable tendencies in 2014–15 towards a more coherent European approach can be explained by the changing emphasis in Russia's geostrategy. Russia's turn to geopolitics works as a centripetal force, causing a relative increase in EU unity. Centripetal tendencies due to heightened threat perception can be observed in the economic sanctions, emerging German leadership in EU foreign policy, and discussion on energy union. The analysis calls for more attention to the way strategic choices—geopolitics versus geoeconomics—affect the coherence of threatened states and alliance patterns.},
+}
+
+
+
+@article{doi:10.1080/09700161.2016.1165468,
+author = {Sreemati Ganguli},
+title = {Energy Interdependence As A Strategic Factor In The Post-Cold War Context},
+journal = {Strategic Analysis},
+volume = {40},
+number = {3},
+pages = {185-198},
+year = {2016},
+doi = {10.1080/09700161.2016.1165468},
+
+URL = {http://dx.doi.org/10.1080/09700161.2016.1165468},
+eprint = {http://dx.doi.org/10.1080/09700161.2016.1165468}
+,
+abstract = { AbstractEnergy, as a resource, has been considered only as a factor of complex geopolitical rivalries and geo-economic calculations globally. This article, on the other hand, attempts to analyse a parallel trend in the post-Cold War international scenario, a trend that shows how energy gains global relevance as a vector of alliance and a link for interdependence, and how economic and environmental challenges have become the compelling factors to push competitors to turn into allies and partners. }
+}
+
+@article{doi:10.1080/23340460.2016.1163775,
+author = {Cristian Nitoiu},
+title = {Russia And The EU’s Quest For Status: The Path To Conflict In The Post-Soviet Space},
+journal = {Global Affairs},
+volume = {0},
+number = {0},
+pages = {1-11},
+year = {0},
+doi = {10.1080/23340460.2016.1163775},
+
+URL = {http://dx.doi.org/10.1080/23340460.2016.1163775},
+eprint = {http://dx.doi.org/10.1080/23340460.2016.116377}
+,
+abstract = {This article suggests that both the EU and Russia sought to achieve the great power status by enhancing their presence in the post-Soviet space. Conflict has arisen as the status seeking efforts of the two have been transformed into a dangerous zero-sum game. Moscow’s actions in Ukraine prompted the EU to adopt a more conflictual attitude, where it now actively aims to counteract Moscow’s influence. This transformed Russia and the EU’s status seeking efforts into a deep security dilemma. Both actors perceive that maintaining their influence in the region is crucial for maintaining their status. Rather than seeking a mutually and sustainable agreement that would give equal importance to Ukraine’s interests, the EU and Russia draw more red lines, and revert to cold war rhetoric. In the short term this behaviour will put their status seeking efforts even more at odds with each other and deepen the conflict. }
+}
+
+@article{ValdésLucas20161032,
+title = "Energy Security And Renewable Energy Deployment In The EU: Liaisons Dangereuses Or Virtuous Circle? ",
+journal = "Renewable and Sustainable Energy Reviews ",
+volume = "62",
+number = "",
+pages = "1032 - 1046",
+year = "2016",
+note = "",
+issn = "1364-0321",
+doi = "http://dx.doi.org/10.1016/j.rser.2016.04.069",
+url = "http://www.sciencedirect.com/science/article/pii/S1364032116301022",
+author = "Javier Noel Valdés Lucas and Gonzalo Escribano Francés and Enrique San Martín González",
+keywords = "Energy security",
+keywords = "Renewable energy",
+keywords = "Energy diversification",
+keywords = "European Union",
+keywords = "Energy policy "
+}
+
+@article{10.2307/20031912,
+ ISSN = {00157120},
+ URL = {http://www.jstor.org/stable/20031912},
+ author = {Daniel Yergin},
+ journal = {Foreign Affairs},
+ number = {2},
+ pages = {69-82},
+ publisher = {Council on Foreign Relations},
+ title = {Ensuring Energy Security},
+ volume = {85},
+ year = {2006},
+ abstract = {The institutions and policies that were set up after the 1973 Arab oil embargo can no longer meet the needs of energy consumers or producers. The definition of energy security needs to be expanded to cope with the challenges of a globalized world.},
+}
+
+@article{Gracceva2014335,
+title = "A Systemic Approach To Assessing Energy Security In A Low-Carbon \{EU\} Energy System",
+journal = "Applied Energy ",
+volume = "123",
+number = "",
+pages = "335 - 348",
+year = "2014",
+note = "",
+issn = "0306-2619",
+doi = "http://dx.doi.org/10.1016/j.apenergy.2013.12.018",
+url = "http://www.sciencedirect.com/science/article/pii/S0306261913010179",
+author = "Francesco Gracceva and Peter Zeniewski",
+keywords = "Energy security",
+keywords = "Low carbon",
+keywords = "Energy system analysis",
+keywords = "Times Integrated Assessment Model (TIAM) ",
+abstract = "Abstract Until now, the complex relationship between energy security and climate change has been addressed using a partial understanding of security, one that is based on simplified indicators such as import dependence or fuel mix diversity. As a consequence, the synergies and trade-offs between climate change and energy security policies have not been systematically explored according to a wider understanding of the latter concept. The purpose of this article is to resolve the resulting knowledge gap by proposing a theoretical approach to energy security that is consistent with its multi-dimensional nature, taking into account the whole energy supply chain. Five key ‘systemic’ properties of energy security will be identified – namely, stability, flexibility, adequacy, resilience and robustness. The paper proposes a novel framework to assess energy security and uses this framework to develop a comprehensive approach to the interactions between climate change policies and energy security. The impact of a low-carbon scenario on one of these five properties (long-term robustness) will be assessed using a complex multi-regional energy system model. The results demonstrate how this scenario induces structural changes along the whole energy supply chain, revealing dynamic vulnerabilities and trade-offs that are not adequately accounted for by existing indicator-based assessments. Finally, the paper provides solid foundations for further analysis of these trade-offs using more detailed sectoral models. "
+}
+
+@article{Kiriyama2014415,
+title = "A Multilayered Analysis Of Energy Security Research And The Energy Supply Process",
+journal = "Applied Energy ",
+volume = "123",
+number = "",
+pages = "415 - 423",
+year = "2014",
+note = "",
+issn = "0306-2619",
+doi = "http://dx.doi.org/10.1016/j.apenergy.2014.01.026",
+url = "http://www.sciencedirect.com/science/article/pii/S0306261914000452",
+author = "Eriko Kiriyama and Yuya Kajikawa",
+keywords = "Energy security",
+keywords = "Energy policy",
+keywords = "Energy supply chain",
+keywords = "Network analysis ",
+abstract = "Abstract After the Fukushima nuclear disaster, a reassessment of the energy system is needed in order to include such aspects as human security and resilience. More open and careful discussions are needed concerning the various risks and uncertainties of future energy options, both in Japan and globally. In this paper, we aim to offer a fundamental basis for discourse on energy security by analyzing the status and trends in academic publications on that issue. Our bibliometrics analysis indicates that research has shifted from promoting strategies for ensuring the self-sufficiency of the primary energy to diversification of the secondary energy supply chain by introducing energy networks consisting of an infrastructure established through international coordination. In the literature, the concept of energy security is ambiguous and allows for multiple interpretations. Our results illustrate the existence of highly multidisciplinary topics within energy security, which can be categorized into four perspectives: geopolitical, economic, policy related, and technological. "
+}
+
+@article{Chester2010887,
+title = "Conceptualising Energy Security And Making Explicit Its Polysemic Nature",
+journal = "Energy Policy ",
+volume = "38",
+number = "2",
+pages = "887 - 895",
+year = "2010",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2009.10.039",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421509007861",
+author = "Lynne Chester",
+keywords = "Energy regime",
+keywords = "Energy security",
+keywords = "Security of supply ",
+abstract = "Twenty-first century access to energy sources depends on a complex system of global markets, vast cross-border infrastructure networks, a small group of primary energy suppliers, and interdependencies with financial markets and technology. This is the context in which energy security has risen high on the policy agenda of governments around the world and the term ‘energy security’ has quietly slipped into the energy lexicon. The limited discourse about the nature of the term or its underlying assumptions has been totally eclipsed by an almost overwhelming focus on securing supplies of primary energy sources and geopolitics. An examination of explicit and inferred definitions finds that the concept of energy security is inherently slippery because it is polysemic in nature, capable of holding multiple dimensions and taking on different specificities depending on the country (or continent), timeframe or energy source to which it is applied. This ‘slipperiness’ poses analytical, prediction and policy difficulties but if explicitly recognised through definitional clarity, new levels of understanding will enrich the policy debate to deal with obstacles impacting on the constantly evolving nature of energy security."
+}
+
+@article{doi:10.1080/00396338.2016.1186980,
+author = {Christian Dargnat},
+title = {China’s Shifting Geo-Economic Strategy},
+journal = {Survival},
+volume = {58},
+number = {3},
+pages = {63-76},
+year = {2016},
+doi = {10.1080/00396338.2016.1186980},
+URL = {http://dx.doi.org/10.1080/00396338.2016.1186980},
+eprint = {http://dx.doi.org/10.1080/00396338.2016.1186980}
+,
+abstract = { If Xi’s project fails, we can expect an economic and geopolitical Chinese withdrawal, extremely dangerous for both China and the world.}
+}
+
+@article{doi:10.1080/00396338.2016.1186988,
+author = {Brian G. Carlson},
+title = {China–Russia Relations And The Inertia Of History},
+journal = {Survival},
+volume = {58},
+number = {3},
+pages = {213-222},
+year = {2016},
+doi = {10.1080/00396338.2016.1186988},
+URL = {http://dx.doi.org/10.1080/00396338.2016.1186988},
+eprint = {http://dx.doi.org/10.1080/00396338.2016.1186988}
+,
+abstract = {Though there are many arguments against it, the possibility of an anti-Western, China–Russia alliance has re-emerged with new urgency.}
+}
+
+@article{Jonsson201548,
+title = "Energy Security Matters In The \{EU\} Energy Roadmap",
+journal = "Energy Strategy Reviews ",
+volume = "6",
+number = "",
+pages = "48 - 56",
+year = "2015",
+note = "",
+issn = "2211-467X",
+doi = "http://dx.doi.org/10.1016/j.esr.2015.03.002",
+url = "http://www.sciencedirect.com/science/article/pii/S2211467X1500005X",
+author = "Daniel K. Jonsson and Bengt Johansson and André Månsson and Lars J. Nilsson and Måns Nilsson and Hannes Sonnsjö",
+keywords = "Energy security",
+keywords = "Security of supply",
+keywords = "Climate change mitigation",
+keywords = "EU Energy Roadmap",
+keywords = "Low-carbon scenarios "
+}
+
+@article{Ang20151077,
+title = "Energy Security: Definitions, Dimensions And Indexes",
+journal = "Renewable and Sustainable Energy Reviews ",
+volume = "42",
+number = "",
+pages = "1077 - 1093",
+year = "2015",
+note = "",
+issn = "1364-0321",
+doi = "http://dx.doi.org/10.1016/j.rser.2014.10.064",
+url = "http://www.sciencedirect.com/science/article/pii/S1364032114008892",
+author = "B.W. Ang and W.L. Choong and T.S. Ng",
+keywords = "Energy security",
+keywords = "Energy security indicators",
+keywords = "Energy security indexes "
+}
+
+@article{Strambo20151,
+title = "Coherent Or inconsistent? Assessing Energy Security And Climate Policy Interaction Within The European Union",
+journal = "Energy Research & Social Science ",
+volume = "8",
+number = "",
+pages = "1 - 12",
+year = "2015",
+note = "",
+issn = "2214-6296",
+doi = "http://dx.doi.org/10.1016/j.erss.2015.04.004",
+url = "http://www.sciencedirect.com/science/article/pii/S221462961500047X",
+author = "Claudia Strambo and Måns Nilsson and André Månsson",
+keywords = "Europe",
+keywords = "Coherence",
+keywords = "Security",
+keywords = "Energy",
+keywords = "Mitigation "
+}
+
+@article{Narula2015148,
+title = "Three Blind Men And An Elephant: The Case Of Energy Indices To Measure Energy Security And Energy Sustainability",
+journal = "Energy ",
+volume = "80",
+number = "",
+pages = "148 - 158",
+year = "2015",
+note = "",
+issn = "0360-5442",
+doi = "http://dx.doi.org/10.1016/j.energy.2014.11.055",
+url = "http://www.sciencedirect.com/science/article/pii/S0360544214013103",
+author = "Kapil Narula and B. Sudhakara Reddy",
+keywords = "Energy security",
+keywords = "Energy sustainability",
+keywords = "Indicators",
+keywords = "Energy index "
+}
+
+@article{Cherp2014415,
+title = "The Concept Of Energy Security: Beyond The Four As",
+journal = "Energy Policy ",
+volume = "75",
+number = "",
+pages = "415 - 421",
+year = "2014",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2014.09.005",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421514004960",
+author = "Aleh Cherp and Jessica Jewell",
+keywords = "Energy security",
+keywords = "Security of supply",
+keywords = "Affordability "
+}
+
+@Article{Gueldry2016,
+author="Gueldry, Michel
+and Liang, Wei",
+title="China's Global Energy Diplomacy: Behavior Normalization Through Economic Interdependence Or Resource Neo-Mercantilism And Power Politics?",
+journal="Journal of Chinese Political Science",
+year="2016",
+pages="1--24",
+abstract="The magnitude of China's energy needs and global energy acquisitions, and their recent emergence as key features of the international system, raise many sensitive questions: will China adapt to or reshape the international system as historically defined by the hegemonic West, and what is the role of its energy policy, politics, and resource nationalism in a possible new Great Game? While much of the current literature posits an either/or approach (China adapts to energy market or tries to redefine them as a part of a wider political plan), our hypothesis is that China is essentially a pragmatic actor who reacts to the forces in presence, rather than a revisionist power with a grand plan to realign the world order to suit its needs and satisfy some kind of pre-established grand vision. We posit that China goes beyond conformity with or resistance to the established energy market and the power relations they underpin: While local circumstances may be considered variables, its fixed objective is a stable international order and the pragmatic satisfaction of its energy needs in order to insure continued economic growth and general stability at home.",
+issn="1874-6357",
+doi="10.1007/s11366-016-9405-3",
+url="http://dx.doi.org/10.1007/s11366-016-9405-3"
+}
+
+
+@article{Mitrova201619,
+title = "Some Future Scenarios Of Russian Natural Gas In Europe ",      
+journal = "Energy Strategy Reviews ",
+volume = "11–12",
+number = "",
+pages = "19 - 28",
+year = "2016",
+note = "",
+issn = "2211-467X",
+doi = "http://dx.doi.org/10.1016/j.esr.2016.06.001",
+url = "http://www.sciencedirect.com/science/article/pii/S2211467X16300141",
+author = "Tatiana Mitrova and Tim Boersma and Anna Galkina",
+keywords = "Natural gas",
+keywords = "European Union",
+keywords = "Russia",
+keywords = "Scenarios "
+}
+
+@article{Stram2016,
+title = "Key Challenges To Expanding Renewable Energy",
+journal = "Energy Policy ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2016",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.05.034",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516302646",
+author = "Bruce N. Stram",
+keywords = "Renewable electric grid integration",
+keywords = "Renewable electricity generation",
+keywords = "Renewable energy costs",
+keywords = "Energy efficiency",
+keywords = "Renewable energy",
+keywords = "Energy poverty "
+}
+
+@article{Austvik2016,
+title = "The Energy Union And Security-Of-Gas Supply",
+journal = "Energy Policy ",
+volume = "96",
+number = "",
+pages = "372 - 382",
+year = "2016",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.06.013",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516302968",
+author = "Ole Gunnar Austvik",
+keywords = "Energy Union",
+keywords = "Natural gas",
+keywords = "Russia",
+keywords = "Gazprom",
+keywords = "Energy security "
+}
+
+
+
+@article{doi:10.1080/09512748.2016.1201129,
+author = {Elizabeth Wishnick},
+title = {In Search Of The ‘Other’ In Asia: Russia–China Relations Revisited},
+journal = {The Pacific Review},
+volume = {0},
+number = {0},
+pages = {1-19},
+year = {0},
+doi = {10.1080/09512748.2016.1201129},
+URL = { 
+        http://dx.doi.org/10.1080/09512748.2016.1201129
+},
+eprint = { 
+        http://dx.doi.org/10.1080/09512748.2016.1201129
+}
+}
+
+
+@Article{Correljé2016,
+author="Correlj{\'e}, Aad",
+title="The European Natural Gas Market",
+journal="Current Sustainable/Renewable Energy Reports",
+year="2016",
+pages="1--7",
+abstract="The European Union started the introduction of competition in the European market for natural gas. Today, mid-2016, the process of restructuring is still going on. In parallel, important changes in geopolitical, environmental and technological determinants can be observed in the European and global energy and gas markets. These changes have been highly influential in generating `reactive' policies in the European Union, both in Brussels as well as in the Member States. The evolution of the European natural gas policy creating a strongly regulated version of a `well-functioning' gas market remains a highly politicized and instable experiment. The values attached to natural gas are constantly shifting between the economics, to security of supply and sustainability. Moreover, the importance attached to these values and their operationalization are different in the various parts of Europe. Therewith, the creation of `well-functioning' EU gas market will always remain a politicized and never ending story.",
+issn="2196-3010",
+doi="10.1007/s40518-016-0048-y",
+url="http://dx.doi.org/10.1007/s40518-016-0048-y"
+}
+
+
+@article{doi:10.1080/23745118.2016.1215374,
+author = {Filippos Proedrou},
+title = {A new framework for EU energy security: putting sustainability first},
+journal = {European Politics and Society},
+volume = {0},
+number = {0},
+pages = {1-17},
+year = {0},
+doi = {10.1080/23745118.2016.1215374},
+
+URL = {http://dx.doi.org/10.1080/23745118.2016.1215374},
+eprint = {http://dx.doi.org/10.1080/23745118.2016.1215374}
+
+@article{Peng201632,
+title = "A Holistic Framework For The Study Of Interdependence Between Electricity And Gas Sectors",
+journal = "Energy Strategy Reviews ",
+volume = "13–14",
+number = "",
+pages = "32 - 52",
+year = "2016",
+note = "",
+issn = "2211-467X",
+doi = "http://dx.doi.org/10.1016/j.esr.2016.08.003",
+url = "http://www.sciencedirect.com/science/article/pii/S2211467X16300347",
+author = "Donna Peng and Rahmatallah Poudineh",
+keywords = "Gas-to-power supply chain",
+keywords = "Interdependency between gas and electricity sectors",
+keywords = "SCP framework",
+keywords = "System dynamics "
+}
+
+@article{Jefferson20161,
+title = "Energy Realities Or Modelling: Which Is More Useful In A World Of Internal Contradictions?",
+journal = "Energy Research & Social Science ",
+volume = "22",
+number = "",
+pages = "1 - 6",
+year = "2016",
+note = "",
+issn = "2214-6296",
+doi = "http://dx.doi.org/10.1016/j.erss.2016.08.006",
+url = "http://www.sciencedirect.com/science/article/pii/S221462961630189X",
+author = "Michael Jefferson",
+keywords = "Energy modeling",
+keywords = "Shell",
+keywords = "Energy futures",
+keywords = "Scenarios "
+}
+
+@article{Wood2016,
+title = "Natural Gas Imports To Europe: The Frontline Of Competition Between \{LNG\} And Pipeline Supplies  ",
+journal = "Journal of Natural Gas Science and Engineering ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2016",
+note = "",
+issn = "1875-5100",
+doi = "http://dx.doi.org/10.1016/j.jngse.2016.09.065",
+url = "http://www.sciencedirect.com/science/article/pii/S1875510016307053",
+author = "David A. Wood"
+}
+
+@article{doi:10.1080/14650045.2016.1222520,
+author = {Andrew Judge and Tomas Maltby and Jack D. Sharples},
+title = {Challenging Reductionism In Analyses Of EU-Russia Energy Relations},
+journal = {Geopolitics},
+volume = {21},
+number = {4},
+pages = {751-762},
+year = {2016},
+doi = {10.1080/14650045.2016.1222520},
+
+URL = { 
+        http://dx.doi.org/10.1080/14650045.2016.1222520
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/14650045.2016.1222520
+    
+}
+
+}
+
+
+@Inbook{Sakai2017,
+author="Sakai, Satoshi",
+editor="Huang, Jing
+and Korolev, Alexander",
+title="Russia And Energy Transactions In Northeast Asia",
+bookTitle="The Political Economy Of Pacific Russia: Regional Developments In East Asia",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="129--155",
+isbn="978-3-319-40120-1",
+doi="10.1007/978-3-319-40120-1_6",
+url="http://dx.doi.org/10.1007/978-3-319-40120-1_6"
+}
+
+TY  - JOUR
+T1  - A Framework For Evaluating Global National Energy Security
+JO  - Applied Energy
+VL  - 188
+IS  - 
+SP  - 19
+EP  - 31
+PY  - 2017/2/15/
+T2  - 
+AU  - Wang, Qiang
+AU  - Zhou, Kan
+SN  - 0306-2619
+DO  - http://dx.doi.org/10.1016/j.apenergy.2016.11.116
+UR  - http://www.sciencedirect.com/science/article/pii/S0306261916317470
+KW  - Energy security
+KW  - Assessment modelling
+KW  - Distribution pattern
+KW  - Global ES performance
+ER  - 
+
+
+@article{Lee2017199,
+title = "Interdependence, Issue Importance, And The 2009 Russia-Ukraine Gas Conflict ",
+journal = "Energy Policy ",
+volume = "102",
+number = "",
+pages = "199 - 209",
+year = "2017",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.11.038",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516306437",
+author = "Yusin Lee",
+keywords = "Russia",
+keywords = "Ukraine",
+keywords = "Gas",
+keywords = "Pipeline",
+keywords = "Interdependence",
+keywords = "Conflict "
+}
+
+@article{Conrad2017644,
+title = "Chinese Investments In Europe's Energy Sector: Risks And Opportunities? ",
+journal = "Energy Policy ",
+volume = "101",
+number = "",
+pages = "644 - 648",
+year = "2017",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2016.12.016",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421516306711",
+author = "Björn Conrad and Genia Kostka",
+keywords = "Chinese investments",
+keywords = "EU",
+keywords = "Energy sector",
+keywords = "FDI",
+keywords = "Renewable energy "
+}
+
+@article{Stulberg2017,
+title = "Natural Gas And The Russia-Ukraine Crisis: Strategic Restraint And The Emerging Europe-Eurasia Gas Network ",
+journal = "Energy Research & Social Science ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2017",
+note = "",
+issn = "2214-6296",
+doi = "http://dx.doi.org/10.1016/j.erss.2016.12.017",
+url = "//www.sciencedirect.com/science/article/pii/S2214629616303206",
+author = "Adam N. Stulberg",
+keywords = "Energy Security",
+keywords = "Gazprom",
+keywords = "Energy Networks",
+keywords = "Russia "
+}
+
+
+@article{Ruble2017341,
+title = "European Union Energy Supply Security: The Benefits Of Natural Gas Imports From The Eastern Mediterranean",
+journal = "Energy Policy ",
+volume = "105",
+number = "",
+pages = "341 - 353",
+year = "2017",
+note = "",
+issn = "0301-4215",
+doi = "http://dx.doi.org/10.1016/j.enpol.2017.03.010",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421517301507",
+author = "Isabella Ruble",
+keywords = "Natural gas",
+keywords = "Energy security",
+keywords = "Energy policy",
+keywords = "European Union",
+keywords = "Eastern Mediterranean "
+}
+
+
+@article{Stulberg2017,
+title = "Natural Gas And The Russia-Ukraine Crisis: Strategic Restraint And The Emerging Europe-Eurasia Gas Network ",
+journal = "Energy Research & Social Science ",
+volume = "",
+number = "",
+pages = " - ",
+year = "2017",
+note = "",
+issn = "2214-6296",
+doi = "http://dx.doi.org/10.1016/j.erss.2016.12.017",
+url = "//www.sciencedirect.com/science/article/pii/S2214629616303206",
+author = "Adam N. Stulberg",
+keywords = "Energy Security",
+keywords = "Gazprom",
+keywords = "Energy Networks",
+keywords = "Russia "
+}
+
+
+
+
+
+@Article{Boersma2017,
+author="Boersma, Tim
+and Jordaan, Sarah M.",
+title="Whatever Happened To the Golden Age Of Natural Gas?",
+journal="Energy Transitions",
+year="2017",
+month="Aug",
+day="21",
+volume="1",
+number="2",
+pages="5",
+abstract="Recent technology innovation in the natural gas industry has powered a shale gas boom, enabling the narrative that natural gas is a transition fuel to a low-carbon future. However, this narrative has not manifested itself uniformly around the world and, more fundamentally, it must be tested and revised periodically to reflect rapidly changing market, supply chain, and environmental realities. The growth in production has put downward pressure on prices, incentivized increased consumption and trade in the coming years, leading to the coming of age of the global market for liquefied natural gas (LNG). LNG from areas with high levels of production can increasingly respond to demand growth elsewhere; however, questions about infrastructure availability, competition with other energy sources, and end use blur our understanding about environmental outcomes. New markets for natural gas face new medium and long-term challenges through capital investments in long-term infrastructure which creates a risk of displacing lower carbon options and prolonging higher emitting facilities. We explore the narrative of natural gas as a transition fuel, and how it has thus far manifested itself in various key markets. The United States is our region of focus on the supply side due to the recent shale gas boom and emission reductions from the coal-to-gas transition in the power sector. We make reference to producing regions involved in the international trade of liquefied natural gas. Questions related to demand from the European Union, OECD Asia, and parts of non-OECD Asia are discussed. China and India---representing the centers of prolific anticipated demand growth---are discussed in terms of challenges to domestic supply growth and competing environmental and political objectives.",
+issn="2520-114X",
+doi="10.1007/s41825-017-0005-4",
+url="https://doi.org/10.1007/s41825-017-0005-4"
+}
+
+
+
+@article{Krzykowski2017534,
+title = "Will The European Commission's Policy Hinder Gas Supplies To Central And Eastern European Countries? \{OPAL\} Case Decision ",
+journal = "Energy Policy ",
+volume = "110",
+number = "",
+pages = "534 - 541",
+year = "2017",
+note = "",
+issn = "0301-4215",
+doi = "https://doi.org/10.1016/j.enpol.2017.08.041",
+url = "http://www.sciencedirect.com/science/article/pii/S0301421517305451",
+author = "Michał Krzykowski and Karolina Krzykowska",
+keywords = "Opal pipeline",
+keywords = "Gas market",
+keywords = "Exemption decisions "
+}
+

@@ -1,5 +1,3 @@
-% !TeX encoding = ISO-8859-1
-
 %---------------------------------------------------------------------------
 % scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
 % Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
@@ -18,7 +16,7 @@
 %---------------------------------------------------------------------------
 % Layout
    headsepline=on,%%         Linie unter der Seitenzahl
-   parskip=half,%%           Abstand zwischen Absätzen
+   parskip=half,%%           Abstand zwischen Absaetzen
 %---------------------------------------------------------------------------
 % Briefkopf und Anschrift
    fromalign=right,%%        Plazierung des Briefkopfs
@@ -34,7 +32,7 @@
    locfield=narrow,%%        zusaetzliches Feld fuer Absender
    foldmarks=on,%%           Faltmarken setzen
    numericaldate=off,%%      Datum numerisch ausgeben
-   refline=narrow,%%         Geschäftszeile im Satzspiegel
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
    draft=on%%                Entwurfsmodus
@@ -42,7 +40,7 @@
 %---------------------------------------------------------------------------
 \usepackage{ngerman}
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{url}
 %---------------------------------------------------------------------------
 % Fonts
@@ -54,11 +52,14 @@
 %\usepackage{mathptmx}%% Schrift Times
 \usepackage{mathpazo}%% Schrift Palatino
 %\setkomafont{fromname}{\LARGE}
-%---------------------------------------------------------------------------
+
+
+
 %---------------------------------------------------------------------------
 % Eigene definierte KOMA-Variablen
-\newkomavar*[Versicherungsnummer]{Versicherungsnummer}
+%\newkomavar*[Mitgliedsnummer]{mitglied}
 
+%---------------------------------------------------------------------------
 \begin{document}
 %---------------------------------------------------------------------------
 % Briefstil und Position des Briefkopfs
@@ -76,58 +77,64 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Van der Hoevenplein 31\\3072 MK Rotterdam\\Niederlande}
+\setkomavar{fromaddress}{DÄ…bska 18k/18\\31-572 KrakÃ³w\\Polen/Polska}
 \setkomavar{fromphone}{+48 795 294 842}
 \renewcommand{\phonename}{Telefon}
-%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{fromemail}{pascal.bernhard@posteo.de}
 \setkomavar{backaddressseparator}{ - }
 \setkomavar{signature}{(Pascal Bernhard)}
 %\setkomavar{frombank}{}
 %\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
 %      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
 %---------------------------------------------------------------------------
-\firsthead{} %LEER LASSEN
+\firsthead{} %LEER LASSEN!
 %---------------------------------------------------------------------------
-%\firstfoot{Fußzeile}
+%\firstfoot{FuÃŸzeile}
 %---------------------------------------------------------------------------
 % Geschaeftszeilenfelder
 %\setkomavar{place}{Ort}
 %\setkomavar{placeseparator}{, den }
 \setkomavar{date}{\today}
 %\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
-%\setkomavar{yourref} {abcdefg}%%    'Ihr Zeichen...'
-\setkomavar{Versicherungsnummer} {504/48 706 551 A 00016}%%      Unser Zeichen
+%\setkomavar{konto} {Y843732129}%%    'Ihr Zeichen...'
+%\setkomavar{myref}{}%%      Unser Zeichen
 %\setkomavar{invoice}{123}%% Rechnungsnummer
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
 % Versendungsart
-%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%\setkomavar{specialmail}{Einschreiben mit RÃ¼ckschein}
 %---------------------------------------------------------------------------
 % Anlage neu definieren
 \renewcommand{\enclname}{Anlage}
-\setkomavar{enclseparator}{: }
+%\setkomavar{enclseparator}{: }
 %---------------------------------------------------------------------------
 % Seitenstil
 \pagestyle{plain}%% keine Header in der Kopfzeile
 %---------------------------------------------------------------------------
-\begin{letter}{HanseMerkur Versicherungsgruppe\\Siegfried-Wedells-Platz 1\\20354 Hamburg}
+\begin{letter}{Berliner Volksbank eG\\10892 Berlin\\Niemcy/Deutschland}
 %---------------------------------------------------------------------------
 % Weitere Optionen
 \KOMAoptions{%%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{Anwartschaft auf Zahnzusatzversicherung während eines Auslandsaufenthaltes}
+\setkomavar{subject}{KÃ¼ndigung Konto}
 %---------------------------------------------------------------------------
 \opening{Sehr geehrte Damen und Herren,}
 
-Ihr Schreiben vom 1. Februar hat mich erst nach meiner Versetzung in die Niederlande erreicht, so dass ich erst jetzt darauf reagieren kann. Ihr Angebot möchte ich gerne annehmen. Bitte teilen Sie mir mit, ob das Angebot für das Kalenderjahr 2018 weiterhin besteht. Den gesamten Jahresbetrag habe ich Ihnen bereits überwiesen.
+hiermit kÃ¼ndige ich zum 31.01.2018 mein bei Ihnen bestehendes Bankkonto (\textbf{704 300 3008}) samt angegliedertem VISA-Kartenkonto (\textbf{704 300 3750}).
+
+Bitte Ã¼berweisen Sie das verbliebene Guthaben auf folgendes Konto:
+
+\textbf{IBAN:} \textsl{PL44 1240 4706 1111 0010 7708 0506}\\
+\textbf{BIC:} \textsl{PKOPPLPW}
+
+Bitte bestÃ¤tigen Sie mir die KontolÃ¶schung schriftlich.
 
 
-
-\closing{Mit freundlichen Grüßen,}
+\closing{Mit freundlichen GrÃ¼ÃŸen,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-\encl{A}
+%\encl{}
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}

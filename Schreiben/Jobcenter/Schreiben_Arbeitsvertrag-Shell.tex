@@ -7,37 +7,37 @@
 % File may not be modified and redistributed under the same name 
 % without the author's prior consent.
 %---------------------------------------------------------------------------
-\documentclass%%
+\documentclass%
 %---------------------------------------------------------------------------
-  [fontsize=10pt,%%          Schriftgroesse
+  [fontsize=10pt,%          Schriftgröße
 %---------------------------------------------------------------------------
 % Satzspiegel
-   paper=a4,%%               Papierformat
-   enlargefirstpage=on,%%    Erste Seite anders
-%   pagenumber=headright,%%   Seitenzahl oben mittig
+   paper=a4,%               Papierformat
+   enlargefirstpage=on,%    Erste Seite anders
+%   pagenumber=headright,%   Seitenzahl oben mittig
 %---------------------------------------------------------------------------
 % Layout
-   headsepline=on,%%         Linie unter der Seitenzahl
-   parskip=half,%%           Abstand zwischen Absätzen
+   headsepline=on,%         Linie unter der Seitenzahl
+   parskip=half,%           Abstand zwischen Absätzen
 %---------------------------------------------------------------------------
 % Briefkopf und Anschrift
-   fromalign=right,%%        Plazierung des Briefkopfs
-   fromphone=on,%%           Telefonnummer im Absender
-   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
-   fromfax=off,%%            Faxnummer
-   fromemail=off,%%          Emailadresse
-   fromurl=off,%%            Homepage
-%   fromlogo=on,%%           Firmenlogo
-   addrfield=on,%%           Adressfeld fuer Fensterkuverts
-   backaddress=on,%%          ...und Absender im Fenster
-   subject=beforeopening,%%  Plazierung der Betreffzeile
-   locfield=narrow,%%        zusaetzliches Feld fuer Absender
-   foldmarks=on,%%           Faltmarken setzen
-   numericaldate=off,%%      Datum numerisch ausgeben
-   refline=narrow,%%         Geschäftszeile im Satzspiegel
+   fromalign=right,%        Plazierung des Briefkopfs
+   fromphone=on,%           Telefonnummer im Absender
+   fromrule=off,%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%            Faxnummer
+   fromemail=off,%          Emailadresse
+   fromurl=off,%            Homepage
+%   fromlogo=on,%           Firmenlogo
+   addrfield=on,%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%          ...und Absender im Fenster
+   subject=beforeopening,%  Plazierung der Betreffzeile
+   locfield=narrow,%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%           Faltmarken setzen
+   numericaldate=off,%      Datum numerisch ausgeben
+   refline=narrow,%         Geschäftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
-   draft=on%%                Entwurfsmodus
+   draft=on%                Entwurfsmodus
 ]{scrlttr2}
 %---------------------------------------------------------------------------
 \usepackage{ngerman}
@@ -47,22 +47,24 @@
 %---------------------------------------------------------------------------
 % Fonts
 \setkomafont{fromname}{\sffamily \LARGE}
-\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{fromaddress}{\sffamily}% statt \small
 \setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
 \setkomafont{backaddress}{\mdseries}
-%\usepackage{mathptmx}%% Schrift Times
-\usepackage{mathpazo}%% Schrift Palatino
+\usepackage{mathptmx}% Schrift Times
+%\usepackage{mathpazo}% Schrift Palatino
 %\setkomafont{fromname}{\LARGE}
-%---------------------------------------------------------------------------
+
+
 %---------------------------------------------------------------------------
 % Eigene definierte KOMA-Variablen
-\newkomavar*[Versicherungsnummer]{Versicherungsnummer}
+\newkomavar*[BG Nummer]{BGnummer}
 
+%---------------------------------------------------------------------------
 \begin{document}
 %---------------------------------------------------------------------------
 % Briefstil und Position des Briefkopfs
-\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\LoadLetterOption{DIN} % oder: DINmtext, SN, SNleft, KOMAold.
 \makeatletter
 \@setplength{firstheadvpos}{20mm}
 \@setplength{firstheadwidth}{\paperwidth}
@@ -76,15 +78,15 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Van der Hoevenplein 31\\3072 MK Rotterdam\\Niederlande}
-\setkomavar{fromphone}{+48 795 294 842}
+\setkomavar{fromaddress}{D?bska 18k/18\\31-572 Kraków}
+\setkomavar{fromphone}{+49 162 32 39 557}
 \renewcommand{\phonename}{Telefon}
 %\setkomavar{fromemail}{absender.name@provider.de}
 \setkomavar{backaddressseparator}{ - }
 \setkomavar{signature}{(Pascal Bernhard)}
 %\setkomavar{frombank}{}
 %\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
-%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
+%      Telefon:\ usekomavar{fromphone}}}}% Neben dem Adressfenster
 %---------------------------------------------------------------------------
 \firsthead{} %LEER LASSEN
 %---------------------------------------------------------------------------
@@ -94,10 +96,11 @@
 %\setkomavar{place}{Ort}
 %\setkomavar{placeseparator}{, den }
 \setkomavar{date}{\today}
-%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
-%\setkomavar{yourref} {abcdefg}%%    'Ihr Zeichen...'
-\setkomavar{Versicherungsnummer} {504/48 706 551 A 00016}%%      Unser Zeichen
-%\setkomavar{invoice}{123}%% Rechnungsnummer
+%\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
+\setkomavar{yourref} {665}%    'Ihr Zeichen...'
+\setkomavar{BGnummer}{BG 92210/0026652}
+%\setkomavar{myref}{}%      Unser Zeichen
+%\setkomavar{invoice}{123}% Rechnungsnummer
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
 % Versendungsart
@@ -108,26 +111,30 @@
 \setkomavar{enclseparator}{: }
 %---------------------------------------------------------------------------
 % Seitenstil
-\pagestyle{plain}%% keine Header in der Kopfzeile
+\pagestyle{plain}% keine Header in der Kopfzeile
 %---------------------------------------------------------------------------
-\begin{letter}{HanseMerkur Versicherungsgruppe\\Siegfried-Wedells-Platz 1\\20354 Hamburg}
+\begin{letter}{Jobcenter Berlin Tempelhof-Schöneberg\\Team 665\\z.H. Frau Müller\\Wolframstraße 89-92\\12105 Berlin}
 %---------------------------------------------------------------------------
 % Weitere Optionen
-\KOMAoptions{%%
+\KOMAoptions{%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{Anwartschaft auf Zahnzusatzversicherung während eines Auslandsaufenthaltes}
+\setkomavar{subject}{\textbf{Rechnung der Umzugsfirma}}
 %---------------------------------------------------------------------------
-\opening{Sehr geehrte Damen und Herren,}
+\opening{Sehr geehrte Frau Müller,}
 
-Ihr Schreiben vom 1. Februar hat mich erst nach meiner Versetzung in die Niederlande erreicht, so dass ich erst jetzt darauf reagieren kann. Ihr Angebot möchte ich gerne annehmen. Bitte teilen Sie mir mit, ob das Angebot für das Kalenderjahr 2018 weiterhin besteht. Den gesamten Jahresbetrag habe ich Ihnen bereits überwiesen.
+anscheinend ist der Beleg der Umzugsfirma, welche ich Ihnen im Dezember 2017 zgesandt habe, nicht angekommen. So habe ich das Unternehmen gebeten, mir eine neue Rechnung auszustellen, diese finden Sie dem Schreiben angehängt.
 
+Sollte das Jobcenter den Betrag nicht vor dem 29.01.2018 überweisen, bitte ich Sie meine neue Kontoverbindung meiner polnischen Bank zu verwenden, da ich mein Bankkonto in Deutschland zum Ende des Monats auflösen werde
+
+\textbf{IBAN:}
+\textbf{BIC:}
 
 
 \closing{Mit freundlichen Grüßen,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-\encl{A}
+\encl{Kopie des Arbeitsvertrages mit Shell Polska}
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}

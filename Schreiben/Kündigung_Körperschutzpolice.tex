@@ -1,5 +1,3 @@
-% !TeX encoding = ISO-8859-1
-
 %---------------------------------------------------------------------------
 % scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
 % Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
@@ -18,7 +16,7 @@
 %---------------------------------------------------------------------------
 % Layout
    headsepline=on,%%         Linie unter der Seitenzahl
-   parskip=half,%%           Abstand zwischen Absätzen
+   parskip=half,%%           Abstand zwischen Absaetzen
 %---------------------------------------------------------------------------
 % Briefkopf und Anschrift
    fromalign=right,%%        Plazierung des Briefkopfs
@@ -34,7 +32,7 @@
    locfield=narrow,%%        zusaetzliches Feld fuer Absender
    foldmarks=on,%%           Faltmarken setzen
    numericaldate=off,%%      Datum numerisch ausgeben
-   refline=narrow,%%         Geschäftszeile im Satzspiegel
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
    draft=on%%                Entwurfsmodus
@@ -51,14 +49,14 @@
 \setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
 \setkomafont{backaddress}{\mdseries}
-%\usepackage{mathptmx}%% Schrift Times
-\usepackage{mathpazo}%% Schrift Palatino
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
 %\setkomafont{fromname}{\LARGE}
-%---------------------------------------------------------------------------
+
 %---------------------------------------------------------------------------
 % Eigene definierte KOMA-Variablen
-\newkomavar*[Versicherungsnummer]{Versicherungsnummer}
-
+\newkomavar*[Versicherungsnummer]{versicherung}
+%---------------------------------------------------------------------------
 \begin{document}
 %---------------------------------------------------------------------------
 % Briefstil und Position des Briefkopfs
@@ -76,8 +74,8 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Van der Hoevenplein 31\\3072 MK Rotterdam\\Niederlande}
-\setkomavar{fromphone}{+48 795 294 842}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{0162 32 39 557}
 \renewcommand{\phonename}{Telefon}
 %\setkomavar{fromemail}{absender.name@provider.de}
 \setkomavar{backaddressseparator}{ - }
@@ -86,7 +84,7 @@
 %\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
 %      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
 %---------------------------------------------------------------------------
-\firsthead{} %LEER LASSEN
+\firsthead{}
 %---------------------------------------------------------------------------
 %\firstfoot{Fußzeile}
 %---------------------------------------------------------------------------
@@ -95,8 +93,8 @@
 %\setkomavar{placeseparator}{, den }
 \setkomavar{date}{\today}
 %\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
-%\setkomavar{yourref} {abcdefg}%%    'Ihr Zeichen...'
-\setkomavar{Versicherungsnummer} {504/48 706 551 A 00016}%%      Unser Zeichen
+\setkomavar{versicherung} {33 328 037 9}%%    'Versicherungsnummer...'
+%\setkomavar{myref}{}%%      Unser Zeichen
 %\setkomavar{invoice}{123}%% Rechnungsnummer
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
@@ -105,29 +103,34 @@
 %---------------------------------------------------------------------------
 % Anlage neu definieren
 \renewcommand{\enclname}{Anlage}
-\setkomavar{enclseparator}{: }
+%\setkomavar{enclseparator}{: }
 %---------------------------------------------------------------------------
 % Seitenstil
 \pagestyle{plain}%% keine Header in der Kopfzeile
 %---------------------------------------------------------------------------
-\begin{letter}{HanseMerkur Versicherungsgruppe\\Siegfried-Wedells-Platz 1\\20354 Hamburg}
+\begin{letter}{Allianz Lebensversicherungs-AG\\10850 Berlin}
 %---------------------------------------------------------------------------
 % Weitere Optionen
 \KOMAoptions{%%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{Anwartschaft auf Zahnzusatzversicherung während eines Auslandsaufenthaltes}
+%\setkomavar{subject}{Kündigung KörperSchutzPolice}
 %---------------------------------------------------------------------------
 \opening{Sehr geehrte Damen und Herren,}
 
-Ihr Schreiben vom 1. Februar hat mich erst nach meiner Versetzung in die Niederlande erreicht, so dass ich erst jetzt darauf reagieren kann. Ihr Angebot möchte ich gerne annehmen. Bitte teilen Sie mir mit, ob das Angebot für das Kalenderjahr 2018 weiterhin besteht. Den gesamten Jahresbetrag habe ich Ihnen bereits überwiesen.
+
+hiermit kündige ich meine KörperSchutzPolice zum 01. Oktober 2017.
+
+Die beiden ausstehenden Beiträge in Höhe von insgesamt überweise ich Ihnen in zwei Raten in den beiden kommenden Monaten.
+
+
 
 
 
 \closing{Mit freundlichen Grüßen,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-\encl{A}
+
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}
