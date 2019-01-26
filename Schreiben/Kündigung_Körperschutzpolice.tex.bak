@@ -1,5 +1,3 @@
-% !TeX encoding = UTF8
-
 %---------------------------------------------------------------------------
 % scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
 % Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
@@ -7,37 +5,37 @@
 % File may not be modified and redistributed under the same name 
 % without the author's prior consent.
 %---------------------------------------------------------------------------
-\documentclass%
+\documentclass%%
 %---------------------------------------------------------------------------
-  [fontsize=10pt,%          Schriftgrï¿½ï¿½e
+  [fontsize=10pt,%%          Schriftgroesse
 %---------------------------------------------------------------------------
 % Satzspiegel
-   paper=a4,%               Papierformat
-   enlargefirstpage=on,%    Erste Seite anders
-%   pagenumber=headright,%   Seitenzahl oben mittig
+   paper=a4,%%               Papierformat
+   enlargefirstpage=on,%%    Erste Seite anders
+%   pagenumber=headright,%%   Seitenzahl oben mittig
 %---------------------------------------------------------------------------
 % Layout
-   headsepline=on,%         Linie unter der Seitenzahl
-   parskip=half,%           Abstand zwischen Absï¿½tzen
+   headsepline=on,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
 %---------------------------------------------------------------------------
 % Briefkopf und Anschrift
-   fromalign=right,%        Plazierung des Briefkopfs
-   fromphone=on,%           Telefonnummer im Absender
-   fromrule=off,%           Linie im Absender (aftername, afteraddress)
-   fromfax=off,%            Faxnummer
-   fromemail=off,%          Emailadresse
-   fromurl=off,%            Homepage
-%   fromlogo=on,%           Firmenlogo
-   addrfield=on,%           Adressfeld fuer Fensterkuverts
-   backaddress=on,%          ...und Absender im Fenster
-   subject=beforeopening,%  Plazierung der Betreffzeile
-   locfield=narrow,%        zusaetzliches Feld fuer Absender
-   foldmarks=on,%           Faltmarken setzen
-   numericaldate=off,%      Datum numerisch ausgeben
-   refline=narrow,%         Geschï¿½ftszeile im Satzspiegel
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=on,%%           Telefonnummer im Absender
+   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=off,%%          Emailadresse
+   fromurl=off,%%            Homepage
+%   fromlogo=on,%%           Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%          ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
-   draft=on%                Entwurfsmodus
+   draft=on%%                Entwurfsmodus
 ]{scrlttr2}
 %---------------------------------------------------------------------------
 \usepackage{ngerman}
@@ -47,18 +45,22 @@
 %---------------------------------------------------------------------------
 % Fonts
 \setkomafont{fromname}{\sffamily \LARGE}
-\setkomafont{fromaddress}{\sffamily}% statt \small
+\setkomafont{fromaddress}{\sffamily}%% statt \small
 \setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
 \setkomafont{backaddress}{\mdseries}
-\usepackage{mathptmx}% Schrift Times
-%\usepackage{mathpazo}% Schrift Palatino
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
 %\setkomafont{fromname}{\LARGE}
+
+%---------------------------------------------------------------------------
+% Eigene definierte KOMA-Variablen
+\newkomavar*[Versicherungsnummer]{versicherung}
 %---------------------------------------------------------------------------
 \begin{document}
 %---------------------------------------------------------------------------
 % Briefstil und Position des Briefkopfs
-\LoadLetterOption{DIN} % oder: DINmtext, SN, SNleft, KOMAold.
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
 \makeatletter
 \@setplength{firstheadvpos}{20mm}
 \@setplength{firstheadwidth}{\paperwidth}
@@ -72,57 +74,63 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Schwalbacher Straï¿½e\\12161 Berlin}
-\setkomavar{fromphone}{+49 30 32 66 58 00}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{0162 32 39 557}
 \renewcommand{\phonename}{Telefon}
 %\setkomavar{fromemail}{absender.name@provider.de}
 \setkomavar{backaddressseparator}{ - }
 \setkomavar{signature}{(Pascal Bernhard)}
 %\setkomavar{frombank}{}
 %\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
-%      Telefon:\ usekomavar{fromphone}}}}% Neben dem Adressfenster
+%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
 %---------------------------------------------------------------------------
-\firsthead{} %LEER LASSEN
+\firsthead{}
 %---------------------------------------------------------------------------
-%\firstfoot{Fuï¿½zeile}
+%\firstfoot{Fußzeile}
 %---------------------------------------------------------------------------
 % Geschaeftszeilenfelder
 %\setkomavar{place}{Ort}
 %\setkomavar{placeseparator}{, den }
 \setkomavar{date}{\today}
-%\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
-\setkomavar{yourref} {621}%    'Ihr Zeichen...'
-%\setkomavar{myref}{}%      Unser Zeichen
-%\setkomavar{invoice}{123}% Rechnungsnummer
+%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
+\setkomavar{versicherung} {33 328 037 9}%%    'Versicherungsnummer...'
+%\setkomavar{myref}{}%%      Unser Zeichen
+%\setkomavar{invoice}{123}%% Rechnungsnummer
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
 % Versendungsart
-%\setkomavar{specialmail}{Einschreiben mit Rï¿½ckschein}
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
 %---------------------------------------------------------------------------
 % Anlage neu definieren
 \renewcommand{\enclname}{Anlage}
-\setkomavar{enclseparator}{: }
+%\setkomavar{enclseparator}{: }
 %---------------------------------------------------------------------------
 % Seitenstil
-\pagestyle{plain}% keine Header in der Kopfzeile
+\pagestyle{plain}%% keine Header in der Kopfzeile
 %---------------------------------------------------------------------------
-\begin{letter}{Jobcenter Berlin Tempelhof-Schï¿½neberg\\z.H. Frau Dittmann\\Wolframstraï¿½e 89-92\\12105 Berlin}
+\begin{letter}{Allianz Lebensversicherungs-AG\\10850 Berlin}
 %---------------------------------------------------------------------------
 % Weitere Optionen
-\KOMAoptions{%
+\KOMAoptions{%%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{BG 94406BG0094952}
+%\setkomavar{subject}{Kündigung KörperSchutzPolice}
 %---------------------------------------------------------------------------
-\opening{Sehr geehrte Frau Ecke,}
-
-anbei Ã¼bersende ich Ihnen die aktuelle Krankschreibungin Folge meines Unfalls. Auf die Unterlagen des Krankenhauses zur ersten Operation warte ich noch, mittlerweile bin ich wieder entlassen worden
+\opening{Sehr geehrte Damen und Herren,}
 
 
-\closing{Mit freundlichen Grï¿½ï¿½en,}
+hiermit kündige ich meine KörperSchutzPolice zum 01. Oktober 2017.
+
+Die beiden ausstehenden Beiträge in Höhe von insgesamt überweise ich Ihnen in zwei Raten in den beiden kommenden Monaten.
+
+
+
+
+
+\closing{Mit freundlichen Grüßen,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-%\encl{Krankschreibung vom 28.11.2016}
+
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}
