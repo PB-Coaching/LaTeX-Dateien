@@ -9,7 +9,7 @@
 %---------------------------------------------------------------------------
 \documentclass%%
 %---------------------------------------------------------------------------
-  [fontsize=10pt,%%          Schriftgroesse
+  [fontsize=10pt,%%          Schriftgr√∂√üe
 %---------------------------------------------------------------------------
 % Satzspiegel
    paper=a4,%%               Papierformat
@@ -18,7 +18,7 @@
 %---------------------------------------------------------------------------
 % Layout
    headsepline=on,%%         Linie unter der Seitenzahl
-   parskip=half,%%           Abstand zwischen Abs‰tzen
+   parskip=half,%%           Abstand zwischen Abs√§tzen
 %---------------------------------------------------------------------------
 % Briefkopf und Anschrift
    fromalign=right,%%        Plazierung des Briefkopfs
@@ -34,15 +34,15 @@
    locfield=narrow,%%        zusaetzliches Feld fuer Absender
    foldmarks=on,%%           Faltmarken setzen
    numericaldate=off,%%      Datum numerisch ausgeben
-   refline=narrow,%%         Gesch‰ftszeile im Satzspiegel
+   refline=narrow,%%         Gesch√§ftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
    draft=on%%                Entwurfsmodus
 ]{scrlttr2}
 %---------------------------------------------------------------------------
-\usepackage{ngerman}
+\usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{url}
 %---------------------------------------------------------------------------
 % Fonts
@@ -76,7 +76,7 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Rozdro\.{z}e 17c/23\\30-333 KrakÛw\\Polen}
+\setkomavar{fromaddress}{Dobrego Paster≈∫a 27A/2\\31-416 Krak√≥w}
 \setkomavar{fromphone}{+48 795 294 842}
 \renewcommand{\phonename}{Telefon}
 %\setkomavar{fromemail}{absender.name@provider.de}
@@ -88,7 +88,7 @@
 %---------------------------------------------------------------------------
 \firsthead{} %LEER LASSEN
 %---------------------------------------------------------------------------
-%\firstfoot{Fuﬂzeile}
+%\firstfoot{Fu√üzeile}
 %---------------------------------------------------------------------------
 % Geschaeftszeilenfelder
 %\setkomavar{place}{Ort}
@@ -101,7 +101,7 @@
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
 % Versendungsart
-%\setkomavar{specialmail}{Einschreiben mit R¸ckschein}
+%\setkomavar{specialmail}{Einschreiben mit R√ºckschein}
 %---------------------------------------------------------------------------
 % Anlage neu definieren
 \renewcommand{\enclname}{Anlage}
@@ -116,15 +116,15 @@
 \KOMAoptions{%%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{\textbf{Verl‰ngerung der Anwartschaft auf Zahnzusatzversicherung w‰hrend eines Auslandsaufenthaltes}}
+\setkomavar{subject}{\textbf{Verl√§ngerung der Anwartschaft auf Zahnzusatzversicherung}}
 %---------------------------------------------------------------------------
 \opening{Sehr geehrte Damen und Herren,}
 
-mein Auslandsaufenthalt wird sich aus beruflichen Gr¸nden um circa ein Jahr verl‰ngern. Daher mˆchte ich meine Anwartschaft auf das Jahr 2019 ausdehnen. Bitte teilen Sie mir mit, wie ich meine Anwartschaft verl‰ngern kann.
+ich m√∂chte meine bestehende Anwartschaft um ein Jahr verl√§ngern. Bitte teilen Sie mir die anfallenden Beitragsbetr√§ge mit.
 
 
 
-\closing{Mit freundlichen Gr¸\ss{}en,}
+\closing{Mit freundlichen Gr√º√üen,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
 %\encl{}
