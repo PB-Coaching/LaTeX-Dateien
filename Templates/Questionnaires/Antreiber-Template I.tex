@@ -1,0 +1,30 @@
+\documentclass[12pt,twoside,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\pagestyle{plain}
+
+\begin{document}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{L{0.5\textwidth}|C{0.1\textwidth}|C{0.1\textwidth}|C{0.1\textwidth}|C{0.1\textwidth}|C{0.1\textwidth}|}
+\cline{2-6}
+I think that I would like to use this system frequently                                   & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I found the system unnecessarily complex                                                  & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I thought the system was easy to use                                                      & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I think that I would need the support of a technical person to be able to use this system & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I found the various functions in this system were well integrated                         & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I thought there was too much inconsistency in this system                                 & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I would imagine that most people would learn to use this system very quickly              & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I found the system very cumbersome to use                                                 & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I felt very confident using the system                                                    & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+I needed to learn a lot of things before I could get going with this system               & 1 & 2 & 3 & 4 & 5 \\ \cline{2-6} 
+\end{tabular}
+\end{table}
+\end{document}

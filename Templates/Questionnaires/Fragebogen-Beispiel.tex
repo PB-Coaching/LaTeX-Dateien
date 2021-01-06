@@ -1,0 +1,675 @@
+Skip to content
+Search…
+All gists
+Back to GitHub
+ 
+Instantly share code, notes, and snippets.
+
+4 0 @lindiglindig/survey.tex
+Created 2 years ago
+ Skip to content
+Search…
+All gists
+Back to GitHub
+ 
+Instantly share code, notes, and snippets.
+
+4 0 @lindiglindig/survey.tex
+Created 2 years ago
+ 
+<script src="https://gist.github.com/lindig/3935127350488c42b8cd40b317e4cbec.js"></script>
+  
+ Code  Revisions 1  Stars 4
+ survey.tex
+\documentclass[a4paper,12pt]{article}
+\usepackage{fullpage}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{xspace}
+
+% PDF stuff
+\ifx\pdfoutput\undefined
+\else
+    \pdfpagewidth=210mm
+    \pdfpageheight=297mm
+\fi
+
+\newif\ifbanner\bannerfalse
+\bannerfalse
+\advance\oddsidemargin-5mm
+\advance\textwidth1cm
+
+\font\manual=manfnt
+\def\shared{\noindent\llap{\manual\char'170\kern.15em}}
+
+\def\heading#1{
+    \ifhmode\par\fi
+    \removelastskip
+    \vskip1ex plus 0.5ex minus 0.3 ex%\goodbreak
+    \noindent
+    \hbox to \hsize{\bf #1\hfill}
+    \smallskip\par\nobreak}
+
+
+\def\nicefrac#1/#2{\leavevmode%
+    \raise.5ex\hbox{\the\scriptfont0 #1}%
+    \kern-.1em/\kern-.15em%
+    \lower.25ex\hbox{\the\scriptfont0 #2}}
+
+\newdimen\scalewidth
+\scalewidth=0.3\hsize 
+
+\def\xboxit#1{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox{\strut\small #1}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+\def\boxit#1{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox to 1.4em
+    {\small\strut\hfil #1\hfil}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+\def\sboxit{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox to 1ex
+    {\small\strut\hfil}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+
+\def\fiveboxes#1#2#3#4#5{\hbox to\scalewidth
+    {\boxit{#1}\hfil\boxit{#2}\hfil\boxit{#3}\hfil%
+     \boxit{#4}\hfil\boxit{#5}}}
+\def\manyboxes{\hbox to \scalewidth
+    {\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil%
+    \sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit}}
+
+
+\def\boxes{\fiveboxes{}{}{}{}{}\ignorespaces}
+
+\def\void{\boxit{}}
+
+\def\xscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut\hfill #2 $\to$}%
+    \setbox2=\hbox to \wd0{\small\strut $\gets$ #1 \hfill}%
+    \vbox{\vbox to 0pt{\vss\box1\box2\kern2pt}\vbox{\box0}}}
+
+\def\scale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut\hfill #2 $\to$}%
+    \setbox2=\hbox to \wd0{\small\strut $\gets$ #1 \hfill}%
+    \vbox{\medskip\box1\box2\kern2pt\box0}}
+
+\def\xshortscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ #1 \hfill #2 $\to$}%
+    \vbox{\vbox to 0pt{\vss\box1\kern2pt}\vbox{\box0}}}
+
+\def\shortscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ #1 \hfill #2 $\to$}%
+    \vbox{\medskip\box1\kern2pt\box0}}
+
+\def\agree{\scale{strongly disagree}{agree completely}}
+\def\xagree{\xscale{strongly disagree}{agree completely}}
+\def\xquality{\xshortscale{poor}{outstanding}}
+\def\quality{\shortscale{poor}{outstanding}}
+
+\def\longquality{%
+    \setbox0=\hbox{\manyboxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ poor \hfill outstanding $\to$}%
+    \vbox{\vbox to 0pt{\vss\box1\kern2pt}\vbox{\box0}}}
+
+\def\linscale{%
+    \def\tick{\vrule height 5pt\relax}%
+    \vbox{\hbox to \scalewidth{\tick\hfil\tick\hfil\tick\hfil\tick}\hrule}}
+
+\def\question#1\par#2\par{\hbox to \hsize
+    {\vbox{\hsize=0.72\hsize #1\dotfill}\quad#2\hfil}\medskip\goodbreak}
+
+\def\freequestion#1\par{#1\par\nobreak
+    \begingroup\nobreak
+    \advance\leftskip by 2pc
+    \hrule width 0pt height 1.7\baselineskip\hrulefill
+    \hrule width 0pt height 1.7\baselineskip\hrulefill
+    \par
+    \medskip
+    \endgroup
+    }
+
+\parindent0pt
+\parskip5pt plus 0.2 ex minus 0.1ex
+
+
+\def\<#1>{\textsc{#1}}
+\parindent0pt
+\parskip5pt plus 0.2 ex minus 0.1ex
+
+\begin{document} 
+\vspace*{-2cm}
+\ifbanner
+    \kern-5mm
+    \leavevmode
+    \kern-9mm\includegraphics[height=2.5cm]{dagstuhl_signet2.pdf}
+    \vskip1cm
+\else
+    \vskip3cm
+\fi
+
+Schloss Dagstuhl would like your feedback to (1) provide feedback to
+organizers and participants, (2) improve our organization, and (3) for
+reports to our funding agencies. We will send you an email with
+seminar-related results of this survey.
+
+Feedback is shared only in aggregated form that cannot be used to
+identify the origin of a statement or grade---\emph{we guarantee your
+anonymity!} However, answers from free-text questions marked with
+{\manual\char'170} will be a reported literally.  If you rather not
+trust us, we would still be very much interested in your feedback and
+would be glad to receive an email from you at survey@dagstuhl.de where
+you describe your experience in your own words.
+
+\textbf{Some questions might not apply to this seminar or your personal
+situation. Please skip any question that does not apply. Otherwise,
+please check the most appropriate box.  You can take this survey also
+online, even back at home:}
+
+\begin{center}\bf
+http://www.dagstuhl.de/immediate
+\end{center}
+
+For questions and remarks regarding this survey, please don't hesitate
+to contact us. We appreciate your input!
+
+\begin{tabular}{@{}l@{\qquad}l}
+Dr. Christian Lindig            & Jutka Gasiorowski     \\
+Research Staff                  & Assistant (on site)   \\
+survey@dagstuhl.de              & survey@dagstuhl.de \\
++49-681-302-5590                & +49-6871-905-134 \\
+\end{tabular}
+
+
+\heading{General Questions}
+
+\question What is the 5-digit seminar number of this seminar?
+You can find it on your badge or the web page of your seminar. \par
+\fiveboxes09{}{}{}
+%\fiveboxes09123 % for seminar 09123
+
+\question How many Dagstuhl Seminars have you attended, including this
+one?\par \fiveboxes123{4--6}{$\ge 7$}
+
+\question Have prior Dagstuhl Seminars changed your expectations towards
+this one? My expectations became \dots\par\shortscale{lower}{higher}
+
+\question Would you come to another Dagstuhl Seminar?
+\par\fiveboxes{no}{}{}{}{yes}
+
+\heading{Scientific Content}
+
+\question All in all, how do you rate the scientific quality of the
+seminar? \par\longquality
+
+\question The seminar inspired new ideas for my work (research,
+development, or teaching).\par\agree
+
+\question The seminar inspired joint projects, joint development, or
+joint publications.\par\boxes
+
+\question The seminar led to insights from neighboring fields or
+communities.\par\xagree
+
+\question The seminar identified new research directions.
+\par\boxes
+
+\shared\freequestion What are the best and the worst aspects of this
+seminar?
+
+\heading{Group Composition}
+
+\question The group is a good mix in terms of expertise and interests.
+\par\xagree
+
+\question The seminar does a good job integrating junior researchers.
+\par\boxes
+
+\question I made new professional contacts like an invitation to give a
+talk or to join an existing project or network. \par\boxes
+
+\question If applicable: I value exchange between academia and
+industry.\par\boxes
+
+\shared\freequestion Suggestions for group composition:
+
+
+\heading{Seminar Organization}
+
+\question Overall usefulness of information you received
+in preparation for the seminar from Dagstuhl. \par\xquality
+
+\question Overall usefulness of information you received
+in preparation for the seminar from scientific organizers. \par\boxes
+
+\shared\freequestion Suggestions for improving the preparation of the
+seminar:
+
+\question Number and length of talks are appropriate.
+\par\agree
+
+\question There is enough opportunity for socializing and
+personal discussions. \par\boxes
+
+\question The schedule is flexible enough to accommodate
+unplanned but interesting talks or discussions. \par\boxes
+
+\question The seminar creates an atmosphere for open and honest
+discussion. \par\xagree
+
+\question The traditional outing (hike, excursion) was useful.
+\par\boxes
+
+\shared\freequestion Suggestions for improving the schedule and organization of
+the seminar:
+
+
+%\vfill\eject
+
+\heading{Dagstuhl as a Venue}
+
+\question Dagstuhl as a venue in general.\par\xquality
+
+\question Conference facilities (rooms, projectors, white
+boards).\par\boxes
+
+\freequestion Suggestions for conference facilities except computer
+facilities:
+
+\question Computer facilities (internet, wlan, printer, computer,
+copier, scanner).\par\quality
+
+\freequestion Suggestions for computer facilities:
+
+\question Quality of the (electronic) library services.\par\quality
+
+\freequestion To improve the (electronic) library collection, please enter 
+book or journal title suggestions below. Our librarian Petra Meyer would be also glad about suggestions by email; you can reach her at petra.meyer@dagstuhl.de.
+
+\question Support by Dagstuhl's staff.\par\quality
+
+\question Quality of meals.\par\boxes
+
+\question Quality of your room (bed, desk, cleanliness, etc).\par\xquality	 
+
+\question Leisure facilities (wine cellar, bikes, sauna, pool table,
+news papers).\par\boxes
+
+\freequestion Suggestions for meals, rooms, and leisure facilities:
+
+%\vfill\eject
+\heading{Dagstuhl versus Traditional Conferences}
+
+\shared\freequestion Compared with traditional conferences, what are Dagstuhl's
+greatest strengths?
+
+\shared\freequestion Compared with traditional conferences, what are Dagstuhl's
+greatest weaknesses? 
+
+\heading{Personal Questions}
+
+\question Please rate your professional seniority. \par 
+\xboxit{junior} \xboxit{neither} \xboxit{senior}
+
+\question What is your primary occupation? \<a>=academia,
+\<ir>=in\-dustrial research, \<id>=in\-dustrial development, \<s>=self
+employed, \<o>=other.\par\fiveboxes{\<a>}{\<ir>}{\<id>}{\<s>}{\<o>}
+
+\question What is your country of residence? Please specify your
+country's two-letter top-level domain (it is often part of your email
+address: England=\<uk>, USA=\<us>, France=\<fr>, Germany=\<de>, \dots) \par
+\void{} \void{}
+
+\heading{General Remarks and Ideas}
+
+\shared\freequestion Please share any other remarks or ideas for improving the
+seminar or this survey:
+
+\end{document}
+
+
+ to join this conversation on GitHub. Already have an account? Sign in to comment
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
+<script src="https://gist.github.com/lindig/3935127350488c42b8cd40b317e4cbec.js"></script>
+  
+ Code  Revisions 1  Stars 4
+ survey.tex
+\documentclass[a4paper,12pt]{article}
+\usepackage{fullpage}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{xspace}
+
+% PDF stuff
+\ifx\pdfoutput\undefined
+\else
+    \pdfpagewidth=210mm
+    \pdfpageheight=297mm
+\fi
+
+\newif\ifbanner\bannerfalse
+\bannerfalse
+\advance\oddsidemargin-5mm
+\advance\textwidth1cm
+
+\font\manual=manfnt
+\def\shared{\noindent\llap{\manual\char'170\kern.15em}}
+
+\def\heading#1{
+    \ifhmode\par\fi
+    \removelastskip
+    \vskip1ex plus 0.5ex minus 0.3 ex%\goodbreak
+    \noindent
+    \hbox to \hsize{\bf #1\hfill}
+    \smallskip\par\nobreak}
+
+
+\def\nicefrac#1/#2{\leavevmode%
+    \raise.5ex\hbox{\the\scriptfont0 #1}%
+    \kern-.1em/\kern-.15em%
+    \lower.25ex\hbox{\the\scriptfont0 #2}}
+
+\newdimen\scalewidth
+\scalewidth=0.3\hsize 
+
+\def\xboxit#1{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox{\strut\small #1}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+\def\boxit#1{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox to 1.4em
+    {\small\strut\hfil #1\hfil}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+\def\sboxit{\hbox{\lower0.7ex\vbox{\hrule\hbox{\vrule\kern1pt
+    \vbox{\kern1pt\hbox to 1ex
+    {\small\strut\hfil}\kern1pt}\kern1pt\vrule}\hrule}}}
+
+
+\def\fiveboxes#1#2#3#4#5{\hbox to\scalewidth
+    {\boxit{#1}\hfil\boxit{#2}\hfil\boxit{#3}\hfil%
+     \boxit{#4}\hfil\boxit{#5}}}
+\def\manyboxes{\hbox to \scalewidth
+    {\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil%
+    \sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit\hfil\sboxit}}
+
+
+\def\boxes{\fiveboxes{}{}{}{}{}\ignorespaces}
+
+\def\void{\boxit{}}
+
+\def\xscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut\hfill #2 $\to$}%
+    \setbox2=\hbox to \wd0{\small\strut $\gets$ #1 \hfill}%
+    \vbox{\vbox to 0pt{\vss\box1\box2\kern2pt}\vbox{\box0}}}
+
+\def\scale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut\hfill #2 $\to$}%
+    \setbox2=\hbox to \wd0{\small\strut $\gets$ #1 \hfill}%
+    \vbox{\medskip\box1\box2\kern2pt\box0}}
+
+\def\xshortscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ #1 \hfill #2 $\to$}%
+    \vbox{\vbox to 0pt{\vss\box1\kern2pt}\vbox{\box0}}}
+
+\def\shortscale#1#2{%
+    \setbox0=\hbox{\boxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ #1 \hfill #2 $\to$}%
+    \vbox{\medskip\box1\kern2pt\box0}}
+
+\def\agree{\scale{strongly disagree}{agree completely}}
+\def\xagree{\xscale{strongly disagree}{agree completely}}
+\def\xquality{\xshortscale{poor}{outstanding}}
+\def\quality{\shortscale{poor}{outstanding}}
+
+\def\longquality{%
+    \setbox0=\hbox{\manyboxes}%
+    \setbox1=\hbox to \wd0{\small\strut $\gets$ poor \hfill outstanding $\to$}%
+    \vbox{\vbox to 0pt{\vss\box1\kern2pt}\vbox{\box0}}}
+
+\def\linscale{%
+    \def\tick{\vrule height 5pt\relax}%
+    \vbox{\hbox to \scalewidth{\tick\hfil\tick\hfil\tick\hfil\tick}\hrule}}
+
+\def\question#1\par#2\par{\hbox to \hsize
+    {\vbox{\hsize=0.72\hsize #1\dotfill}\quad#2\hfil}\medskip\goodbreak}
+
+\def\freequestion#1\par{#1\par\nobreak
+    \begingroup\nobreak
+    \advance\leftskip by 2pc
+    \hrule width 0pt height 1.7\baselineskip\hrulefill
+    \hrule width 0pt height 1.7\baselineskip\hrulefill
+    \par
+    \medskip
+    \endgroup
+    }
+
+\parindent0pt
+\parskip5pt plus 0.2 ex minus 0.1ex
+
+
+\def\<#1>{\textsc{#1}}
+\parindent0pt
+\parskip5pt plus 0.2 ex minus 0.1ex
+
+\begin{document} 
+\vspace*{-2cm}
+\ifbanner
+    \kern-5mm
+    \leavevmode
+    \kern-9mm\includegraphics[height=2.5cm]{dagstuhl_signet2.pdf}
+    \vskip1cm
+\else
+    \vskip3cm
+\fi
+
+Schloss Dagstuhl would like your feedback to (1) provide feedback to
+organizers and participants, (2) improve our organization, and (3) for
+reports to our funding agencies. We will send you an email with
+seminar-related results of this survey.
+
+Feedback is shared only in aggregated form that cannot be used to
+identify the origin of a statement or grade---\emph{we guarantee your
+anonymity!} However, answers from free-text questions marked with
+{\manual\char'170} will be a reported literally.  If you rather not
+trust us, we would still be very much interested in your feedback and
+would be glad to receive an email from you at survey@dagstuhl.de where
+you describe your experience in your own words.
+
+\textbf{Some questions might not apply to this seminar or your personal
+situation. Please skip any question that does not apply. Otherwise,
+please check the most appropriate box.  You can take this survey also
+online, even back at home:}
+
+\begin{center}\bf
+http://www.dagstuhl.de/immediate
+\end{center}
+
+For questions and remarks regarding this survey, please don't hesitate
+to contact us. We appreciate your input!
+
+\begin{tabular}{@{}l@{\qquad}l}
+Dr. Christian Lindig            & Jutka Gasiorowski     \\
+Research Staff                  & Assistant (on site)   \\
+survey@dagstuhl.de              & survey@dagstuhl.de \\
++49-681-302-5590                & +49-6871-905-134 \\
+\end{tabular}
+
+
+\heading{General Questions}
+
+\question What is the 5-digit seminar number of this seminar?
+You can find it on your badge or the web page of your seminar. \par
+\fiveboxes09{}{}{}
+%\fiveboxes09123 % for seminar 09123
+
+\question How many Dagstuhl Seminars have you attended, including this
+one?\par \fiveboxes123{4--6}{$\ge 7$}
+
+\question Have prior Dagstuhl Seminars changed your expectations towards
+this one? My expectations became \dots\par\shortscale{lower}{higher}
+
+\question Would you come to another Dagstuhl Seminar?
+\par\fiveboxes{no}{}{}{}{yes}
+
+\heading{Scientific Content}
+
+\question All in all, how do you rate the scientific quality of the
+seminar? \par\longquality
+
+\question The seminar inspired new ideas for my work (research,
+development, or teaching).\par\agree
+
+\question The seminar inspired joint projects, joint development, or
+joint publications.\par\boxes
+
+\question The seminar led to insights from neighboring fields or
+communities.\par\xagree
+
+\question The seminar identified new research directions.
+\par\boxes
+
+\shared\freequestion What are the best and the worst aspects of this
+seminar?
+
+\heading{Group Composition}
+
+\question The group is a good mix in terms of expertise and interests.
+\par\xagree
+
+\question The seminar does a good job integrating junior researchers.
+\par\boxes
+
+\question I made new professional contacts like an invitation to give a
+talk or to join an existing project or network. \par\boxes
+
+\question If applicable: I value exchange between academia and
+industry.\par\boxes
+
+\shared\freequestion Suggestions for group composition:
+
+
+\heading{Seminar Organization}
+
+\question Overall usefulness of information you received
+in preparation for the seminar from Dagstuhl. \par\xquality
+
+\question Overall usefulness of information you received
+in preparation for the seminar from scientific organizers. \par\boxes
+
+\shared\freequestion Suggestions for improving the preparation of the
+seminar:
+
+\question Number and length of talks are appropriate.
+\par\agree
+
+\question There is enough opportunity for socializing and
+personal discussions. \par\boxes
+
+\question The schedule is flexible enough to accommodate
+unplanned but interesting talks or discussions. \par\boxes
+
+\question The seminar creates an atmosphere for open and honest
+discussion. \par\xagree
+
+\question The traditional outing (hike, excursion) was useful.
+\par\boxes
+
+\shared\freequestion Suggestions for improving the schedule and organization of
+the seminar:
+
+
+%\vfill\eject
+
+\heading{Dagstuhl as a Venue}
+
+\question Dagstuhl as a venue in general.\par\xquality
+
+\question Conference facilities (rooms, projectors, white
+boards).\par\boxes
+
+\freequestion Suggestions for conference facilities except computer
+facilities:
+
+\question Computer facilities (internet, wlan, printer, computer,
+copier, scanner).\par\quality
+
+\freequestion Suggestions for computer facilities:
+
+\question Quality of the (electronic) library services.\par\quality
+
+\freequestion To improve the (electronic) library collection, please enter 
+book or journal title suggestions below. Our librarian Petra Meyer would be also glad about suggestions by email; you can reach her at petra.meyer@dagstuhl.de.
+
+\question Support by Dagstuhl's staff.\par\quality
+
+\question Quality of meals.\par\boxes
+
+\question Quality of your room (bed, desk, cleanliness, etc).\par\xquality	 
+
+\question Leisure facilities (wine cellar, bikes, sauna, pool table,
+news papers).\par\boxes
+
+\freequestion Suggestions for meals, rooms, and leisure facilities:
+
+%\vfill\eject
+\heading{Dagstuhl versus Traditional Conferences}
+
+\shared\freequestion Compared with traditional conferences, what are Dagstuhl's
+greatest strengths?
+
+\shared\freequestion Compared with traditional conferences, what are Dagstuhl's
+greatest weaknesses? 
+
+\heading{Personal Questions}
+
+\question Please rate your professional seniority. \par 
+\xboxit{junior} \xboxit{neither} \xboxit{senior}
+
+\question What is your primary occupation? \<a>=academia,
+\<ir>=in\-dustrial research, \<id>=in\-dustrial development, \<s>=self
+employed, \<o>=other.\par\fiveboxes{\<a>}{\<ir>}{\<id>}{\<s>}{\<o>}
+
+\question What is your country of residence? Please specify your
+country's two-letter top-level domain (it is often part of your email
+address: England=\<uk>, USA=\<us>, France=\<fr>, Germany=\<de>, \dots) \par
+\void{} \void{}
+
+\heading{General Remarks and Ideas}
+
+\shared\freequestion Please share any other remarks or ideas for improving the
+seminar or this survey:
+
+\end{document}
+
+
+ to join this conversation on GitHub. Already have an account? Sign in to comment
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
