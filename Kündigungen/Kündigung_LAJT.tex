@@ -60,6 +60,8 @@
 %---------------------------------------------------------------------------
 % Eigene definierte KOMA-Variablen
 \newkomavar*[Numer umowy]{umowy}
+\newkomavar*[Numer telefonu]{telefon}
+
 \begin{document}
 %---------------------------------------------------------------------------
 % Briefstil und Position des Briefkopfs
@@ -98,6 +100,7 @@
 %\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
 %\setkomavar{yourref} {621}%    'Ihr Zeichen...'
 \setkomavar{umowy} {900/026/0423}%    'Numer umowy...'
+\setkomavar{telefon}{737186132}%	'Numer telefonu'
 %\setkomavar{myref}{}%      Unser Zeichen
 %\setkomavar{invoice}{123}% Rechnungsnummer
 %\setkomavar{phoneseparator}{}
@@ -118,19 +121,19 @@
 \KOMAoptions{%
 }
 %---------------------------------------------------------------------------
-\setkomavar{subject}{Rezygnacja}
+\setkomavar{subject}{}
 %---------------------------------------------------------------------------
 \opening{Szanowni Państwo,}
 
-Odwołuję umowę (\textbf{900/026/0423}) przy najbliższej wizycie.
+Jeszcze nie otrzymałem potwierdzenia rezygnacjy. Jak informuje Poczta Poska, przesyłka dotarła 2 lutego.
 
-Dziękuję za potwierdzenie.
+Dziękuję za pisemne potwierdzenie rezygnacjy.
 
 
 \closing{Z pozdrowieniami,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-%\encl{Krankschreibung vom 28.11.2016}
+%\encl
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}
