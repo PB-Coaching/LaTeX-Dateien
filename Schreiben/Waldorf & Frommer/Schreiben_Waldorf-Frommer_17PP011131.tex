@@ -1,3 +1,5 @@
+% !TEX encoding = UTF-8 Unicode
+
 %---------------------------------------------------------------------------
 % scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
 % Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
@@ -26,13 +28,13 @@
    fromemail=off,%%          Emailadresse
    fromurl=off,%%            Homepage
 %   fromlogo=on,%%           Firmenlogo
-   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   addrfield=on,%%           Adressfeld f√ºr Fensterkuverts
    backaddress=on,%%          ...und Absender im Fenster
    subject=beforeopening,%%  Plazierung der Betreffzeile
-   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   locfield=narrow,%%        zus√§tzliches Feld fuer Absender
    foldmarks=on,%%           Faltmarken setzen
    numericaldate=off,%%      Datum numerisch ausgeben
-   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+   refline=narrow,%%         Gesch√§ftszeile im Satzspiegel
 %---------------------------------------------------------------------------
 % Formatierung
    draft=on%%                Entwurfsmodus
@@ -40,7 +42,7 @@
 %---------------------------------------------------------------------------
 \usepackage{ngerman}
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{url}
 %---------------------------------------------------------------------------
 % Fonts
@@ -49,8 +51,8 @@
 \setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
 \setkomafont{backaddress}{\mdseries}
-\usepackage{mathptmx}%% Schrift Times
-%\usepackage{mathpazo}%% Schrift Palatino
+%\usepackage{mathptmx}%% Schrift Times
+\usepackage{mathpazo}%% Schrift Palatino
 %\setkomafont{fromname}{\LARGE}
 
 %---------------------------------------------------------------------------
@@ -74,7 +76,7 @@
 %---------------------------------------------------------------------------
 % Absender
 \setkomavar{fromname}{Pascal Bernhard}
-\setkomavar{fromaddress}{Dobrego Pasterza 27A/2\\31-416 Krakau, Polen}
+\setkomavar{fromaddress}{Dobrego Paster\.{z}a 27B/2\\31-416 Krakau, Polen}
 %\setkomavar{fromphone}{+49 162 32 39 557}
 \renewcommand{\phonename}{Telefon}
 %\setkomavar{fromemail}{absender.name@provider.de}
@@ -86,7 +88,7 @@
 %---------------------------------------------------------------------------
 \firsthead{}
 %---------------------------------------------------------------------------
-%\firstfoot{Fuﬂzeile}
+%\firstfoot{Fu√üzeile}
 %---------------------------------------------------------------------------
 % Geschaeftszeilenfelder
 %\setkomavar{place}{Ort}
@@ -99,7 +101,7 @@
 %\setkomavar{phoneseparator}{}
 %---------------------------------------------------------------------------
 % Versendungsart
-%\setkomavar{specialmail}{Einschreiben mit R¸ckschein}
+%\setkomavar{specialmail}{Einschreiben mit R√ºckschein}
 %---------------------------------------------------------------------------
 % Anlage neu definieren
 \renewcommand{\enclname}{Anlage}
@@ -108,7 +110,7 @@
 % Seitenstil
 \pagestyle{plain}%% keine Header in der Kopfzeile
 %---------------------------------------------------------------------------
-\begin{letter}{Waldorf Frommer Rechtsanw‰lte\\z.H. Frau Amireh Venske\\Beethovenstraﬂe 12\\80336 M¸nchen\\Niemcy}
+\begin{letter}{Waldorf Frommer Rechtsanw√§lte\\z.H. Frau Janine Maier\\Beethovenstra√üe 12\\80336 M√ºnchen\\Niemcy}
 %---------------------------------------------------------------------------
 % Weitere Optionen
 \KOMAoptions{%%
@@ -116,18 +118,16 @@
 %---------------------------------------------------------------------------
 %\setkomavar{subject}{}
 %---------------------------------------------------------------------------
-\opening{Sehr geehrte Frau Venske,}
+\opening{Sehr geehrte Frau Maier,}
 
-bislang habe ich von Ihrer Seite keine Antwort auf mein Schreiben vom 28. Februar diesen Jahres erhalten. Daher fordere ich Sie erneut auf, mir mit einer Frist von 14 Tagen eine Abrechnung der Gesch‰ftssache \textit{17PP011131} zu ¸bermitteln. Nach meinen Unterlagen ist die Forderungssumme mit der letzten ‹berweisung vom M‰rz beglichen. Best‰tigen Sie mir bitte schriftlich die Erledigung der genannten Gesch‰ftssache. 
+laut Ihrer Aufstellung vom 16.03.2020 zum noch offenen Betrag, ist mit der letzten Zahlung am 25.02.2021 in H√∂he von 180 EUR die Gesamtsumme beglichen.
 
-Weitere Zahlungen werde ich erst leisten, wenn von Ihrer Seite schriftlich nachgewiesen wurde, dass noch ein Betrag offen steht.
+Bitte best√§tigen Sie mir schriftlich die Erledigung des Vorgangs \textsl{17PP011131}
 
-Sofern Sie in der Zwischenzeit geantwortet haben, betrachten Sie dieses Schreiben als gegenstandslos.
-
-\closing{Mit freundlichen Gr¸ﬂen,}
+\closing{Vielen Dank,}
 %---------------------------------------------------------------------------
 %\ps{PS:}
-%\encl{Unterlassungserkl‰rung \& Kopie des Hartz IV-Bescheids}
+%\encl{}
 %\cc{}
 %---------------------------------------------------------------------------
 \end{letter}
