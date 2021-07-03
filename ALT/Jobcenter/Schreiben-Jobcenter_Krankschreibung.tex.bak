@@ -1,0 +1,142 @@
+% !TeX encoding = ISO-8859-1
+
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%
+%---------------------------------------------------------------------------
+  [fontsize=10pt,%          Schriftgröße
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%               Papierformat
+   enlargefirstpage=on,%    Erste Seite anders
+%   pagenumber=headright,%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%         Linie unter der Seitenzahl
+   parskip=half,%           Abstand zwischen Absätzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%        Plazierung des Briefkopfs
+   fromphone=on,%           Telefonnummer im Absender
+   fromrule=off,%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%            Faxnummer
+   fromemail=off,%          Emailadresse
+   fromurl=off,%            Homepage
+%   fromlogo=on,%           Firmenlogo
+   addrfield=on,%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%          ...und Absender im Fenster
+   subject=beforeopening,%  Plazierung der Betreffzeile
+   locfield=narrow,%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%           Faltmarken setzen
+   numericaldate=off,%      Datum numerisch ausgeben
+   refline=narrow,%         Geschäftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=on%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}% Schrift Times
+%\usepackage{mathpazo}% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+
+
+%---------------------------------------------------------------------------
+% Eigene definierte KOMA-Variablen
+\newkomavar*[BG Nummer]{BGnummer}
+
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} % oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+\setkomavar{fromphone}{+49 162 32 39 557}
+\renewcommand{\phonename}{Telefon}
+%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{backaddressseparator}{ - }
+\setkomavar{signature}{(Pascal Bernhard)}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+\firsthead{} %LEER LASSEN
+%---------------------------------------------------------------------------
+%\firstfoot{Fußzeile}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+%\setkomavar{place}{Ort}
+%\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
+\setkomavar{yourref} {621}%    'Ihr Zeichen...'
+\setkomavar{BGnummer}{BG 92210/0026652}
+%\setkomavar{myref}{}%      Unser Zeichen
+%\setkomavar{invoice}{123}% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlage}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+\pagestyle{plain}% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\begin{letter}{Jobcenter Berlin Tempelhof-Schöneberg\\Team 621\\z.H. Herr Ecke\\Wolframstraße 89-92\\12105 Berlin}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{\textbf{Krankschreibung}}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Herr Koepke,}
+
+anbei übersende ich Ihnen den Arbeitsvertrag bei Shell in Krakau, Polen. Zwischenzeitlich hatte ich von der Firma nichts mehr gehört und konnte die Personalabteilung auch nicht erreichen. So hatte ich mich erneut auf Jobsuche begeben, so dass ich am Ende zwischen mehreren Angeboten auswählen konnte. Meine Entscheidung für Shell habe ich dann doch beibehalten. Der Vertrag läuft nur über die Probezeit von 3 Monaten. In Polen ist dies so üblich, wie ich mich erkundigt habe und der Arbeitsvertrag wird dann noch Ablauf der Probezeit intern in eine befristete oder unbefristete Stelle umgewandelt.
+
+
+Für den Fall, dass ich jemand Ihrer Kunden vorstellen kann, in Polen eine Beschäftigung aufzunehmen, empfehle ich Kontakt zu Herrn \{L}ukasz Sokal (lukasz@ideahr.com.pl) aufzunehmen und ihm einen Lebenslauf auf Englisch zu senden. Herr Sokal ist dringend auf der Suche nach deutschsprachigen Personen, die in und um Stettin arbeiten möchten.
+
+
+
+\closing{Mit freundlichen Grüßen,}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+\encl{Krankschreibung vom 28.11.2016}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

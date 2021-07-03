@@ -1,0 +1,148 @@
+\documentclass[10pt,foldmarks=true,parskip=half]{scrlttr2}
+
+\usepackage[ansinew]{inputenc}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{xcolor}
+\usepackage[german,germanb]{babel}
+\usepackage[top=8mm, bottom=8mm]{geometry}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{tabularx}
+
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+
+
+
+%%%_________________________________________________________________________________________________
+
+\begin{document}
+
+\begin{letter}
+ 
+\pagestyle{empty}
+
+
+
+%%%\noindent macht keinen Unterschied
+
+		\scriptsize{
+
+		  \setlength{\tabcolsep}{35pt}
+		  \renewcommand{\arraystretch}{0.9}
+
+
+
+		\begin{tabularx}{\textwidth}{llll}
+		 \textbf{Wort} & \textbf{Zwei Wörter} 	& \textbf{Wort}	& \textbf{Wort} \\
+		 Wieder Wörter	& Noch mehr Wörter		& Zahlenreihe	& Letzte Wörter \\
+		\end{tabularx}
+
+			      }
+
+
+\vspace{4mm}	
+
+\normalsize{
+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+
+}
+
+
+
+
+
+
+\par
+\vspace{12mm}	
+
+
+Mit freundlichem Gru{\ss}, \\ 
+
+			
+Berlin, den \today
+
+\end{letter}
+
+
+\end{document}
+
+
+
+}
+
+\vspace{8mm}
+
+%Tabelle
+\setlength{\tabcolsep}{23pt}
+\renewcommand{\arraystretch}{1.2}
+\definecolor{dunkelgrau}{rgb}{0.82,0.82,0.82}
+\definecolor{hellgrau}{rgb}{0.92,0.92,0.92}
+
+
+  \begin{tabular}[c]{>{\columncolor{dunkelgrau}}l >{\columncolor{hellgrau}}c r}
+    \rowcolor{dunkelgrau}
+
+    \multicolumn{3}{l}{\textbf{Leistungen: Krankengeld} \footnotesize{\textsl{(nach V. Sozialgesetzbuch §44
+Abs. 1 und §46 Abs. 2)}}} \\
+    
+    \rowcolor{dunkelgrau}
+%   & & \\
+    Bezugszeitraum: & monatlich & Summe \\
+
+    \textsl{01.10.2011 -- 31.12.2011} & 935,96 \EUR & 2807,88 \EUR{} \\
+    \textsl{01.01.2012 -- 31.10.2012} & 962,25 \EUR & 9622,50 \EUR{} \\
+    \hline
+    \cellcolor{white} \textbf{Gesamtbetrag:} & \cellcolor{white} & 12430,38 \EUR{} \\
+    
+  \end{tabular}
+
+
+
+
+\par
+\vspace{12mm}	
+
+
+Mit freundlichem Gru{\ss}, \\ 
+
+			
+Berlin, den 5. März 2013
+
+\end{letter}
+
+
+\end{document}
+
+
+
+}
+
+
+
+
+
+\par
+\vspace{12mm}	
+
+
+Mit freundlichem Gru{\ss}, \\ 
+
+			
+Berlin, den 5. März 2013
+
+\end{letter}
+
+
+\end{document}
+

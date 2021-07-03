@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Letter Class Option to define letter head and foot
+%  of University Konstanz, Germany
+%
+ 
+\ProvidesFile{uni-kstz.lco}[%
+  2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
+ 
+\@ifclassloaded{scrlttr2}{}{%
+  \GenericWarning{%
+    (infoblck.lco)\@spaces\@spaces\@spaces\@spaces\@spaces\@spaces%
+  }{%
+    Letter-class-option uni-kstz Warning:\space
+    This letter class option file was made\MessageBreak
+    only to be used with KOMA-Script letter\MessageBreak
+    class `scrlttr2'. Use with other classes\MessageBreak
+    may result in a lot of errors\@gobble
+  }%
+}
+ 
+% Change of font of the back-address, because of
+% corporated identity
+\setkomafont{backaddress}{\rmfamily}
+ 
+% Set some variable, which are always the same
+\setkomavar{backaddress}{Universit\"at Konstanz\\
+  \usekomavar{department}\\78457 Konstanz}
+\setkomavar{backaddressseparator}{ $\cdot$ }
+\setkomavar{place}{Konstanz}
+\setkomavar{fromlogo}{\includegraphics*[width=3cm]{signet}}
+% NOTE: You also need signet.eps and/or signet.png to
+%       use this.
+ 
+% Load graphicx package.
+% NOTE: You may use \PassOptionsToPackage or set global
+%       options, if you have to pass options to it.
+\RequirePackage{graphicx}
+ 
+% Define some new variable:
+\newkomavar{department}% e.g. ``Institute of \LaTeX''
+\newkomavar{bus}% how to arrive with bus
+ 
+% Define a new letter head
+% (with tricky use of \rlap to center the logo):
+\firsthead{
+  \hspace*{\fill}%
+  \usekomavar{fromlogo}%
+  \rlap{\quad
+    \parbox[b]{\hsize}{\raggedright\small
+      \textbf{Universit\"at Konstanz\\
+        \usekomavar{department}\\
+        \usekomavar{fromname}}\\
+      \footnotesize{\usekomavar{fromaddress}%
+        \if@phone\\
+          \usekomavar*{fromphone}(0\,75\,31)~88-\usekomavar{fromphone}\fi
+        \if@fax\\
+          \usekomavar*{fromfax}(0\,75\,31)~88-\usekomavar{fromfax}\fi
+        \if@email\\\usekomavar*{fromemail}\usekomavar{fromemail}\fi
+        \if@www\\\usekomavar*{fromurl}\usekomavar{fromurl}\fi
+      }}}%
+  \hspace*{\fill}%
+}
+ 
+% Define a new letter foot
+% (with tricky use of tabulars but without centering middle tabular;
+% if you need to center the middle tabular, use \rlap to set first 
+% tabular and \llap to set third tabular):
+\firstfoot{\scriptsize
+%  \rlap{%
+  \begin{tabular}{@{}l@{}}
+    Busverbindungen\\
+    \usekomavar{bus}\\
+  \end{tabular}%
+%  }\null
+  \hfill
+  \begin{tabular}{@{}l@{}}
+    Paketanschrift\\
+    \usekomavar{fromaddress}\\
+  \end{tabular}%
+  \hfill
+%  \llap{%
+  \begin{tabular}{@{}l@{}}
+    \usekomavar*{frombank}\\
+    \usekomavar{frombank}\\
+  \end{tabular}
+%  }\null
+}
+ 
+\endinput
+%
+%  End of Letter Class Option uni-kstz
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

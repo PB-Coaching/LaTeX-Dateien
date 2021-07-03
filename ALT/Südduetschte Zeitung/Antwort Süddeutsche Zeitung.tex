@@ -1,0 +1,147 @@
+
+
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%%
+%---------------------------------------------------------------------------
+  [fontsize=10pt,%%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%%               Papierformat
+   enlargefirstpage=on,%%    Erste Seite anders
+%   pagenumber=headright,%%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%%         Linie unter der Seitenzahl
+   parskip=half,%%           Abstand zwischen Absaetzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%%        Plazierung des Briefkopfs
+   fromphone=on,%%           Telefonnummer im Absender
+   fromrule=off,%%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%%            Faxnummer
+   fromemail=off,%%          Emailadresse
+   fromurl=off,%%            Homepage
+%   fromlogo=on,%%           Firmenlogo
+   addrfield=on,%%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%%          ...und Absender im Fenster
+   subject=beforeopening,%%  Plazierung der Betreffzeile
+   locfield=narrow,%%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%%           Faltmarken setzen
+   numericaldate=off,%%      Datum numerisch ausgeben
+   refline=narrow,%%         Geschaeftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=on%%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}%% Schrift Times
+%\usepackage{mathpazo}%% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+
+%---------------------------------------------------------------------------
+% Eigene definierte KOMA-Variablen
+
+\newkomavar*[Kundennummer]{KUNDE}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} %% oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{+49 162 32 39 557}
+\renewcommand{\phonename}{Telefon}
+%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{backaddressseparator}{ - }
+\setkomavar{signature}{(Pascal Bernhard)}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}%% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+\firsthead{}
+%---------------------------------------------------------------------------
+%\firstfoot{Fußzeile}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+%\setkomavar{place}{Ort}
+%\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}%% 'Ihr Schreiben...'
+
+\setkomavar{KUNDE}{3004290687}%%      'Kundennummer...'
+%\setkomavar{invoice}{123}%% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlage}
+%\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+\pagestyle{plain}%% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\begin{letter}{Süddeutsche Zeitung GmbH\\Hultschiner Straße 8\\81677 München}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{Rücklastschrift Abonnementgebühr}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Damen und Herren,}
+
+Mit Überraschung habe ich Ihr Schreiben vom 11.08.2016 entgegengenommen. Weder habe ich eine Rückbuchung Ihrer Lastschrift veranlasst noch hat meine Bank ein Lastschrift abgelehnt, wie ich mich informiert habe. Möglicherweise sind die Kontodaten von Ihnen nicht korrekt oder vollständig erfasst worden:
+
+\textsf{\begin{flushleft}
+Pascal Bernhard\\
+\textbf{IBAN:} DE32100900007043003008\\
+\textbf{BIC:} BEVODEBB\\
+\textsl{Berliner Volksbank}\\
+\end{flushleft}}
+
+Buchen Sie bitte den reinen Abo-Betrag von diesem Konto ab, für die Gebühren der Rücklastschrift bin ich nicht verantwortlich.
+
+
+
+
+\closing{Mit freundlichen Grüßen,}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+%\encl{Kopie des Bescheid für Leistungen nach dem Sozialgesetzbuch}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

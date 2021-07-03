@@ -1,0 +1,84 @@
+\documentclass[foldmarks=on,%   Faltmarken setzen
+               paper=a4,%       Papierformat
+	       10pt,%		
+               fromphone=on,%  Telefonnummer im Absender
+               fromrule=off,%   keine Linie unter Absender
+               fromfax=off,%    keine Faxnummer
+               fromemail=off,%   Emailadresse
+               fromurl=off,%    keine Homepage
+	       subject=titled%  Plazierung der Betreffzeile
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+%\usepackage[scaled]{helvet}
+\usepackage{lmodern}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+						
+
+\begin{document}
+
+\setkomafont{fromname}{\footnotesize}
+\setkomavar{fromname}{Pascal Bernhard}
+
+\setkomafont{fromaddress}{\footnotesize}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+
+%\setkomafont{fromphone}{\footnotesize}
+\setkomavar{fromphone}{0162 32 39 557}
+
+%\setkomafont{fromemail}{\footnotesize}
+\setkomavar{fromemail}{pascal.bernhard@rppr.de}
+
+
+\setkomavar{subject}{Feedback zu Einzelfallhilfe}
+
+\setkomavar{backaddressseparator}{%
+~\raisebox{0.25ex}{\textbf{\Large.}}~}
+\setkomafont{backaddress}{\tiny}
+%%\setkomavar{backaddress}{Dietrich% kuerzere Rueckaddresse
+%%\usekomavar{backaddressseparator}\usekomavar{fromaddress}}
+
+
+
+\begin{letter}{%         Empfaenger-Adresse
+
+\textbf{Frau Yadi}\\
+Gesundheitsamt Berlin Tempelhof-Schöneberg\\
+10832 Berlin
+}
+
+\vspace{6mm}
+
+\opening{Sehr geehrter Frau Yadi,}
+
+ich habe mir lange schwer getan, dieses Schreiben zu verfassen, aber ich denke, dass es für alle Seiten letztendlich doch sehr erkenntnissreich sein wird, dass ich (wenn auch etwas verspätet) Feedback zur Einzelfallhilfe durch Herrn Christoph gebe, die ich von meiner Seite aus sehr abrupt und nicht gerade auf die sog. feine englische Art, abgebrochen habe. Herr Christoph erhält selbstverständlich eine Kopie dieses Schreibens wie auch die bewilligende Instanz, das Bezirksamt von Berlin Tempelhof-Schöneberg.
+
+Ich glaube nicht, dass mein Schreiben etwas zum Positiven bewirken wird, aber ich möchte andererseits auch nicht, mich einfach schmollend zurückziehen. Zudem denke ich, dass auch Sie (Herr Christoph und das Bezirksamt eingeschlossen ein Anrecht, wie auch die die Steuerzahler) ein Anrecht auf eine Einschätzung der Effektivität und eine Bewertung des Einzelfallhilfe-Systems haben.
+
+Im Zeitraum von 2011 bis 2015 war ich 'Klient' der Einzelfallhilfe. Im Folgenden maße ich mir Aussagen über Inhalt, Folgen, sowie ein Urteil über das Geschehene an. Einerseits war es ein Glück Herrn Christoph, als Einzelfallhelfer zu haben, zugleich muss ich konstatieren, dass im Endergebnis die Einzelfallhilfe mir sehr geschadet hat und letztendlich meine Qualen, leben zu müssen, nur verlängert hat. Kurzum die Einzelfallhilfe hat meine Lebenssituation deutlich verschlechtert, von Hilfe zu sprechen ist einzig und allein Zynismus. 
+
+
+Herr Christoph hat mich tatkräftig dabei unterstützt, meine Diplomarbeit zu schreiben. Dafür kann ich ihm nicht genug dankbar sein, diese drei Monate Arbeit waren die einzigen nicht qualvollen meines inzwischen fast 34 Jahre langen Lebens. Ich habe mir lange Zeit schwer getan damit, aber inzwischen kann ich wirklich stolz sein auf das Ergebnis, meine Abschlussarbeit wurde bei Weitem als die beste des Jahrgangs mit Auszeichnung bewertet und wird von anderer wissenschaftlicher Literatur zitiert. Ohne Herrn Christoph wäre dies nicht möglich gewesen. Hierfür gebührt ihm jeglicher Dank und Anerkennung.  
+
+Auf der anderen Seite habe ich die Einzelfallhilfe als grundlegend menschenverachtend erlebt, wobei das Ziel subsumiert werden kann, als 'Leben auf Teufel komm' raus'. Ich habe feststellen müssen, dass es nicht darum ging, Menschen in wertschätzender Form als grundsätzlich gleichwertige Subjekte zu respektieren und mit ihnen entsprechend umzugehen. Stattdessen stand die Erhaltung von menschlichem Leben per se im Mittelpunkt der Arbeit, auch wenn dies durch bisherige Erfahrungen bedingt nur qualvoll möglich ist. Nicht der Mensch selbst ist Ihr Anliegen, sondern menschliches Leben im biologischen Sinne. Es macht unfassbar traurig, dass Ihrer Arbeit und Ihrem Selbstverständnis als sozial-psychiatrischen Dienst wie auch Einzelfallhelfer ein totalitäres Menschenbild zugrunde liegt. Totalitarismus bedeutet, um Hannah Arendt zu zitieren, die Unterordnung des Individuums unter die Gemeinschaft bzw. ein gemeinschaftliches Ziel. Die Einzelfallhilfe hat meiner Erfahrung nach lediglich das Ziel, Menschen mit 'verpfuschten' Leben um jeden Preis am Leben zu erhalten. Es geht nicht um die Klienten, diese Personen als Subjekte und Individuen mit meine instrinsischen Wert als Menschen sind Ihnen relativ gleichgültig, es geht Ihnen darum, dass niemand durch Suizid das Gesellschaftssystem als solches durch ein individuelle Form des 'J'accuse' in Frage stellen sollte.
+
+Ist Ihnen einmal der Gedanke gekommen, dass manchen Menschen mit gewissen Biographien und Erlebnissen in ihrem Leben mit dem Freitod geholfen wäre und ein Weiterleben nur eine Verlängerung ihrer Qualen bedeutet? Wie kalt, unempathisch und menschenverachtend muss man sein, um sich einzureden Menschen, die sich nur an ihrem Leben abquälen, mit der Fortführung ihres Lebens zu helfen? Bestehen Menschen für Sie nur aus ihrer biologischen Funktion des Atmens, des Handelns und der Fortpflanzung, also letztendlich des totalitären Ziels der Erhaltung der Art, koste es, was es wolle? Ist denn nicht Einsicht des Humanismus, dass Menschen einen intrinsischen Wert haben, der unabhängig von der Gemeinschaft ist, und dass jeder Inhalt und Wert seines eigenen Lebens selbst definiert und dies nicht durch 'übergeordnete' Ziele der Gesellschaft geschieht? 
+
+
+Um nach diesen Gedanken zum konkreten Feedback zur Einzelfallhilfe zu kommen. Ich möchte Herrn Christoph dafür danken, dass meine Schuldensituation nicht verbessert, sondern durch Mithilfe des Einzelfallhelfers weiter verschlechtert wurde. Ich möchte mich auch für die Empfehlung bedanken, mich aufgrund ausgeschlagenener Schneidezähne und von meiner Erzeugerin bewusst verhinderten Kieferorthopädie (Originalzitat: 'Jungs brauchen keine schönen Zähne zu haben' - das heißt, seit dem sechsten Lebensjahr, war ich nie wieder beim Zahnarzt, Fehlbiss wurde nicht korrigiert) bei der Zahnklinik in Behandlung zu geben. Nicht nur wurde der Sparsamkeit willen auf jedwede Betäubung verzichtet (Hat wirklich Freude bereitet), sondern es wurde auch falsch behandelt und gepfuscht. Inzwischen sind meine Zähne komplett ruiniert mit entsprechenden Beschwerden und Zusatzkosten bis an das Lebensende. Herr Christoph hatte nach eigener Aussage ein Bild der dortigen Behandlungsmethoden, vielen Dank, da freue ich mich.
+
+Ich möchte mich auch für das wiederholte Drängen auf die Einnahme von Psycho-Pharmarka bedanken, seitens Herrn Christoph, Frau Resa Thomas und Herrn Puchart. Mir ist unverständlich, wie Personen solche sadistischen Medikamente empfehlen, bzw. verschreiben können, wenn sie dieselben und ihre Nebenwirkungen nicht selbst ausprobiert haben. Wie tief muss die Missachtung anderer Menschen und der Zynismus sitzen? Nach ausgiebiger Internet-Recherche bin ich nicht die Person, die so massiv negativ auf solche Mittel reagiert. Wie können Sie anderen Menschen die Einnahme solcher Medikamente empfehlen, wenn Sie selbst keinerlei Erfahrung über deren Wirkung haben? Grundsätzlich könnte man sich die Frage stellen, ob es nicht sinnvoller wäre, an die Ursache von Depressionen zu gehen, als einfach dilettantisch zu versuchen, die Symptome zu unterdrücken. Haben Sie sich bei Ihrer Arbeit mal die Frage gestellt, was mit Menschen ist, die wegen Erinnerungen an ihre Vergangenheit Depressionen haben? Für die jegliche Erinnerung an Vergangenes nur schmerzhaft ist, die keinerlei positive Erinnerungen an ihr bisheriges Leben haben?  										  
+
+
+
+
+\closing{Mit freundlichen Grüßen,}
+
+
+\end{letter}
+
+\end{document}

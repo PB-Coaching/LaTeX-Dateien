@@ -1,0 +1,132 @@
+% !TeX encoding = ISO-8859-1
+
+%---------------------------------------------------------------------------
+% scrlttr2.tex v0.3. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Template for a letter to be typeset with scrlttr2.cls from KOMA-Script.
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%---------------------------------------------------------------------------
+\documentclass%
+%---------------------------------------------------------------------------
+  [fontsize=10pt,%          Schriftgroesse
+%---------------------------------------------------------------------------
+% Satzspiegel
+   paper=a4,%               Papierformat
+   enlargefirstpage=on,%    Erste Seite anders
+%   pagenumber=headright,%   Seitenzahl oben mittig
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%         Linie unter der Seitenzahl
+   parskip=half,%           Abstand zwischen Absätzen
+%---------------------------------------------------------------------------
+% Briefkopf und Anschrift
+   fromalign=right,%        Plazierung des Briefkopfs
+   fromphone=on,%           Telefonnummer im Absender
+   fromrule=off,%           Linie im Absender (aftername, afteraddress)
+   fromfax=off,%            Faxnummer
+   fromemail=off,%          Emailadresse
+   fromurl=off,%            Homepage
+%   fromlogo=on,%           Firmenlogo
+   addrfield=on,%           Adressfeld fuer Fensterkuverts
+   backaddress=on,%          ...und Absender im Fenster
+   subject=beforeopening,%  Plazierung der Betreffzeile
+   locfield=narrow,%        zusaetzliches Feld fuer Absender
+   foldmarks=on,%           Faltmarken setzen
+   numericaldate=off,%      Datum numerisch ausgeben
+   refline=narrow,%         Geschäftszeile im Satzspiegel
+%---------------------------------------------------------------------------
+% Formatierung
+   draft=on%                Entwurfsmodus
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}% Schrift Times
+%\usepackage{mathpazo}% Schrift Palatino
+%\setkomafont{fromname}{\LARGE}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Briefstil und Position des Briefkopfs
+\LoadLetterOption{DIN} % oder: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\makeatother
+%---------------------------------------------------------------------------
+% Absender
+\setkomavar{fromname}{Pascal Bernhard}
+\setkomavar{fromaddress}{Schwalbacher Straße\\12161 Berlin}
+\setkomavar{fromphone}{+49 30 32 66 58 00}
+\renewcommand{\phonename}{Telefon}
+%\setkomavar{fromemail}{absender.name@provider.de}
+\setkomavar{backaddressseparator}{ - }
+\setkomavar{signature}{(Pascal Bernhard)}
+%\setkomavar{frombank}{}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\
+%      Telefon:\ usekomavar{fromphone}}}}% Neben dem Adressfenster
+%---------------------------------------------------------------------------
+\firsthead{} %LEER LASSEN
+%---------------------------------------------------------------------------
+%\firstfoot{Fußzeile}
+%---------------------------------------------------------------------------
+% Geschaeftszeilenfelder
+%\setkomavar{place}{Ort}
+%\setkomavar{placeseparator}{, den }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2003}% 'Ihr Schreiben...'
+%\setkomavar{yourref} {abcdefg}%    'Ihr Zeichen...'
+\setkomavar{myref}{291 356 137}%      Unser Zeichen
+%\setkomavar{invoice}{123}% Rechnungsnummer
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Versendungsart
+%\setkomavar{specialmail}{Einschreiben mit Rückschein}
+%---------------------------------------------------------------------------
+% Anlage neu definieren
+\renewcommand{\enclname}{Anlage}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Seitenstil
+\pagestyle{plain}% keine Header in der Kopfzeile
+%---------------------------------------------------------------------------
+\begin{letter}{ARD ZDF \\Deutschlandradio\\50565 Köln}
+%---------------------------------------------------------------------------
+% Weitere Optionen
+\KOMAoptions{%
+}
+%---------------------------------------------------------------------------
+\setkomavar{subject}{Höhe der Ratenzahlung}
+%---------------------------------------------------------------------------
+\opening{Sehr geehrte Damen und Herren,}
+
+in Ihrem Schreiben von 04.04.2014 hatten Sie mit mir eine Ratenzahlung in Höhe von 10 EUR monatlich zur Tilgung der Rückstände vereinbart (Kopie liegt bei). In Ihrem letzten Schreiben Anfang Mai wurde ich nun aufgefordert für Mai 20 EUR zu überweisen. Ich bitte um Klarstellung.
+
+
+
+\closing{Mit freundlichen Grüßen,}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+\encl{Kopie des Schreibens vom 04.04.2014}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Letter Class Option of John Doe at University Konstanz
+%
+ 
+\ProvidesFile{john-doe.lco}[%
+  2002/07/06 v0.9 LaTeX2e unsupported letter-class-option]
+ 
+% We need Letter Class Option uni-kstz:
+\LoadLetterOption{uni-kstz}
+ 
+% Personalization
+\KOMAoptions{fromphone,fromfax,fromemail}
+\setkomavar{phoneseparator}{ }
+\setkomavar{faxseparator}{ }
+\setkomavar{emailseparator}{ }
+\setkomavar{fromname}{Dr.\,John Doe}
+\setkomavar{fromaddress}{Universit\"atsstra\ss e 10\\78464 Konstanz}
+\setkomavar{fromphone}{00\,00}
+\setkomavar{fromfax}{baca}
+\setkomavar{fromemail}{john.doe@uni-konstanz.de}
+\setkomavar{signature}{Dr.\,John Doe\\Fachreferent}
+\setkomavar{department}{Bibliothek}
+\setkomavar{frombank}{Landeszentralbank Konstanz\\
+  Kto. 690\,015\,04
+  BLZ 690\,000\,00}
+\setkomavar{bus}{ab Hauptbahnhof: Linie 9A oder 9B\\
+    ab Bahnhof Wollmatingen: Linie 11}
+ 
+\endinput
+%
+%  End of Letter Class Option john-doe
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

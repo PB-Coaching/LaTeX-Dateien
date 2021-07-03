@@ -1,0 +1,110 @@
+\documentclass[foldmarks=on,%   Faltmarken setzen
+               paper=a4,%       Papierformat
+	       10pt,%		
+               fromphone=on,%  Telefonnummer im Absender
+               fromrule=off,%   keine Linie unter Absender
+               fromfax=off,%    keine Faxnummer
+               fromemail=on,%   Emailadresse
+               fromurl=off,%    keine Homepage
+	       subject=beforeopening%  Plazierung der Betreffzeile
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+%\usepackage[scaled]{helvet}
+\usepackage{lmodern}
+
+%%%Serifenlose Schrift für das gesamte Dokument
+\renewcommand{\familydefault}{\sfdefault}
+						
+
+\begin{document}
+
+\setkomafont{fromname}{\footnotesize}
+\setkomavar{fromname}{Pascal Bernhard}
+
+\setkomafont{fromaddress}{\footnotesize}
+\setkomavar{fromaddress}{Schwalbacher Straße 7\\12161 Berlin}
+
+%\setkomafont{fromphone}{\footnotesize}
+\setkomavar{fromphone}{0152 38 50 23 63}
+
+%\setkomafont{fromemail}{\footnotesize}
+\setkomavar{fromemail}{pbernhard@seitenfreunde.de}
+
+
+\setkomavar{backaddressseparator}{%
+~\raisebox{0.25ex}{\textbf{\Large.}}~}
+\setkomafont{backaddress}{\tiny}
+%%\setkomavar{backaddress}{Dietrich% kuerzere Rueckaddresse
+%%\usekomavar{backaddressseparator}\usekomavar{fromaddress}}
+
+
+
+\begin{letter}{%         Empfaenger-Adresse
+
+Frau\\
+Im Bühl 23\\
+333 Hobbingen\\
+Mittelerde
+}
+
+\vspace{6mm}
+
+\opening{Sehr geehrte Frau XXX,}
+
+ 
+
+\vspace{1cm}
+
+\pagebreak
+
+\noindent 
+Die mir entstandenen Schäden \& Kosten können Sie der folgenden Tabelle entnehmen.
+
+
+
+\vspace{2cm} 
+
+					\begin{quote}
+						\begin{flushright}
+						\begin{tabular}{r c r}
+							
+						Deckenlampe Küche (Anschaffung 2012) & = & 200 Euro \\
+						Bodenteppich Flur (Anschaffung 2009) & = & 90 Euro \\
+					    Läufer Flur (Anschaffung 2010)  	   & = & 250 Euro\\
+					    Beleuchtung Flur (Anschaffung 2009)  &  = & 50 Euro\\
+					    Türsprechanlage (Neubeschaffung) 	  & = & circa 50 Euro\\
+					    									&		& 		\\
+					    	Kosten durch Trocknungsmaßnahmen	&	= &	287,11 Euro\\
+											\hline
+					            \textbf{Gesamtbetrag} & \textbf{=} & \textbf{927,11 Euro}
+					            
+						\end{tabular}
+						\end{flushright}
+					\end{quote}
+
+
+\vspace{3cm}
+
+Die Zahlung bitte ich auf das folgenden Konto zu überweisen:
+
+
+					
+\begin{center}
+\emph{Kontonummer: 704 300 3008\\
+IBAN: DE32 1009 0000 7043 0030 08\\
+BIC: BEVODEBBXXX (Berliner Volksbank)}
+\end{center}
+														  
+
+
+
+
+\closing{Mit freundlichen Grüßen,}
+
+
+\end{letter}
+
+\end{document}
